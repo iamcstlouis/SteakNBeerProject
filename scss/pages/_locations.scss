@@ -1,0 +1,55 @@
+section.locationsSection {
+
+    h1 {
+        color: $clr-site-offWhite;
+        font-size: 3.5rem;
+        font-weight: 600;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        padding-left: 1rem;
+        flex-basis: 100%;
+        display: none;
+    }
+}
+
+div.locationsWrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .locationHoxtonSq,
+    .locationBrixton,
+    .locationCroydonCentre,
+    .locationClapham {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        img {
+            border: solid $clr-site-red .1rem;
+            padding: .5rem;
+            opacity: .5;
+            display: block;
+            max-width: 33.6rem;
+            height: auto;
+
+            &:hover {
+                opacity: 1;
+                @include imgHover;
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            padding: .5rem 0 1rem 0;
+            color: rgb(75, 75, 75);
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.6rem;
+            padding-bottom: 5rem;
+        }
+    }
+}

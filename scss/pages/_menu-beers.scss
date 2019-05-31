@@ -1,0 +1,199 @@
+/* ===================================================================
+        Extensive Range Of Beers
+=================================================================== */
+
+div.extensiveRangeOfBeers {
+
+    p {
+        width: 85vw;
+        font-size: 1.6rem;
+        color: $clr-site-offWhite;
+        font-weight: 400;
+        padding: 2rem 0 0 7.5rem;
+    }
+}
+
+/* ===================================================================
+        Beers Featured Image Section
+=================================================================== */
+
+section.beersSection {
+    display: flex;
+    margin-top: 6rem;
+    padding: 0 7.5rem;
+}
+
+div.beersFeatImgSection {
+    width: 40%;
+    padding-top: 10rem;
+}
+
+/* ===================================================================
+        Beers Menu
+=================================================================== */
+
+div.beersMenuSection {
+    width: 60%;
+
+    div.beersMenuWrapper {
+        margin-left: auto;
+        padding-left: 5rem;
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+}
+
+div.beersMenu {
+    display: flex;
+    margin: -3.5rem 0 10rem 0;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-right: 5rem;
+
+    div.beerNameCol {
+        font-weight: 700;
+
+        p.beerName {
+            padding-bottom: 2rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    div.PintsCol {
+        text-align: right;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 5rem;
+        }
+
+        .pintPrice {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding-bottom: 2rem;
+        }
+
+        .emptyPrice {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding-bottom: 2rem;
+            color: #010101;
+        }
+    }
+
+    .halfPintCol {
+        text-align: right;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 5rem;
+        }
+
+        .halfPintPrice {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding-bottom: 2rem;
+        }
+
+        .emptyPrice {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding-bottom: 2rem;
+            color: #010101;
+        }
+    }
+
+    .bottlePriceCol {
+        text-align: right;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 5rem;
+        }
+
+        .bottlePrice {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding-bottom: 2rem;
+        }
+
+        .emptyPrice {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding-bottom: 2rem;
+            color: #010101;
+        }
+    }
+}
+
+/* ===================================================================
+        Ciders Menu
+=================================================================== */
+
+section.ciderMenuSection {
+    display: flex;
+    padding: 0 7.5rem;
+
+    .ciderMenuWrapper {
+        width: 60%;
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 4.5rem;
+        }
+
+        .ciderMenu {
+            margin-bottom: 10rem;
+
+            .productItem {
+                padding-bottom: 2rem;
+
+                .productTopInfo {
+                    vertical-align: top;
+                    display: flex;
+                    -webkit-box-align: end;
+                    align-items: flex-end;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    padding-right: 5rem;
+
+
+                    .productName,
+                    .productPrice {
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ===================================================================
+        Ciders Featured Image Section
+=================================================================== */
+
+.cidersFeatImgSection {
+    display: flex;
+    width: 40%;
+    padding-top: 8rem;
+    padding-right: 5rem;
+
+    .ciderFeatImg {
+        margin-left: auto;
+    }
+}

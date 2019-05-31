@@ -1,0 +1,339 @@
+/* ===================================================================
+        For Allergy Info 
+=================================================================== */
+.forAllergyInfo {
+
+    p {
+        width: 90vw;
+        font-size: 1.6rem;
+        color: $clr-site-offWhite;
+        font-weight: 400;
+        padding: 2rem 0 0 7.5rem;
+    }
+}
+
+/* ===================================================================
+        Nibbles Menu
+=================================================================== */
+
+section.nibblesMenuSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    padding: 0 7.5rem;
+
+    div.nibblesMenuWrapper {
+        width: 55%;
+
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 4.5rem;
+        }
+
+        .nibblesMenu {
+            width: 100%;
+
+            .productItem {
+                padding-bottom: 2rem;
+
+                .productTopInfo {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .productName,
+                    .productPrice {
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                    }
+                }
+
+                .itemDesc {
+                    padding-bottom: .2rem;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+/* ===================================================================
+        Featured Nibbles Section
+=================================================================== */
+
+div.nibblesFeatImgSection {
+    width: 45%;
+    display: flex;
+
+    div.nibblesHdrAndImgWrapper {
+        margin-left: auto;
+
+        div.nibblesHdrAndImg {
+            width: 100%;
+
+            h2.nibblesHdr {
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin: 3rem 0 3.7rem 0;
+                color: $clr-site-red;
+
+                &.nibblesHdr:before,
+                &.nibblesHdr:after {
+                    background-color: $clr-site-red;
+                    display: inline-block;
+                    content: '';
+                    height: .2rem;
+                    width: 2rem;
+                    position: relative;
+                    vertical-align: middle;
+
+                    &.nibblesHdr:before {
+                        right: 2rem;
+
+                        &.nibblesHdr:after {
+                            left: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.featNibblesDesc {
+    margin-bottom: 10rem;
+
+    h2.featNibblesHdr {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    p {
+        width: 30rem;
+        font-size: 1.4rem;
+        margin: -4.6rem 0;
+    }
+}
+
+/* ===================================================================
+        Featured Steak 'N' Beer Section
+=================================================================== */
+
+section.SnBSection {
+    display: flex;
+    margin-top: 10rem;
+    padding: 0 7.5rem;
+
+    div.featSnBWrapper {
+        width: 55%;
+
+        div.featSnBHdrAndImg {
+            padding-top: 3rem;
+
+            h2.SnBHdr {
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin: 0 0 3.7rem 0;
+                color: $clr-site-yellow;
+
+                &.SnBHdr:before,
+                &.SnBHdr:after {
+                    background-color: $clr-site-yellow;
+                    display: inline-block;
+                    content: '';
+                    height: .2rem;
+                    width: 2rem;
+                    position: relative;
+                    vertical-align: middle;
+
+                    &.SnBHdr:before {
+                        right: 2rem;
+
+                        &.SnBHdr:after {
+                            left: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.featSnBDescSection {
+    margin-bottom: 5rem;
+
+    h2.SnBSubHdr {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    p.featSnBDesc {
+        width: 30rem;
+        font-size: 1.4rem;
+        margin-top: -4.7rem;
+    }
+}
+
+/* ===================================================================
+        Steak Mains Menu
+=================================================================== */
+
+div.SnBMenuSection {
+    width: 55%;
+
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 4.5rem;
+    }
+
+    p.steaksMainsDesc {
+        font-size: 1.6rem;
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    div.SnBMenu {
+        width: 100%;
+
+        .productItem {
+            padding-bottom: 2rem;
+
+            .productTopInfo {
+                display: flex;
+                justify-content: space-between;
+
+
+                .productName,
+                .productPrice {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                }
+            }
+
+            .itemDesc {
+                padding-bottom: .2rem;
+                font-size: 1.4rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+/* ===================================================================
+        Desserts Menu
+=================================================================== */
+
+section.dessertsMenuSection {
+    display: flex;
+    margin-top: 10rem;
+    padding: 0 7.5rem 5rem 7.5rem;
+
+    div.dessertsMenuWrapper {
+        width: 55%;
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 4.5rem;
+        }
+
+        .dessertsMenu {
+            width: 100%;
+
+            .productItem {
+                padding-bottom: 2rem;
+
+                .productTopInfo {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .productName,
+                    .productPrice {
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                    }
+                }
+
+                .itemDesc {
+                    padding-bottom: .2rem;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+
+                    &.banoffePie,
+                    &.chocOreoCake {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ===================================================================
+        Desserts - Fatty Favourite Section
+=================================================================== */
+
+.fattyFaveSection {
+    width: 45%;
+
+    div.fattyFaveFlexWrapper {
+        display: flex;
+        flex-direction: column;
+
+        .fattyFaveHdrAndImg {
+            margin-left: auto;
+            padding-right: 4.5rem;
+
+            h2.fattyFaveHdr {
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin: 3rem 0 3.7rem 0;
+                color: $clr-site-red;
+
+                &.fattyFaveHdr:before,
+                &.fattyFaveHdr:after {
+                    background-color: $clr-site-red;
+                    display: inline-block;
+                    content: '';
+                    height: .2rem;
+                    width: 2rem;
+                    position: relative;
+                    vertical-align: middle;
+
+                    &.fattyFaveHdr:before {
+                        right: 2rem;
+
+                        &.fattyFaveHdr:after {
+                            left: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fattyFaveDesc {
+    margin-left: auto;
+
+    h2.fattyfaveCakeHdr {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    p {
+        width: 30rem;
+        font-size: 1.4rem;
+        margin: -4.6rem 0;
+    }
+}

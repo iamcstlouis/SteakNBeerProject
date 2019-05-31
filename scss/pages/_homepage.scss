@@ -1,0 +1,304 @@
+/* ===================================================================
+            Home Page Main Content
+=================================================================== */
+
+#homepage {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+section.homePageImgSection {
+    width: 100%;
+    margin: 7rem auto 0 auto;
+    text-align: center;
+
+    p.bestSteakHouseSub {
+        font-size: 2.6rem;
+        font-weight: 300;
+        color: $clr-site-red;
+        margin-top: 4rem;
+    }
+
+    img.heroImage {
+        margin: 0 auto;
+        display: block;
+        height: auto;
+    }
+}
+
+/* ===================================================================
+            See Specials Btn
+=================================================================== */
+
+div.seeSpecialsBtnSection {
+
+    div.seeSpecialsWrapper {
+        position: relative;
+        top: -42rem;
+        left: 8rem;
+
+        a.seeSpecialsBtn {
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            text-decoration: none;
+            display: block;
+            color: $clr-site-red;
+            cursor: pointer;
+            position: relative;
+            top: 15rem;
+            left: -9.2rem;
+            width: 20%;
+            transform: rotate(-90deg);
+
+            &:visited {
+                color: $clr-site-red;
+            }
+
+            &:hover {
+                color: #3e0303;
+                @include easeInOut;
+            }
+
+            &:active {
+                color: $clr-site-red;
+                @include easeInOut;
+            }
+        }
+    }
+}
+
+/* ===================================================================
+        Socials, Reserve Table and Mini Bio Section
+=================================================================== */
+
+section.socials-resrv-minibio {
+    display: flex;
+    flex-direction: row;
+    vertical-align: top;
+    -webkit-box-align: end;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: -40rem;
+
+    div.socialsCol {
+        padding-left: 8rem;
+        padding-right: 0;
+        z-index: 5;
+        flex: 1;
+
+        div.socialsBtns {
+            width: 5.1rem;
+            text-align: center;
+
+            a {
+                display: block;
+                color: rgb(77, 77, 77);
+                padding: 1rem 0;
+
+                &:visited {
+                    color: rgb(77, 77, 77);
+                }
+
+                &:hover {
+                    color: #fff;
+                    transition: .5s ease-in-out;
+                }
+
+                &:active {
+                    color: rgb(77, 77, 77);
+                    @include easeInOut;
+                }
+
+                i {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+}
+
+/* ===================================================================
+            Reservation Button
+=================================================================== */
+
+div.makeReservationCol {
+    text-align: center;
+    padding-top: 2rem;
+    z-index: 3;
+    flex: 3;
+    display: flex;
+
+    div.resevationBtn {
+        margin-left: auto;
+        padding-right: 2.9rem;
+
+        a {
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $clr-site-red;
+            padding: 1.5rem 2.5rem;
+            background-color: $clr-site-yellow;
+            border-radius: 2rem;
+            text-align: center;
+
+            &:visited {
+                color: $clr-site-red;
+            }
+
+            &:hover {
+                color: #000;
+                transition: .5s ease-in-out;
+            }
+
+            &:active {
+                color: $clr-site-red;
+                @include easeInOut;
+            }
+        }
+    }
+}
+
+/* ===================================================================
+            Scroll Down Button
+=================================================================== */
+
+div.scrollDownCol {
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+
+    a.scrollDownLink {
+        text-decoration: none;
+        color: $clr-site-offWhite;
+
+        h2.homeAboutUsHdr {
+            font-size: 1.6rem;
+            margin-top: 6rem;
+        }
+
+        div.scrollDownBtn {
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            transform: rotate(90deg);
+
+            svg.svgHomepageScroll {
+                width: 5rem;
+                height: 5rem;
+                fill: $clr-site-yellow;
+
+                &:hover {
+                    opacity: .3;
+                    @include easeInOut;
+                }
+            }
+        }
+    }
+}
+
+/* ===================================================================
+            Steak 'N' Beer Mini Bio
+=================================================================== */
+
+div.miniBioCol {
+    flex: 3;
+
+    div.miniBioImgSection {
+        margin-top: -7.5rem;
+
+        img {
+            display: block;
+            margin-left: auto;
+            padding-right: 2rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: $clr-site-offWhite;
+            text-align: right;
+            padding-right: 6rem;
+            padding-bottom: 4.5rem;
+            margin-top: -4rem;
+        }
+    }
+}
+
+div.miniBiotext {
+    display: flex;
+
+    p {
+        color: $clr-site-red;
+        font-size: 1.4rem;
+        text-align: right;
+        line-height: 1.5;
+        padding-right: 6rem;
+        width: 90%;
+        margin-left: auto;
+
+        span {
+            display: block;
+            margin: 2rem 0;
+            font-size: inherit;
+        }
+    }
+}
+
+/* ===================================================================
+            Responsive See Our Specials Section
+=================================================================== */
+
+div.responisveSeeSpecialsBtn {
+    position: relative;
+    margin: 0 auto;
+    display: none;
+
+    a.responsiveSeeSpecialsLink {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        text-decoration: none;
+        display: block;
+        color: $clr-site-red;
+        position: relative;
+        top: 3.7rem;
+        cursor: pointer;
+        z-index: 6;
+
+        &:visited {
+            color: $clr-site-red;
+        }
+
+        &:hover {
+            color: #3e0303;
+            @include easeInOut;
+        }
+
+        &:active {
+            color: $clr-site-red;
+            @include easeInOut;
+        }
+    }
+
+    img {
+        transform: scaleX(-1);
+    }
+}
+
+/* ===================================================================
+            Copyright Info
+=================================================================== */
+
+p.homepageCopyright {
+    margin-top: auto;
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $clr-site-offWhite;
+    text-align: center;
+    opacity: .15;
+}

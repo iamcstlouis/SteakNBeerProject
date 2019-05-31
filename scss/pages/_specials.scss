@@ -1,0 +1,161 @@
+/* ===================================================================
+        Specials Top Section
+=================================================================== */
+
+div.specialsTopInfo {
+    text-align: center;
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin: 2rem 0 1.5rem 0;
+        display: none;
+    }
+
+    p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-top: 5rem;
+        margin-bottom: 6rem;
+        text-align: left;
+        padding-left: 5rem;
+    }
+}
+
+/* ===================================================================
+        Steak Stack Specials Section
+=================================================================== */
+
+div.specialsFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+}
+
+section.SpecialsBSSection {
+
+    div.SpecialsBSHdrAndImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        h2.SpecialsBSHdr {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: $clr-site-yellow;
+            padding-bottom: 3rem;
+            text-align: center;
+
+            &.SpecialsBSHdr:before,
+            &.SpecialsBSHdr:after {
+                background-color: $clr-site-yellow;
+                display: inline-block;
+                content: '';
+                height: .2rem;
+                width: 2rem;
+                position: relative;
+                vertical-align: middle;
+
+                &.SpecialsBSHdr:before {
+                    right: 2rem;
+
+                    &.SpecialsBSHdr:after {
+                        left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+img.steakStackSpecialImg,
+img.fattyFaveSpecialImg {
+    display: block;
+    max-width: 48.1rem;
+    width: 40vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+div.SpecialsSSDesc {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    h2.specialsSSHdr {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    p {
+        margin-top: -4.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 3rem;
+        width: 55%;
+        font-size: 1.4rem;
+        text-align: left;
+    }
+}
+
+/* ===================================================================
+        Fatty Fave Specials Section
+=================================================================== */
+
+section.fattyFaveSpecialSection {
+
+    div.dessertHdrAndImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2.dessertHdr {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: $clr-site-red;
+            padding-bottom: 3rem;
+            text-align: center;
+
+            &.dessertHdr:before,
+            &.dessertHdr:after {
+                background-color: $clr-site-red;
+                display: inline-block;
+                content: '';
+                height: .2rem;
+                width: 2rem;
+                position: relative;
+                vertical-align: middle;
+
+                &.dessertHdr:before {
+                    right: 2rem;
+
+                    &.dessertHdr:after {
+                        left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.specialsDessertDesc {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    p {
+        width: 55%;
+        font-size: 1.4rem;
+        margin: -4.8rem auto;
+        text-align: right;
+    }
+}

@@ -1,0 +1,345 @@
+/* ===================================================================
+        Brunch Opening hours
+=================================================================== */
+
+section.brunchOpeningHours {
+
+    p {
+        width: 80%;
+        font-size: 1.6rem;
+        color: $clr-site-offWhite;
+        font-weight: 400;
+        padding-top: 2rem;
+        padding-left: 7.5rem;
+        margin-bottom: 10rem;
+    }
+}
+
+/* ===================================================================
+        Breakfast Special Section
+=================================================================== */
+
+section.bfastMenuSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7.5rem;
+}
+
+/*  --------    Breakfast Special: Header    --------  */
+
+div.bfastSpecialSection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    width: 45%;
+
+    div.bfastSpecialHdrAndImg {
+
+        h2.bfastSpecialHdr {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: $clr-site-yellow;
+            padding-bottom: 2rem;
+
+            &.bfastSpecialHdr:before,
+            &.bfastSpecialHdr:after {
+                background-color: $clr-site-yellow;
+                display: inline-block;
+                content: '';
+                height: .2rem;
+                width: 2rem;
+                position: relative;
+                vertical-align: middle;
+
+                &.bfastSpecialHdr:before {
+                    right: 2rem;
+
+                    &.bfastSpecialHdr:after {
+                        left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  --------    Breakfast Special: Description    --------  */
+
+div.bfastSpecialDesc {
+
+    h2.steakStackHdr {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    p {
+        width: 30rem;
+        font-size: 1.4rem;
+        margin-top: -4.9rem;
+    }
+}
+
+/* ===================================================================
+        Breakfast Menu
+=================================================================== */
+
+div.breakfastMenuSection {
+    width: 55%;
+
+    div.breakfastMenuWrapper {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 4.5rem;
+            text-align: left;
+            padding-bottom: 0;
+        }
+
+        div.breakfastMenu {
+
+            div.productItem {
+
+                div.productTopInfo {
+                    display: flex;
+                    justify-content: space-between;
+
+
+                    p.productName,
+                    p.productPrice {
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                    }
+                }
+
+                p.itemDesc {
+                    padding-bottom: .2rem;
+                    font-size: 1.4rem;
+                    padding: 0 0 2rem 0;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+/* ===================================================================
+        Hot Drinks Menu Section
+=================================================================== */
+
+section.hotDrinksMenuSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7.5rem;
+    margin-top: 10rem;
+}
+
+/*  --------    Hot Drinks Menu    --------  */
+
+div.hotDrinksMenuWrapper {
+    width: 55%;
+
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 4.5rem;
+    }
+
+    div.hotDrinksMenu {
+
+        div.productItem {
+            padding-bottom: 2rem;
+
+            div.productTopInfo {
+                display: flex;
+                justify-content: space-between;
+
+
+                p.productName,
+                p.productPrice {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                }
+            }
+
+            p.itemDesc {
+                padding-bottom: .2rem;
+                font-size: 1.4rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+/* ===================================================================
+        Hot Drinks Favourite Section
+=================================================================== */
+
+div.hotDrinksFaveSection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    width: 45%;
+
+    div.hotDrinksFaveHdrAndImg {
+        align-self: flex-end;
+        padding-right: 4.5rem;
+
+        /*  --------    Hot Drinks Fave: Header    --------  */
+
+        h2.hotDrinksFaveHdr {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: $clr-site-red;
+            padding-bottom: 2rem;
+
+            &.hotDrinksFaveHdr:before,
+            &.hotDrinksFaveHdr:after {
+                background-color: $clr-site-red;
+                display: inline-block;
+                content: '';
+                height: .2rem;
+                width: 2rem;
+                position: relative;
+                vertical-align: middle;
+
+                &.hotDrinksFaveHdr:before {
+                    right: 2rem;
+
+                    &.hotDrinksFaveHdr:after {
+                        left: 2rem;
+
+                    }
+                }
+            }
+        }
+    }
+
+    /*  --------    Hot Drinks Fave Description: Mini Header    --------  */
+
+    div.hotDrinksFaveDesc {
+        align-self: flex-end;
+
+        h2.chocOreoDrinkHdr {
+            margin: 2rem 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        p {
+            width: 30rem;
+            font-size: 1.4rem;
+            margin-top: -4.9rem;
+        }
+    }
+}
+
+/* ===================================================================
+        Refresher Menu Section
+=================================================================== */
+
+section.refresherSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7.5rem 5rem 7.5rem;
+    margin-top: 10rem;
+}
+
+/*  --------    Refresher Special: Section    --------  */
+
+div.refresherSpecialSection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    width: 45%;
+
+    div.refresherSpecialHdrAndImg {
+
+        h2.refresherSpecialHdr {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: $clr-site-yellow;
+            padding-bottom: 2rem;
+
+            &.refresherSpecialHdr:before,
+            &.refresherSpecialHdr:after {
+                background-color: $clr-site-yellow;
+                display: inline-block;
+                content: '';
+                height: .2rem;
+                width: 2rem;
+                position: relative;
+                vertical-align: middle;
+
+                &.refresherSpecialHdr:before {
+                    right: 2rem;
+
+                    &.refresherSpecialHdr:after {
+                        left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  --------    Refresher Special: Description    --------  */
+
+div.refresherSpecialDesc {
+
+    h2.IcedTeaHdr {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    p.icedTeaDesc {
+        width: 30rem;
+        font-size: 1.4rem;
+        margin-top: -4.9rem;
+    }
+}
+
+/* ===================================================================
+        Refresher Menu
+=================================================================== */
+
+div.refresherMenuSection {
+    display: flex;
+    width: 55%;
+}
+
+div.refresherMenuWrapper {
+    width: 100%;
+
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 4.5rem;
+    }
+
+    div.refresherMenu {
+
+        div.productItem {
+            padding-bottom: 2rem;
+
+            div.productTopInfo {
+                display: flex;
+                justify-content: space-between;
+
+
+                p.productName,
+                p.productPrice {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

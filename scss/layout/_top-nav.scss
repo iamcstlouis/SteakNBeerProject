@@ -1,0 +1,112 @@
+/* ===================================================================
+           Top Nav
+=================================================================== */
+
+/*  --------    Top Nav: Left Side    --------  */
+
+nav.top-nav {
+    display: flex;
+    width: 100%;
+    margin: 2rem auto;
+    z-index: 100;
+}
+
+.leftTopNav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+
+    li {
+        flex-grow: 1;
+        align-self: center;
+
+        a.topNavBtn {
+            font-size: 1.4rem;
+            font-weight: 400;
+            letter-spacing: .13rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #858585;
+            cursor: pointer;
+
+            &:visited {
+                color: #858585;
+            }
+
+            &:hover {
+                color: #fff;
+                @include easeInOut;
+            }
+
+            &:active {
+                color: #fff;
+                @include easeInOut;
+            }
+        }
+    }
+}
+
+/*  --------    Top Nav: Logo    --------  */
+
+.topNavLogoWrapper {
+    order: 1;
+    flex: 3 0 20vw;
+    text-align: center;
+
+    svg.topNavLogo {
+        fill: #676767;
+        width: 14rem;
+        height: auto;
+    }
+}
+
+/*  --------    Top Nav: Right Side    --------  */
+
+.rightTopNav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    order: 2;
+
+    li {
+        align-self: center;
+
+        a.topNavBtn {
+            font-size: 1.4rem;
+            font-weight: 400;
+            letter-spacing: .13rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #858585;
+            cursor: pointer;
+
+            &:visited {
+                color: #858585;
+            }
+
+            &:hover {
+                color: #fff;
+                @include easeInOut;
+            }
+
+            &:active {
+                color: #fff;
+                @include easeInOut;
+            }
+        }
+    }
+}
+
+/*  --------    Top Nav: Active Class    --------  */
+
+.top-nav {
+    a.topNav-Active-tab {
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: .13rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+    }
+}

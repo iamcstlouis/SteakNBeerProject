@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <title>Steak 'N' Beer | Privacy</title>
+</head>
+
+<body>
+
+    <!--    /////////////////////////////////////////////////////////////////////
+                                    Hamburger Menu: SVG
+///////////////////////////////////////////////////////////////////////////-->
+
+    <div class="mobileMenuNavBar">
+        <div class="hamburger-icon">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="rgb(198, 198, 198)" stroke-width="2" />
+                    <path d="M0,14 30,14" stroke="rgb(198, 198, 198)" stroke-width="2" />
+                    <path d="M0,23 30,23" stroke="rgb(198, 198, 198)" stroke-width="2" />
+                </svg>
+            </a>
+        </div>
+        <div class="MobileNavLogoWrapper">
+            <a href="/index.html" class="mobileNavlogoLink">
+                <svg class="MobileNavLogo" viewBox="0 0 257.12 129.07">
+                    <path class="cls-1"
+                        d="M185.89,92.67a7.82,7.82,0,0,1-2.22,5.78,9.3,9.3,0,0,1-7,2.53H165V58.9h10.88a11.16,11.16,0,0,1,7.13,2,6.58,6.58,0,0,1,2.55,5.41v5.82a6,6,0,0,1-.78,3.18,8.5,8.5,0,0,1-4.59,3.06c2.35.6,4,1.53,4.83,2.77a5.71,5.71,0,0,1,.84,3.31Zm-9-19V66.48c0-1-.23-1.68-.69-1.9a4.81,4.81,0,0,0-2-.33v11.6a5.18,5.18,0,0,0,1.76-.18A2.06,2.06,0,0,0,176.93,73.63Zm0,19.77V82.71c0-1-.23-1.67-.69-1.9a4.81,4.81,0,0,0-2-.33V95.63a5.18,5.18,0,0,0,1.76-.18A2.08,2.08,0,0,0,176.93,93.4Z" />
+                    <path class="cls-1"
+                        d="M207.35,94.55a5.92,5.92,0,0,1-3,5.53,13.89,13.89,0,0,1-6.85,1.38,13,13,0,0,1-6.85-1.5,6.26,6.26,0,0,1-2.89-5.71V73.87a6.21,6.21,0,0,1,2.83-5.65,12.91,12.91,0,0,1,6.91-1.56A14.1,14.1,0,0,1,204.34,68a5.84,5.84,0,0,1,3,5.53v13H196.11v7.89a2,2,0,0,0,.36,1.28,1.52,1.52,0,0,0,2.16,0,2,2,0,0,0,.36-1.28V87.63h8.36ZM199,81.38V73.62a1.89,1.89,0,0,0-.36-1.26,1.37,1.37,0,0,0-1.08-.41,1.42,1.42,0,0,0-1,.41,1.71,1.71,0,0,0-.42,1.26v7.76Z" />
+                    <path class="cls-1"
+                        d="M228.81,94.55a5.92,5.92,0,0,1-3,5.53,13.92,13.92,0,0,1-6.85,1.38,13,13,0,0,1-6.85-1.5,6.24,6.24,0,0,1-2.89-5.71V73.87A6.21,6.21,0,0,1,212,68.22,12.88,12.88,0,0,1,219,66.66,14.13,14.13,0,0,1,225.8,68a5.84,5.84,0,0,1,3,5.53v13H217.57v7.89a2,2,0,0,0,.36,1.28,1.52,1.52,0,0,0,2.16,0,2,2,0,0,0,.36-1.28V87.63h8.36Zm-8.36-13.17V73.62a1.89,1.89,0,0,0-.36-1.26A1.37,1.37,0,0,0,219,72a1.42,1.42,0,0,0-1,.41,1.71,1.71,0,0,0-.42,1.26v7.76Z" />
+                    <path class="cls-1"
+                        d="M250.39,81H242V73.58c0-1-.48-1.57-1.44-1.57a1.47,1.47,0,0,0-1.08.36,1.56,1.56,0,0,0-.36,1.14V101h-8.36V66.9h8.36V68a5.87,5.87,0,0,1,2.07-1,11.59,11.59,0,0,1,3.1-.38,6.61,6.61,0,0,1,4.35,1.41,4.33,4.33,0,0,1,1.72,3.46Z" />
+                    <path class="cls-1"
+                        d="M22.09,78.32c-1.49-1.53-3.09-3.15-4.78-4.87a5.82,5.82,0,0,1-1.81-4V65.52a1.19,1.19,0,0,1,.38-1,1.76,1.76,0,0,1,1.12-.3,1.55,1.55,0,0,1,1,.34,1.14,1.14,0,0,1,.41.93v7.81H26.8V66.06a6.73,6.73,0,0,0-2.1-5.23c-1.65-1.49-4.13-2.23-7.46-2.23-3.84,0-6.65.74-8.41,2.23-1.52,1.28-2.29,3.26-2.29,6v4.75a8.4,8.4,0,0,0,2.12,5q.48.62,4.47,4.81,2.41,2.59,4.53,4.77a4.5,4.5,0,0,1,.79,2.78v5A1.34,1.34,0,0,1,18,95a2,2,0,0,1-1.31.36A2.08,2.08,0,0,1,15.43,95a1.28,1.28,0,0,1-.53-1.06V84.21H6.54v9.62a6.69,6.69,0,0,0,2,4.92c1.76,1.81,4.55,2.71,8.35,2.71q6,0,8.54-2.28c1.44-1.33,2.16-3.37,2.16-6.14V87.69a8.75,8.75,0,0,0-1.75-5.16A42.65,42.65,0,0,0,22.09,78.32Z" />
+                    <path class="cls-1"
+                        d="M42.19,94.85a2.24,2.24,0,0,1-1-2.11V72h4.51V66.9H41.17V60H32.81V66.9H29.09V72h3.72V92.76q0,5.28,1.23,6.75c.83,1,3,1.47,6.65,1.47H46V95.27H44.41A4.54,4.54,0,0,1,42.19,94.85Z" />
+                    <path class="cls-1"
+                        d="M64.25,68a14.16,14.16,0,0,0-6.85-1.38,12.94,12.94,0,0,0-6.92,1.56,6.22,6.22,0,0,0-2.82,5.65V94.25A6.25,6.25,0,0,0,50.54,100a13,13,0,0,0,6.86,1.5,14,14,0,0,0,6.85-1.38,5.93,5.93,0,0,0,3-5.53V87.63H58.9v6.81a2,2,0,0,1-.36,1.28,1.3,1.3,0,0,1-1.08.45,1.32,1.32,0,0,1-1.09-.45A2,2,0,0,1,56,94.44V86.55H67.25v-13A5.85,5.85,0,0,0,64.25,68ZM58.9,81.38H56V73.62a1.71,1.71,0,0,1,.42-1.26,1.43,1.43,0,0,1,1-.41,1.37,1.37,0,0,1,1.08.41,1.89,1.89,0,0,1,.36,1.26Z" />
+                    <path class="cls-1"
+                        d="M86.19,68.16q-2.23-1.5-6.67-1.5A14.33,14.33,0,0,0,72.6,68a5.89,5.89,0,0,0-3.06,5.53v6.79h8.11V73.63a1.75,1.75,0,0,1,.41-1.26,1.36,1.36,0,0,1,1-.42,1.29,1.29,0,0,1,1.06.42,1.89,1.89,0,0,1,.36,1.26v5.05c0,.72-1.88,2-5.62,3.79s-5.62,4.06-5.62,6.79v6.85a5,5,0,0,0,1.56,4q1.56,1.32,5.29,1.32a14.46,14.46,0,0,0,3.52-.33,2.81,2.81,0,0,0,1.83-1.47V101h7.39V73.87Q88.83,69.9,86.19,68.16ZM80.48,94.61a1.59,1.59,0,0,1-.39,1.17,1.36,1.36,0,0,1-1,.39A1.5,1.5,0,0,1,78,95.78a1.59,1.59,0,0,1-.39-1.17V88.42a2.13,2.13,0,0,1,.6-1.57,5.06,5.06,0,0,1,2.29-1Z" />
+                    <path class="cls-1"
+                        d="M85.63,19H75.38a13.92,13.92,0,0,1,3.46-7.18,30.22,30.22,0,0,1,3.09-3.25L76.76,4.61A47.9,47.9,0,0,0,66.59,12.3,17.55,17.55,0,0,0,62,24.44v12H85.63Z" />
+                    <path class="cls-1"
+                        d="M139.43,59.2,123.16,4.61H90.81V124.25h23.66V60.44l19.41,63.81h29.21V4.61H139.43ZM104.34,101,99.17,88.66V101H90.82V58.9h8.35V77.84L103.5,66.9h8.59l-6,14.94L114.14,101Z" />
+                    <path class="cls-1"
+                        d="M167.53,4.61V22h10.25a13.89,13.89,0,0,1-3.46,7.18,30.22,30.22,0,0,1-3.09,3.25l5.17,3.93a47.9,47.9,0,0,0,10.17-7.69,17.53,17.53,0,0,0,4.62-12.14v-12Z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!--    /////////////////////////////////////////////////////////////////////
+                        Top Nav
+///////////////////////////////////////////////////////////////////////////-->
+
+    <header class="container">
+        <nav class="top-nav">
+            <ul class="leftTopNav">
+                <li><a href="/pages/menu-brunch.html" class="topNavBtn">Menu</a></li>
+                <li><a href="/pages/bookings.html" class="topNavBtn">Book</a></li>
+                <li><a href="/pages/specials.html" class="topNavBtn">Specials</a></li>
+            </ul>
+
+            <div class="topNavLogoWrapper">
+                <a href="/index.html" class="topNavlogoLink">
+                    <svg class="topNavLogo" viewBox="0 0 257.12 129.07">
+                        <path class="cls-1"
+                            d="M185.89,92.67a7.82,7.82,0,0,1-2.22,5.78,9.3,9.3,0,0,1-7,2.53H165V58.9h10.88a11.16,11.16,0,0,1,7.13,2,6.58,6.58,0,0,1,2.55,5.41v5.82a6,6,0,0,1-.78,3.18,8.5,8.5,0,0,1-4.59,3.06c2.35.6,4,1.53,4.83,2.77a5.71,5.71,0,0,1,.84,3.31Zm-9-19V66.48c0-1-.23-1.68-.69-1.9a4.81,4.81,0,0,0-2-.33v11.6a5.18,5.18,0,0,0,1.76-.18A2.06,2.06,0,0,0,176.93,73.63Zm0,19.77V82.71c0-1-.23-1.67-.69-1.9a4.81,4.81,0,0,0-2-.33V95.63a5.18,5.18,0,0,0,1.76-.18A2.08,2.08,0,0,0,176.93,93.4Z" />
+                        <path class="cls-1"
+                            d="M207.35,94.55a5.92,5.92,0,0,1-3,5.53,13.89,13.89,0,0,1-6.85,1.38,13,13,0,0,1-6.85-1.5,6.26,6.26,0,0,1-2.89-5.71V73.87a6.21,6.21,0,0,1,2.83-5.65,12.91,12.91,0,0,1,6.91-1.56A14.1,14.1,0,0,1,204.34,68a5.84,5.84,0,0,1,3,5.53v13H196.11v7.89a2,2,0,0,0,.36,1.28,1.52,1.52,0,0,0,2.16,0,2,2,0,0,0,.36-1.28V87.63h8.36ZM199,81.38V73.62a1.89,1.89,0,0,0-.36-1.26,1.37,1.37,0,0,0-1.08-.41,1.42,1.42,0,0,0-1,.41,1.71,1.71,0,0,0-.42,1.26v7.76Z" />
+                        <path class="cls-1"
+                            d="M228.81,94.55a5.92,5.92,0,0,1-3,5.53,13.92,13.92,0,0,1-6.85,1.38,13,13,0,0,1-6.85-1.5,6.24,6.24,0,0,1-2.89-5.71V73.87A6.21,6.21,0,0,1,212,68.22,12.88,12.88,0,0,1,219,66.66,14.13,14.13,0,0,1,225.8,68a5.84,5.84,0,0,1,3,5.53v13H217.57v7.89a2,2,0,0,0,.36,1.28,1.52,1.52,0,0,0,2.16,0,2,2,0,0,0,.36-1.28V87.63h8.36Zm-8.36-13.17V73.62a1.89,1.89,0,0,0-.36-1.26A1.37,1.37,0,0,0,219,72a1.42,1.42,0,0,0-1,.41,1.71,1.71,0,0,0-.42,1.26v7.76Z" />
+                        <path class="cls-1"
+                            d="M250.39,81H242V73.58c0-1-.48-1.57-1.44-1.57a1.47,1.47,0,0,0-1.08.36,1.56,1.56,0,0,0-.36,1.14V101h-8.36V66.9h8.36V68a5.87,5.87,0,0,1,2.07-1,11.59,11.59,0,0,1,3.1-.38,6.61,6.61,0,0,1,4.35,1.41,4.33,4.33,0,0,1,1.72,3.46Z" />
+                        <path class="cls-1"
+                            d="M22.09,78.32c-1.49-1.53-3.09-3.15-4.78-4.87a5.82,5.82,0,0,1-1.81-4V65.52a1.19,1.19,0,0,1,.38-1,1.76,1.76,0,0,1,1.12-.3,1.55,1.55,0,0,1,1,.34,1.14,1.14,0,0,1,.41.93v7.81H26.8V66.06a6.73,6.73,0,0,0-2.1-5.23c-1.65-1.49-4.13-2.23-7.46-2.23-3.84,0-6.65.74-8.41,2.23-1.52,1.28-2.29,3.26-2.29,6v4.75a8.4,8.4,0,0,0,2.12,5q.48.62,4.47,4.81,2.41,2.59,4.53,4.77a4.5,4.5,0,0,1,.79,2.78v5A1.34,1.34,0,0,1,18,95a2,2,0,0,1-1.31.36A2.08,2.08,0,0,1,15.43,95a1.28,1.28,0,0,1-.53-1.06V84.21H6.54v9.62a6.69,6.69,0,0,0,2,4.92c1.76,1.81,4.55,2.71,8.35,2.71q6,0,8.54-2.28c1.44-1.33,2.16-3.37,2.16-6.14V87.69a8.75,8.75,0,0,0-1.75-5.16A42.65,42.65,0,0,0,22.09,78.32Z" />
+                        <path class="cls-1"
+                            d="M42.19,94.85a2.24,2.24,0,0,1-1-2.11V72h4.51V66.9H41.17V60H32.81V66.9H29.09V72h3.72V92.76q0,5.28,1.23,6.75c.83,1,3,1.47,6.65,1.47H46V95.27H44.41A4.54,4.54,0,0,1,42.19,94.85Z" />
+                        <path class="cls-1"
+                            d="M64.25,68a14.16,14.16,0,0,0-6.85-1.38,12.94,12.94,0,0,0-6.92,1.56,6.22,6.22,0,0,0-2.82,5.65V94.25A6.25,6.25,0,0,0,50.54,100a13,13,0,0,0,6.86,1.5,14,14,0,0,0,6.85-1.38,5.93,5.93,0,0,0,3-5.53V87.63H58.9v6.81a2,2,0,0,1-.36,1.28,1.3,1.3,0,0,1-1.08.45,1.32,1.32,0,0,1-1.09-.45A2,2,0,0,1,56,94.44V86.55H67.25v-13A5.85,5.85,0,0,0,64.25,68ZM58.9,81.38H56V73.62a1.71,1.71,0,0,1,.42-1.26,1.43,1.43,0,0,1,1-.41,1.37,1.37,0,0,1,1.08.41,1.89,1.89,0,0,1,.36,1.26Z" />
+                        <path class="cls-1"
+                            d="M86.19,68.16q-2.23-1.5-6.67-1.5A14.33,14.33,0,0,0,72.6,68a5.89,5.89,0,0,0-3.06,5.53v6.79h8.11V73.63a1.75,1.75,0,0,1,.41-1.26,1.36,1.36,0,0,1,1-.42,1.29,1.29,0,0,1,1.06.42,1.89,1.89,0,0,1,.36,1.26v5.05c0,.72-1.88,2-5.62,3.79s-5.62,4.06-5.62,6.79v6.85a5,5,0,0,0,1.56,4q1.56,1.32,5.29,1.32a14.46,14.46,0,0,0,3.52-.33,2.81,2.81,0,0,0,1.83-1.47V101h7.39V73.87Q88.83,69.9,86.19,68.16ZM80.48,94.61a1.59,1.59,0,0,1-.39,1.17,1.36,1.36,0,0,1-1,.39A1.5,1.5,0,0,1,78,95.78a1.59,1.59,0,0,1-.39-1.17V88.42a2.13,2.13,0,0,1,.6-1.57,5.06,5.06,0,0,1,2.29-1Z" />
+                        <path class="cls-1"
+                            d="M85.63,19H75.38a13.92,13.92,0,0,1,3.46-7.18,30.22,30.22,0,0,1,3.09-3.25L76.76,4.61A47.9,47.9,0,0,0,66.59,12.3,17.55,17.55,0,0,0,62,24.44v12H85.63Z" />
+                        <path class="cls-1"
+                            d="M139.43,59.2,123.16,4.61H90.81V124.25h23.66V60.44l19.41,63.81h29.21V4.61H139.43ZM104.34,101,99.17,88.66V101H90.82V58.9h8.35V77.84L103.5,66.9h8.59l-6,14.94L114.14,101Z" />
+                        <path class="cls-1"
+                            d="M167.53,4.61V22h10.25a13.89,13.89,0,0,1-3.46,7.18,30.22,30.22,0,0,1-3.09,3.25l5.17,3.93a47.9,47.9,0,0,0,10.17-7.69,17.53,17.53,0,0,0,4.62-12.14v-12Z" />
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="rightTopNav">
+                <li><a href="/pages/locations.html" class="topNavBtn">Locations</a></li>
+                <li><a href="/pages/opening-hours.html" class="topNavBtn">Opening Hours</a></li>
+                <li><a href="/pages/contact.html" class="topNavBtn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--    /////////////////////////////////////////////////////////////////////
+                                    Side Menu
+///////////////////////////////////////////////////////////////////////////-->
+
+    <div id="side-menu" class="side-nav">
+        <div class="mobileMenuLinks">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="/pages/menu-brunch.html">Menu</a>
+            <a href="/pages/bookings.html">Book</a>
+            <a href="/pages/specials.html">Specials</a>
+            <a href="/pages/locations.html">Locations</a>
+            <a href="/pages/opening-hours.html">Opening Hours</a>
+            <a href="/pages/contact.html">Contact</a>
+        </div>
+        <div class="mobileMenuSocialsBtns">
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!--    /////////////////////////////////////////////////////////////////////
+                        Main Content
+///////////////////////////////////////////////////////////////////////////-->
+
+    <main class="container">
+
+        <!--    /////////////////////////////////////////////////////////////////////
+                        Privacy Main Content
+///////////////////////////////////////////////////////////////////////////-->
+
+        <section class="privacyContentSection">
+            <div class="privacyContentWrapper">
+                <h1>Privacy</h1>
+                <p>
+                    This Privacy Policy sets out the basis on which we will process the personally identifying
+                    information (‘Personal Data’) that we collect and receive from and about the users of our website
+                    (www.steaknbeer.com) , subscribers to our newsletter, or when you use our services.
+                </p>
+
+                <h3>Our Privacy Commitments</h3>
+
+                <p>
+                    We will only collect, keep, use and share Personal Data for legitimate business purposes that we
+                    explain here below, or if we’re legally required to do so. <br><br>
+
+                    We will be as clear and open as we can with you on what Personal Data we collect and how it will be
+                    processed.<br><br>
+
+                    For as long as we maintain records of your Personal Data, we will keep it up to date and protect it
+                    with appropriate safety measures.
+                </p>
+
+                <h2>Reservations</h2>
+                <h3>Data Collection</h3>
+                <p>
+                    We collect the following Personal data from or about you as a Steak 'N' Beer customer:<br><br>
+
+                    Personal Data Collected directly from you through the booking process may include: your name, phone
+                    number, and email address. Our legal basis for the collection and processing of this data is to
+                    secure a reservation made by you, to enable us to contact you to confirm this reservation, or inform
+                    you of any issues with it.
+                </p>
+
+                <h3>Bookatable</h3>
+                <p>
+                    We work with Bookatable as an external reservations system in order to collect and process bookings
+                    online. They will not share your data with us without your consent. You can access Bookatable’s
+                    privacy policy here: <a href="https://www.bookatable.co.uk/legal#privacy"
+                        target="_blank">https://www.bookatable.co.uk/legal#privacy</a>
+                </p>
+
+                <h3>Data Uses</h3>
+                <p>
+                    We use your Personal Data:<br><br>
+
+                    For the administration of your reservation and to contact you about your reservation (for example if
+                    changes are needed)<br><br>
+
+                    To contact you with marketing messages which you have requested or agreed to receive from us (for
+                    example via a branded newsletter);
+                </p>
+
+                <h3>Data Sharing</h3>
+                <p>
+                    Steak 'N' Beer will not sell your information. We will not share your information with any third
+                    party except as stated in this Privacy Notice or as required to operate the Sites, provide our
+                    services to you and administer your account.
+                </p>
+
+                <h2>Social Media Followers</h2>
+                <h3>Data Collection</h3>
+                <p>
+                    We receive the following Personal Data about you if you follow one of our social media accounts:
+                    Your account name, gender, general interests, location, age. Our legal basis for processing this
+                    data is our legitimate interest in providing social media and marketing content that is of interest
+                    to our followers on social media.
+                </p>
+
+                <h3>Data Uses</h3>
+
+                <p>
+                    We use this Personal Data:<br><br>
+
+                    to provide bespoke social media content<br><br>
+
+                    to create targeted advertising across all our social media channels (for example by analysing
+                    responses to posts and existing advertisements);<br><br>
+
+                    to find out more about our digital community (for example by analysing the age ranges of our
+                    followers).
+                </p>
+
+                <h3>Data Sharing</h3>
+                <p>
+                    Steak 'N' Beer will not sell your information. We will not share your information with any third
+                    party except as stated in this Privacy Notice or as required to operate the Sites, provide our
+                    services to you and administer your account.
+                </p>
+
+                <h3>Social Media Marketing</h3>
+
+                <p>
+                    We will share your Personal Data with social media sites to enable them to provide marketing
+                    messages that you have agreed to receive from them, and that you have agreed to provide to us in
+                    agreement with this Privacy Policy.<br><br>
+
+                    The social media sites we share your Personal Data with as at the date of this Privacy Policy and
+                    their respective privacy statements are:<br><br>
+
+                    Facebook: <a href="https://www.facebook.com/privacy/explanation"
+                        target="_blank">https://www.facebook.com/privacy/explanation</a><br><br>
+
+                    Twitter: <a href="https://twitter.com/en/privacy"
+                        target="_blank">https://twitter.com/en/privacy</a><br><br>
+
+                    Instagram: <a href="https://help.instagram.com/155833707900388"
+                        target="_blank">https://help.instagram.com/155833707900388</a>
+                </p>
+
+                <h2>Website Visitors</h2>
+                <h3>Data Collection</h3>
+
+                <p>
+                    The data transmitted from your browser includes your IP address, the date and time of the visit, the
+                    pages accessed, the access status/HTTP status code, your browser, your operating system and
+                    interface, as well as the language and version of the browser software. The legal basis for
+                    collecting and processing this personal data is to be able to operate our website and provide you
+                    with access to the pages you wish to access.<br><br>
+
+                    We collect the following Personal Data about you if you visit one of our Sites: site referrals,
+                    browsing pattern, browser type, location, general interests, gender, age. The data transmitted from
+                    your browser includes your IP address, the date and time of the visit the pages accessed, the access
+                    status/ HTTP status code, your browser, your operating system and interface, as well as the language
+                    and version of the browser software. The legal basis for collecting and processing this personal
+                    data is our legitimate interest in operating the Sites, providing you with access to the pages you
+                    wish to access, understanding the interests of our potential customers and providing you with
+                    relevant information about our services.
+                </p>
+
+                <h3>Data Uses</h3>
+                <p>
+                    We use this Personal Data:<br><br>
+
+                    to provide you with bespoke website content (for example by analysing our site visitors’ age
+                    ranges);<br><br>
+
+                    to gain insight into your behaviour and preferences (for example by analysing the website pages you
+                    visit);<br><br>
+
+                    to create bespoke marketing messages (for example by analysing the click throughs on our
+                    Sites);<br><br>
+
+                    to re-target our website visitors with relevant marketing messages (for example by using cookies
+                    hosted on our Sites); to collect site statistics.
+                </p>
+
+                <h3>Data Sharing</h3>
+
+                <p>
+                    Steak 'N' Beer will not sell your information. We will not share your information with any third
+                    party except as stated in this Privacy Notice or as required to operate the Sites, provide our
+                    services to you and administer your account or otherwise as required or permitted by law.
+                </p>
+
+                <h3>Cookies</h3>
+
+                <p>
+                    We may occasionally use alphanumeric identifiers (“cookies”) which are transferred to your
+                    computer’s hard drive through your web browser to enable our system to recognise your browser when
+                    you use the Website and to monitor traffic patterns. Our Website uses cookies to distinguish you
+                    from other users of our Website. This helps us to provide you with a good experience when you browse
+                    our Website and also allows us to improve our Website. You may modify your web browser to prevent it
+                    from accepting new cookies, to notify you when a cookie is received or to disable cookies entirely.
+                    Doing so, however, may prevent you from enjoying certain features of our Website. Find out more
+                    about cookies by visiting <a
+                        href="https://policies.google.com/privacy/">https://policies.google.com/privacy/</a><br><br>
+
+                    We may use YouTube to host video content. When you view a web page on our site with an embedded
+                    YouTube video, YouTube creates at least three cookies: VISITOR_INFO1_LIVE, use_hitbox, and PREF. In
+                    some circumstances you may also find an additional GEO cookie. We use the YouTube service as a
+                    convenience for our visitors, and we use it on the basis that Google adheres to its privacy
+                    policy.<br><br>
+
+                    We use Google Maps on our Locations page to provide detailed information on how to locate
+                    us.<br><br>
+
+                    Google Maps stores up to four cookies: khcookie, NID, SNID and PREF. We use Google’s interactive
+                    maps because we believe they provide a helpful way for our visitors to identify how best to reach
+                    us.<br><br>
+
+                    We use the Google Maps tools on the basis that Google adheres to its privacy policy which can be
+                    found here <a href="https://policies.google.com/privacy"
+                        target="_blank">https://policies.google.com/privacy</a> and
+                    its terms of service for Google Maps.
+                </p>
+
+                <h3>Google Analytics</h3>
+
+                <p>
+                    Google Analytics, a web analytics service provided by Google, Inc. (“Google”) also places cookies on
+                    your computer, to enable Google to provide us with activity reports relating to the Sites. Google
+                    uses this data only to provide us with information on how users use the Sites and does not associate
+                    your IP address with any other data held by Google. The information generated by Google cookies
+                    about your use of the platform (including your IP address) will be transmitted to and stored by
+                    Google on servers in the United States. You may refuse these cookies by selecting the appropriate
+                    settings on your browser or by downloading and installing the browser plug-in available under <a
+                        href="https://tools.google.com/dlpage/gaoptout?hl=en-GB"
+                        target="_blank">https://tools.google.com/dlpage/gaoptout?hl=en-GB</a>.
+                </p>
+
+                <h3>Google Tag Manager</h3>
+
+                <p>
+                    This website also uses Google Tag Manager. This service allows website tags to be managed via an
+                    interface. Tags are small elements of code that are used, for example, to measure traffic and
+                    visitor behaviour. Google Tag Manager only implements tags. This means that no cookies are used and,
+                    as a result, no personal data is recorded. Google Tag Manager initiates other tags which, in turn,
+                    may record data. However, Google Tag Manager does not access this data. If deactivation has been
+                    performed at a domain or cookie level, this remains in place for all tracking tags if these are
+                    implemented with Google Tag Manager.
+                </p>
+
+                <h2>Data Processors</h2>
+
+                <p>
+                    We use third party processors to collect, export, process and store Personal Data on our behalf. The
+                    processors we use currently are the following:<br><br>
+
+                    CRM Tool: MailChimp, located in the U.S. Privacy Shield: <a
+                        href="https://mailchimp.com/legal/privacy/?_ga=2.235311809.1396092974.1524581029-438272600.1522245182"
+                        target="_blank">https://mailchimp.com/legal/privacy/?_ga=2.235311809.1396092974.1524581029-438272600.1522245182</a><br><br>
+
+                    Social Wifi: Captini: <a href="https://captini.com/legal"
+                        target="_blank">https://captini.com/legal</a><br><br>
+
+                    Survey Tool: Survey Monkey, located in the U.S. Privacy Shield Certified: <a
+                        href="https://www.surveymonkey.com/mp/policy/privacy-policy/"
+                        target="_blank">https://www.surveymonkey.com/mp/policy/privacy-policy/</a>
+                </p>
+
+                <h3>Management Tools</h3>
+
+                <p>
+                    Bookatable Limited, registered in England and Wales: <a
+                        href="https://www.bookatable.co.uk/legal#privacy"
+                        target="_blank">https://www.bookatable.co.uk/legal#privacy</a><br><br>
+
+                    MailChimp®, a registered trademark of The Rocket Science Group, U.S: <a
+                        href="https://mailchimp.com/legal/privacy/?_ga=2.30193023.1396092974.1524581029-438272600.1522245182"
+                        target="_blank">https://mailchimp.com/legal/privacy/?_ga=2.30193023.1396092974.1524581029-438272600.1522245182</a><br><br>
+
+                    Google Analytics, Google Tag Manager and Google Data Studio, located in the U.S. Privacy Shield
+                    Certified: <a href="https://www.google.com/policies/privacy/"
+                        target="_blank">https://www.google.com/policies/privacy/</a><br><br>
+
+                    VaultPress, located in the U.S. Privacy Shield Certified: <a href="https://automattic.com/privacy/"
+                        target="_blank">https://automattic.com/privacy/</a><br><br>
+
+                    Wordfence, located in the U.S. Privacy Shield Certified: <a
+                        href="https://www.wordfence.com/privacy-policy/"
+                        target="_blank">https://www.wordfence.com/privacy-policy/</a>
+                </p>
+
+                <h3>Data Security</h3>
+
+                <p>
+                    We maintain technical and physical safeguards that are designed to protect the security and
+                    integrity of your Personal Data, and to guard it against accidental or unauthorised access, use,
+                    alteration or disclosure to unauthorised third parties. These measures include device encryption,
+                    firewalls and virus checking procedures.<br><br>
+
+                    Where we keep Personal Data files on local devices these devices are protected and accessible only
+                    to authorised Secret Group employees.<br><br>
+
+                    We regularly review our security systems to ensure that your Personal Data remains safe and
+                    secure.<br><br>
+                </p>
+
+                <h3>Duration of Storage</h3>
+
+                <p>
+                    We will maintain records of your Personal Data for as long as you remain:<br><br>
+
+                    a registered subscriber to our mailing list;<br><br>
+
+                    a registered user on our website;<br><br>
+
+                    for as long as is necessary to provide our services to you.
+                </p>
+
+                <h3>Your Rights in Relation to Personal Data</h3>
+
+                <p>
+                    You have the right to update and correct the personal information on your account. You also have the
+                    right to request from us all personal information that we hold that relates to you, to request
+                    restriction of the processing of that data and to request that we delete that data. Where allowed by
+                    applicable law there may be an administrative charge for supply of copies of data and we may also
+                    require you to provide us with appropriate identification before we comply with this request. You
+                    also have the right to object to our continued processing of your personal data. You may also have
+                    the right to data portability. If you have a complaint about the way in which we use your personal
+                    information you have the right to complain to the Information Commissioner www.ico.gov.uk.<br><br>
+
+                    You can contact us with questions about the personal information we hold about you using the contact
+                    information provided in the “Contacting Us” section of this Privacy Policy.
+                </p>
+
+                <h3>Changes to our Privacy Policy</h3>
+
+                <p>
+                    We will update this Privacy Policy from time to time to reflect changes in our business. All such
+                    changes will be posted to the Sites and if we consider it to be appropriate we will notify
+                    subscribers of any material changes by e-mail.
+                </p>
+
+                <h3>Contacting us</h3>
+
+                <p>
+                    Steak 'N' Beer Connoisseurs is the Data Controller in respect of any Personal Data that you submit
+                    to us or that we collect from or about you. We are a limited company registered in England and Wales
+                    (Limited company no. 20072018) with registered offices at 815 Lancashire Court, London, W1T
+                    1BX<br><br>
+
+                    If you would like to know what information we hold about you or if you have any other queries or
+                    complaints in relation to this Privacy Notice, or our Sites, our contact details are as
+                    follows:<br><br>
+
+                    Steak 'N' Beer Connoisseurs, 815 Lancashire Court, London, W1T 1BX<br><br>
+
+                    Info@steaknbeer.com<br><br>
+
+                    <span class="phoneNo">0207 239 1664</span>
+                </p>
+
+            </div>
+        </section>
+
+        <div class="blackBoxBottom"></div>
+
+    </main>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

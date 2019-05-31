@@ -1,0 +1,1017 @@
+/* ===================================================================
+            Media Queries: General Styles
+=================================================================== */
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1000px) {
+
+    div.mobileMenuNavBar {
+        display: flex;
+    }
+
+    nav.top-nav {
+        display: none;
+    }
+}
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 992px) {}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 550px) {
+    svg.MobileNavLogo {
+        margin-top: 1rem;
+        width: 10rem !important;
+        height: auto;
+    }
+}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 467px) {
+    div.mobileMenuNavBar {
+        width: 100vw;
+    }
+}
+
+/* ===================================================================
+            Media Queries: Homepage
+=================================================================== */
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1178px) {
+
+    div.makeReservationCol {
+        padding-top: 1rem;
+    }
+}
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1176px) {
+
+    div.seeSpecialsBtnSection {
+
+        div.seeSpecialsWrapper {
+
+            a.seeSpecialsBtn {
+                padding-top: 1.6rem;
+            }
+        }
+    }
+}
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1120px) {
+
+    div.seeSpecialsBtnSection {
+
+        div.seeSpecialsWrapper {
+
+            a.seeSpecialsBtn {
+                padding-top: 2.5rem;
+            }
+        }
+    }
+}
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1078px) {
+
+    div.seeSpecialsBtnSection {
+
+        div.seeSpecialsWrapper {
+
+            a.seeSpecialsBtn {
+                padding-top: 3.5rem;
+            }
+        }
+    }
+}
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1000px) {
+
+    section.homePageImgSection {
+        margin-top: 15rem;
+
+        img.heroImage {
+            width: 60vw;
+            height: auto;
+        }
+    }
+
+    /* ===================================================================
+            See Specials Btn
+=================================================================== */
+
+    div.seeSpecialsBtnSection {
+        display: none;
+    }
+
+    /* ===================================================================
+        Socials, Reserve Table and Mini Bio Section
+=================================================================== */
+
+    section.socials-resrv-minibio {
+        flex-direction: column;
+        text-align: center;
+        margin-top: -2rem;
+    }
+
+    /* ===================================================================
+            Reservation Button
+=================================================================== */
+
+    div.makeReservationCol {
+        display: block;
+        margin: 0 auto;
+        order: 0;
+
+        div.resevationBtn {
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 0;
+
+            a {
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $clr-site-red;
+                padding: 1.5rem 2.5rem;
+                background-color: $clr-site-yellow;
+                border-radius: 2rem;
+                text-align: center;
+            }
+        }
+    }
+
+    /* ===================================================================
+            Scroll Down Button
+=================================================================== */
+
+    div.scrollDownCol {
+        display: block;
+        margin: 0 auto;
+        order: 1;
+
+        h2.homeAboutUsHdr {
+            margin-top: 6rem;
+        }
+    }
+
+    /* ===================================================================
+            Steak 'N' Beer Mini Bio
+=================================================================== */
+
+    div.miniBioCol {
+        display: block;
+        margin: 0 auto;
+        order: 2;
+
+        div.miniBioImgSection {
+            margin: 0;
+
+            img {
+                display: block;
+                margin: 5rem auto;
+                padding-right: 0;
+            }
+
+            h1 {
+                text-align: center;
+                padding-right: 0;
+                margin: -9rem;
+            }
+        }
+    }
+
+    div.miniBiotext {
+        width: 60%;
+        margin: 0 auto;
+
+        p {
+            color: $clr-site-red;
+            font-size: 1.4rem;
+            text-align: center;
+            line-height: 1.5;
+            padding-right: 0;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 13rem;
+        }
+    }
+
+    /* ===================================================================
+            Socials
+=================================================================== */
+
+    div.socialsCol {
+        padding-left: 0 !important;
+        padding-right: 0;
+        display: block;
+        margin: 5rem auto 0 auto;
+        order: 4;
+
+        div.socialsBtns {
+            width: 50vw !important;
+            text-align: center;
+
+            a {
+                display: inline-block !important;
+                padding: 2rem 1rem 5rem 1rem !important;
+                color: rgb(77, 77, 77);
+            }
+        }
+    }
+
+    /* ===================================================================
+            Responsive See Our Specials Section
+=================================================================== */
+
+    div.responisveSeeSpecialsBtn {
+        position: relative;
+        margin: 5rem auto 0 auto;
+        display: block;
+        order: 3;
+    }
+}
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 787px) {
+
+    section.homePageImgSection {
+
+        img.heroImage {
+            width: 80vw;
+            height: auto;
+        }
+    }
+}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 575px) {
+
+    section.homePageImgSection {
+        margin-top: 15rem;
+
+        p {
+            font-size: 1.2rem;
+            padding: 0 2.5rem 1rem 2.5rem;
+            line-height: 1.2;
+        }
+    }
+}
+
+/*  Phones  */
+
+@media only screen and (max-width: 370px) {
+
+    div.miniBioImgSection,
+    div.responisveSeeSpecialsBtn {
+
+        img {
+            width: 85vw;
+        }
+    }
+}
+
+/* ===================================================================
+            Media Queries: Menu - Menu Nav
+=================================================================== */
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1200px) {}
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 992px) {}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 900px) {}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 600px) {
+    ul.menuNav {
+
+        li {
+            padding-left: 0 !important;
+        }
+    }
+
+}
+
+/*  Medium Phones  */
+
+@media only screen and (max-width: 500px) {
+
+    ul.menuNav {
+        margin-left: auto;
+        margin-right: auto;
+
+        li {
+            padding-left: 0 !important;
+
+            a {
+                color: $clr-site-offWhite;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                font-weight: 600;
+                background: inherit;
+                border-top-left-radius: 2rem;
+                border-top-right-radius: 2rem;
+                padding: 0 1.5rem !important;
+                font-size: 1.8rem !important;
+            }
+        }
+    }
+}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 400px) {}
+
+
+/* ===================================================================
+            Media Queries: Menu - Brunch
+=================================================================== */
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1200px) {}
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 1000px) {
+    nav.menuNavSection {
+        margin-top: 10rem !important;
+    }
+}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 900px) {
+
+    section.brunchOpeningHours {
+        p {
+            margin-bottom: 5rem;
+        }
+    }
+
+    div.breakfastMenuWrapper h1 {
+        margin-bottom: 2rem !important;
+        padding-bottom: 0;
+    }
+
+    div.hotDrinksMenuWrapper h2,
+    div.refresherMenuWrapper h2 {
+        margin-bottom: 2rem;
+    }
+
+    div.bfastSpecialSection,
+    div.hotDrinksFaveSection,
+    div.refresherSpecialSection {
+        display: none;
+    }
+
+    div.breakfastMenuSection,
+    div.hotDrinksMenuWrapper,
+    div.refresherMenuSection {
+        width: 100%;
+    }
+
+    section.hotDrinksMenuSection,
+    section.refresherMenuSection,
+    section.refresherSection {
+        margin-top: 3rem;
+    }
+
+    div.hotDrinksMenu,
+    div.breakfastMenu {
+        p.itemDesc {
+            width: 80%;
+        }
+    }
+}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 768px) {}
+
+/*  Medium Phones  */
+
+@media only screen and (max-width: 600px) {
+    section.brunchOpeningHours {
+        p {
+            padding-top: 2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            width: 100%;
+            margin-bottom: 2rem;
+            ;
+        }
+    }
+
+    section.bfastMenuSection,
+    section.hotDrinksMenuSection {
+        padding: 0 3rem;
+    }
+
+    section.refresherSection {
+        padding-bottom: 5rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 400px) {
+    section.brunchOpeningHours {
+        p {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    section.bfastMenuSection,
+    section.hotDrinksMenuSection {
+        padding: 0 2rem;
+    }
+
+    section.refresherSection {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+/* ===================================================================
+            Media Queries: Menu - Mains
+=================================================================== */
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1200px) {}
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 992px) {}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 900px) {
+
+    section.forAllergyInfo {
+        p {
+            margin-bottom: 5rem;
+        }
+    }
+
+    div.nibblesMenuWrapper h2,
+    div.SnBMenuSection h2,
+    div.dessertsMenuWrapper h2 {
+        margin-bottom: 2rem !important;
+    }
+
+    div.nibblesFeatImgSection,
+    div.featSnBWrapper,
+    div.fattyFaveSection {
+        display: none;
+    }
+
+    div.nibblesMenuWrapper,
+    div.SnBMenuSection,
+    div.dessertsMenuWrapper {
+        width: 100% !important;
+    }
+
+    section.nibblesMenuSection,
+    section.SnBSection,
+    section.dessertsMenuSection {
+        margin-top: 3rem;
+    }
+
+    p.itemDesc {
+        width: 80%;
+    }
+}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 600px) {
+    section.forAllergyInfo {
+        p {
+            padding-top: 2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            width: 100%;
+        }
+    }
+
+    section.nibblesMenuSection,
+    section.SnBSection {
+        padding: 0 3rem;
+    }
+
+    section.dessertsMenuSection {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 400px) {
+    section.forAllergyInfo {
+        p {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    section.nibblesMenuSection,
+    section.SnBSection {
+        padding: 0 2rem;
+    }
+
+    section.dessertsMenuSection {
+        padding: 0 2rem 5rem 2rem;
+    }
+}
+
+/* ===================================================================
+            Media Queries: Menu - Beers
+=================================================================== */
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1200px) {}
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 1060px) {
+
+    div.beersMenuSection {
+        width: 100%;
+    }
+
+    div.beersMenuWrapper {
+        padding-left: 0 !important;
+    }
+
+    section.ciderMenuSection {
+        margin-top: -6rem;
+    }
+
+    div.ciderMenuWrapper {
+        width: 100% !important;
+    }
+
+    div.ciderMenuWrapper h2 {
+        margin-bottom: 2rem !important;
+    }
+
+    div.ciderMenu {
+        div.productTopInfo {
+            padding-right: 0 !important;
+        }
+    }
+
+    div.beersMenu {
+        padding: 0;
+    }
+
+    div.beersFeatImgSection,
+    div.cidersFeatImgSection {
+        display: none;
+    }
+}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 850px) {}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 600px) {
+    div.extensiveRangeOfBeers {
+        p {
+            padding-top: 2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            width: 100%;
+        }
+    }
+
+    section.beersSection {
+        padding: 0 3rem;
+    }
+
+    section.ciderMenuSection {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 490px) {
+    div.extensiveRangeOfBeers {
+        p {
+            padding-left: 2rem !important;
+        }
+    }
+
+    section.beersSection {
+        padding: 0 2rem;
+    }
+
+    div.beersMenuWrapper h2 {
+        font-size: 3.5rem !important;
+    }
+
+    div.PintsCol h3,
+    div.halfPintCol h3,
+    div.bottlePriceCol h3 {
+        font-size: 1.4rem !important;
+    }
+
+    .beerName,
+    .pintPrice,
+    .emptyPrice,
+    .halfPintPrice,
+    .bottlePrice {
+        font-size: 1.4rem !important;
+    }
+
+    section.ciderMenuSection {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+/* ===================================================================
+            Media Queries: Bookings
+=================================================================== */
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1200px) {
+
+    img.bookATableDesktopImg {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 1000px) {
+
+
+    h1.bookingsHdr {
+        margin-top: 10rem;
+    }
+}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 800px) {
+    div.bookingsImgWrapper {
+
+        img.bookATableDesktopImg {
+            display: none;
+        }
+
+        img.bookATableMobileImg {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 650px) {
+
+    div.bookingsImgWrapper {
+
+        img.bookATableDesktopImg {
+            display: none;
+        }
+    }
+}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 375px) {
+    img.bookATableMobileImg {
+        max-width: 30rem;
+        height: auto;
+    }
+}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 350px) {
+
+    div.bookingsForm {
+        width: 80vw;
+    }
+
+    div.BookTableBtn {
+        width: 80vw;
+
+        button {
+            margin-top: 2rem;
+        }
+    }
+
+    img.bookATableMobileImg {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+/* ===================================================================
+            Media Queries: Specials
+=================================================================== */
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 1024px) {
+    div.specialsTopInfo {
+
+        p {
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+
+    section.SpecialsBSSection {
+        padding-bottom: 7rem;
+        border-bottom: solid rgba(255, 255, 255, .3) 1px;
+    }
+
+    section.fattyFaveSpecialSection {
+        margin: 5rem 0;
+    }
+}
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 1000px) {
+    section.steakStackSpecialSec {
+        margin-top: 10rem;
+
+        div.specialsTopInfo {
+
+            h1 {
+                display: block;
+            }
+        }
+    }
+}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 529px) {
+
+    img.specialsSSTxtOutlineImg,
+    img.specialFFTxtOutlineImg {
+        display: none;
+    }
+
+    div.SpecialsSSDesc p,
+    div.specialsDessertDesc p {
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 350px) {}
+
+/* ===================================================================
+            Media Queries: Locations
+=================================================================== */
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1110px) {
+
+    div.locationsWrapper {
+        justify-content: space-around;
+    }
+}
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 1000px) {
+    section.locationsSection {
+        margin-top: 10rem;
+
+        h1 {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 850px) {}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 600px) {}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 400px) {
+
+    .locationHoxtonSq,
+    .locationBrixton,
+    .locationCroydonCentre,
+    .locationClapham {
+        img {
+            width: 80vw;
+        }
+
+        h2 {
+            width: 80vw;
+        }
+    }
+}
+
+/* ===================================================================
+            Media Queries: Opening Hours
+=================================================================== */
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 1145px) {
+    div.openingHrsImgWrapper {
+        padding: 0;
+    }
+
+    p.pleaseNote {
+        width: 100% !important;
+        padding-bottom: 5rem;
+    }
+}
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1000px) {
+    section.openingHrsSection {
+        margin-top: 10rem;
+
+        h1.openingHrsHdr {
+            margin-bottom: 0;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 850px) {}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 600px) {
+
+    div.openingHrstextInfo {
+        padding-top: 2rem;
+        width: 80vw;
+    }
+
+    img.openingHrsImg {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 400px) {}
+
+
+/* ===================================================================
+            Media Queries: Privacy
+=================================================================== */
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 1145px) {}
+
+/*  Large Screens & Desktop  */
+
+@media only screen and (max-width: 1000px) {
+
+    div.privacyContentWrapper {
+        padding: 2rem 5rem 1rem 5rem !important;
+    }
+}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 900px) {
+
+    section.privacyContentSection {
+        margin-top: 5rem;
+
+        div.privacyContentWrapper {
+            padding: 5rem 5rem 1rem 5rem !important;
+            width: 90vw;
+        }
+    }
+}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 600px) {}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 450px) {
+    section.privacyContentSection {
+        margin-top: 10rem;
+
+        div.privacyContentWrapper {
+            padding: 0 2rem 1rem 2rem !important;
+            width: 90vw;
+
+            h1 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* ===================================================================
+            Media Queries: Contact
+=================================================================== */
+
+/*  Small Laptop Screens  */
+
+@media only screen and (max-width: 1000px) {
+    h1.contactPageHdr {
+        margin-top: 10rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/*  Tablets  */
+
+@media only screen and (max-width: 838px) {
+
+    div.contactFormWrapper {
+        padding-right: 0 !important;
+    }
+
+    div.contactStoreLocations {
+        width: 42.1rem;
+        padding-left: 0 !important;
+        padding-bottom: 5rem;
+    }
+}
+
+/*  Larger Phones  */
+
+@media only screen and (max-width: 600px) {}
+
+/*  Small Phones  */
+
+@media only screen and (max-width: 465px) {
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    textarea {
+        width: 90vw !important;
+    }
+
+    div.contactStoreLocations {
+        width: 90vw;
+    }
+}

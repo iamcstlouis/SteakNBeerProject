@@ -1,0 +1,120 @@
+div.bookingsForm {
+    max-width: 30rem;
+    margin: 0 auto;
+
+    h1.bookingsHdr {
+        font-size: 3.5rem;
+        font-weight: 600;
+        padding-bottom: 2rem;
+    }
+
+    select.customSelect {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        padding: 2rem;
+        border: solid #707070 1px;
+        border-radius: .2rem;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        background-image: url(/svg/bookings-select-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: right 2rem top 50%, 0 0;
+        cursor: pointer;
+    }
+}
+
+div.BookTableBtn {
+    max-width: 30rem;
+    margin: 0 auto;
+
+    button {
+        width: 100%;
+        padding: 2rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        display: block;
+        margin-top: 3rem;
+        text-align: center;
+        cursor: pointer;
+        background: #1E1D21;
+        border: solid $clr-site-white .1rem;
+        outline: none;
+
+        &:hover {
+            opacity: .75;
+            @include easeInOut;
+        }
+
+        a {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: $clr-site-white;
+            text-decoration: none;
+
+            &:visited {
+                color: $clr-site-white;
+            }
+        }
+    }
+}
+
+div.bookingsImgWrapper {
+    text-align: center;
+
+    img.bookATableDesktopImg {
+        max-width: 95.8rem;
+        height: auto;
+    }
+
+    img.bookATableMobileImg {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// div.bookingsForm {
+//     max-width: 30rem;
+//     margin: 0 auto;
+
+//     h1.bookingsHdr {
+//         font-size: 3.5rem;
+//         font-weight: 600;
+//         padding-bottom: 2rem;
+//     }
+
+//     select {
+//         width: 100%;
+//         height: 4.2rem;
+//         font-size: 1.5rem;
+//         font-weight: 400;
+//         padding: 0 0 0 .5rem;
+//         border: solid #707070 1px;
+//         border-radius: .2rem;
+//     }
+// }

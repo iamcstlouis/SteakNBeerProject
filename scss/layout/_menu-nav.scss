@@ -1,0 +1,60 @@
+/* ===================================================================
+        Menu Nav
+=================================================================== */
+
+.menuNavSection {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1200px;
+
+    ul.menuNav {
+        margin-top: 8rem;
+        padding-left: 2rem;
+        padding-top: 1.5rem;
+        border-bottom: solid rgba(255, 255, 255, 0.5) .1rem;
+        display: flex;
+        align-content: flex-start;
+
+        li {
+            padding-left: 3rem;
+            font-size: 2rem;
+
+            a {
+                color: $clr-site-offWhite;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                font-weight: 600;
+                background: inherit;
+                border-top-left-radius: 2rem;
+                border-top-right-radius: 2rem;
+                padding: 0 2.5rem;
+                font-size: 2rem;
+
+                &:hover {
+                    color: $clr-site-red;
+                    background: $clr-site-yellow;
+                    font-size: 2rem;
+                    @include easeInOut;
+                }
+            }
+        }
+    }
+}
+
+/*  --------    Menu Nav: Active Tab    --------  */
+
+.menuNavSection {
+    .menuNav {
+
+        a.active-tab {
+            color: $clr-site-red;
+            background: $clr-site-yellow;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            margin-bottom: 1.5rem;
+            padding: 0 2.5rem;
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+body {
+    background: #010101;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: $clr-site-offWhite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    flex: 1;
+}
+
+main {
+    flex: 2;
+}
+
+/*  --------    Container    --------  */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}

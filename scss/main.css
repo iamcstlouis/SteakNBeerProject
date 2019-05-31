@@ -1,0 +1,3021 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-size: 62.5%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #010101;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: #c6c6c6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+/*  --------    Container    --------  */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===================================================================
+           Top Nav
+=================================================================== */
+/*  --------    Top Nav: Left Side    --------  */
+nav.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 2rem auto;
+  z-index: 100;
+}
+
+.leftTopNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.leftTopNav li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.leftTopNav li a.topNavBtn {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .13rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #858585;
+  cursor: pointer;
+}
+
+.leftTopNav li a.topNavBtn:visited {
+  color: #858585;
+}
+
+.leftTopNav li a.topNavBtn:hover {
+  color: #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.leftTopNav li a.topNavBtn:active {
+  color: #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/*  --------    Top Nav: Logo    --------  */
+.topNavLogoWrapper {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 0 20vw;
+          flex: 3 0 20vw;
+  text-align: center;
+}
+
+.topNavLogoWrapper svg.topNavLogo {
+  fill: #676767;
+  width: 14rem;
+  height: auto;
+}
+
+/*  --------    Top Nav: Right Side    --------  */
+.rightTopNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.rightTopNav li {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.rightTopNav li a.topNavBtn {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .13rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #858585;
+  cursor: pointer;
+}
+
+.rightTopNav li a.topNavBtn:visited {
+  color: #858585;
+}
+
+.rightTopNav li a.topNavBtn:hover {
+  color: #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.rightTopNav li a.topNavBtn:active {
+  color: #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/*  --------    Top Nav: Active Class    --------  */
+.top-nav a.topNav-Active-tab {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .13rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===================================================================
+        Menu Nav
+=================================================================== */
+.menuNavSection {
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 1200px;
+}
+
+.menuNavSection ul.menuNav {
+  margin-top: 8rem;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  border-bottom: solid rgba(255, 255, 255, 0.5) 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.menuNavSection ul.menuNav li {
+  padding-left: 3rem;
+  font-size: 2rem;
+}
+
+.menuNavSection ul.menuNav li a {
+  color: #c6c6c6;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  background: inherit;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 0 2.5rem;
+  font-size: 2rem;
+}
+
+.menuNavSection ul.menuNav li a:hover {
+  color: #990000;
+  background: #D89033;
+  font-size: 2rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/*  --------    Menu Nav: Active Tab    --------  */
+.menuNavSection .menuNav a.active-tab {
+  color: #990000;
+  background: #D89033;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 0 2.5rem;
+  font-size: 2rem;
+}
+
+div.mobileMenuNavBar {
+  z-index: 100;
+  width: 90vw;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #010101;
+  display: none;
+}
+
+div.mobileMenuNavBar div.hamburger-icon {
+  padding-top: 4rem;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+div.mobileMenuNavBar div.MobileNavLogoWrapper {
+  margin-left: auto;
+  padding: 2rem;
+}
+
+div.mobileMenuNavBar div.MobileNavLogoWrapper svg.MobileNavLogo {
+  fill: #676767;
+  width: 14rem;
+  height: auto;
+}
+
+/* ===================================================================
+        Side Nav Styles
+=================================================================== */
+div.side-nav {
+  height: 100vh;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: #070707;
+  overflow: hidden;
+  padding-top: 15rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: fixed;
+  z-index: 102;
+}
+
+div.side-nav .mobileMenuLinks a:first-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 4rem;
+  font-weight: 300;
+  opacity: .5;
+  border: none;
+  cursor: pointer;
+}
+
+div.side-nav .mobileMenuLinks a:first-child:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+div.side-nav a {
+  padding: .5rem 0;
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--site-light-grey);
+  display: block;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  opacity: .5;
+  border-bottom: solid rgba(255, 255, 255, 0.3) 0.1px;
+  margin: 0 2rem;
+}
+
+div.side-nav a:hover {
+  color: #D89033;
+  opacity: 1;
+}
+
+div.mobileMenuSocialsBtns {
+  margin-top: 5rem;
+}
+
+div.mobileMenuSocialsBtns i.fab,
+div.mobileMenuSocialsBtns a {
+  font-size: 2rem;
+  border: none;
+  display: inline-block;
+}
+
+div.mobileMenuSocialsBtns i.fab:hover,
+div.mobileMenuSocialsBtns a:hover {
+  color: #fff;
+}
+
+div.sideMenuLogoLink a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  cursor: pointer;
+  padding-top: 2rem;
+}
+
+div.sideMenuLogoLink a svg.sideMenuLogo {
+  fill: #676767;
+  width: 8rem;
+}
+
+/* ===================================================================
+            Privacy & Careers Buttons
+=================================================================== */
+footer.privacy {
+  background: #070707;
+  margin-top: auto;
+}
+
+footer.privacy div.privacyLinkWrapper {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+footer.privacy div.privacyLinkWrapper a.privacyLink {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #c6c6c6;
+}
+
+/* ===================================================================
+            Home Page Main Content
+=================================================================== */
+#homepage {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+section.homePageImgSection {
+  width: 100%;
+  margin: 7rem auto 0 auto;
+  text-align: center;
+}
+
+section.homePageImgSection p.bestSteakHouseSub {
+  font-size: 2.6rem;
+  font-weight: 300;
+  color: #990000;
+  margin-top: 4rem;
+}
+
+section.homePageImgSection img.heroImage {
+  margin: 0 auto;
+  display: block;
+  height: auto;
+}
+
+/* ===================================================================
+            See Specials Btn
+=================================================================== */
+div.seeSpecialsBtnSection div.seeSpecialsWrapper {
+  position: relative;
+  top: -42rem;
+  left: 8rem;
+}
+
+div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: block;
+  color: #990000;
+  cursor: pointer;
+  position: relative;
+  top: 15rem;
+  left: -9.2rem;
+  width: 20%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn:visited {
+  color: #990000;
+}
+
+div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn:hover {
+  color: #3e0303;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn:active {
+  color: #990000;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/* ===================================================================
+        Socials, Reserve Table and Mini Bio Section
+=================================================================== */
+section.socials-resrv-minibio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  vertical-align: top;
+  -webkit-box-align: end;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: -40rem;
+}
+
+section.socials-resrv-minibio div.socialsCol {
+  padding-left: 8rem;
+  padding-right: 0;
+  z-index: 5;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section.socials-resrv-minibio div.socialsCol div.socialsBtns {
+  width: 5.1rem;
+  text-align: center;
+}
+
+section.socials-resrv-minibio div.socialsCol div.socialsBtns a {
+  display: block;
+  color: #4d4d4d;
+  padding: 1rem 0;
+}
+
+section.socials-resrv-minibio div.socialsCol div.socialsBtns a:visited {
+  color: #4d4d4d;
+}
+
+section.socials-resrv-minibio div.socialsCol div.socialsBtns a:hover {
+  color: #fff;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+section.socials-resrv-minibio div.socialsCol div.socialsBtns a:active {
+  color: #4d4d4d;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+section.socials-resrv-minibio div.socialsCol div.socialsBtns a i {
+  font-size: 2.3rem;
+}
+
+/* ===================================================================
+            Reservation Button
+=================================================================== */
+div.makeReservationCol {
+  text-align: center;
+  padding-top: 2rem;
+  z-index: 3;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.makeReservationCol div.resevationBtn {
+  margin-left: auto;
+  padding-right: 2.9rem;
+}
+
+div.makeReservationCol div.resevationBtn a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #990000;
+  padding: 1.5rem 2.5rem;
+  background-color: #D89033;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+div.makeReservationCol div.resevationBtn a:visited {
+  color: #990000;
+}
+
+div.makeReservationCol div.resevationBtn a:hover {
+  color: #000;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+div.makeReservationCol div.resevationBtn a:active {
+  color: #990000;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/* ===================================================================
+            Scroll Down Button
+=================================================================== */
+div.scrollDownCol {
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+
+div.scrollDownCol a.scrollDownLink {
+  text-decoration: none;
+  color: #c6c6c6;
+}
+
+div.scrollDownCol a.scrollDownLink h2.homeAboutUsHdr {
+  font-size: 1.6rem;
+  margin-top: 6rem;
+}
+
+div.scrollDownCol a.scrollDownLink div.scrollDownBtn {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+div.scrollDownCol a.scrollDownLink div.scrollDownBtn svg.svgHomepageScroll {
+  width: 5rem;
+  height: 5rem;
+  fill: #D89033;
+}
+
+div.scrollDownCol a.scrollDownLink div.scrollDownBtn svg.svgHomepageScroll:hover {
+  opacity: .3;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/* ===================================================================
+            Steak 'N' Beer Mini Bio
+=================================================================== */
+div.miniBioCol {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+div.miniBioCol div.miniBioImgSection {
+  margin-top: -7.5rem;
+}
+
+div.miniBioCol div.miniBioImgSection img {
+  display: block;
+  margin-left: auto;
+  padding-right: 2rem;
+}
+
+div.miniBioCol div.miniBioImgSection h1 {
+  font-size: 1.8rem;
+  color: #c6c6c6;
+  text-align: right;
+  padding-right: 6rem;
+  padding-bottom: 4.5rem;
+  margin-top: -4rem;
+}
+
+div.miniBiotext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.miniBiotext p {
+  color: #990000;
+  font-size: 1.4rem;
+  text-align: right;
+  line-height: 1.5;
+  padding-right: 6rem;
+  width: 90%;
+  margin-left: auto;
+}
+
+div.miniBiotext p span {
+  display: block;
+  margin: 2rem 0;
+  font-size: inherit;
+}
+
+/* ===================================================================
+            Responsive See Our Specials Section
+=================================================================== */
+div.responisveSeeSpecialsBtn {
+  position: relative;
+  margin: 0 auto;
+  display: none;
+}
+
+div.responisveSeeSpecialsBtn a.responsiveSeeSpecialsLink {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: block;
+  color: #990000;
+  position: relative;
+  top: 3.7rem;
+  cursor: pointer;
+  z-index: 6;
+}
+
+div.responisveSeeSpecialsBtn a.responsiveSeeSpecialsLink:visited {
+  color: #990000;
+}
+
+div.responisveSeeSpecialsBtn a.responsiveSeeSpecialsLink:hover {
+  color: #3e0303;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+div.responisveSeeSpecialsBtn a.responsiveSeeSpecialsLink:active {
+  color: #990000;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+div.responisveSeeSpecialsBtn img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+/* ===================================================================
+            Copyright Info
+=================================================================== */
+p.homepageCopyright {
+  margin-top: auto;
+  padding-bottom: 1rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #c6c6c6;
+  text-align: center;
+  opacity: .15;
+}
+
+/* ===================================================================
+        Brunch Opening hours
+=================================================================== */
+section.brunchOpeningHours p {
+  width: 80%;
+  font-size: 1.6rem;
+  color: #c6c6c6;
+  font-weight: 400;
+  padding-top: 2rem;
+  padding-left: 7.5rem;
+  margin-bottom: 10rem;
+}
+
+/* ===================================================================
+        Breakfast Special Section
+=================================================================== */
+section.bfastMenuSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 7.5rem;
+}
+
+/*  --------    Breakfast Special: Header    --------  */
+div.bfastSpecialSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3rem;
+  width: 45%;
+}
+
+div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #D89033;
+  padding-bottom: 2rem;
+}
+
+div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:before, div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:after {
+  background-color: #D89033;
+  display: inline-block;
+  content: '';
+  height: .2rem;
+  width: 2rem;
+  position: relative;
+  vertical-align: middle;
+}
+
+div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:before.bfastSpecialHdr:before, div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:after.bfastSpecialHdr:before {
+  right: 2rem;
+}
+
+div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:before.bfastSpecialHdr:before.bfastSpecialHdr:after, div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:after.bfastSpecialHdr:before.bfastSpecialHdr:after {
+  left: 2rem;
+}
+
+/*  --------    Breakfast Special: Description    --------  */
+div.bfastSpecialDesc h2.steakStackHdr {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+div.bfastSpecialDesc p {
+  width: 30rem;
+  font-size: 1.4rem;
+  margin-top: -4.9rem;
+}
+
+/* ===================================================================
+        Breakfast Menu
+=================================================================== */
+div.breakfastMenuSection {
+  width: 55%;
+}
+
+div.breakfastMenuSection div.breakfastMenuWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.breakfastMenuSection div.breakfastMenuWrapper h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem;
+  text-align: left;
+  padding-bottom: 0;
+}
+
+div.breakfastMenuSection div.breakfastMenuWrapper div.breakfastMenu div.productItem div.productTopInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.breakfastMenuSection div.breakfastMenuWrapper div.breakfastMenu div.productItem div.productTopInfo p.productName,
+div.breakfastMenuSection div.breakfastMenuWrapper div.breakfastMenu div.productItem div.productTopInfo p.productPrice {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+div.breakfastMenuSection div.breakfastMenuWrapper div.breakfastMenu div.productItem p.itemDesc {
+  padding-bottom: .2rem;
+  font-size: 1.4rem;
+  padding: 0 0 2rem 0;
+  font-weight: 300;
+}
+
+/* ===================================================================
+        Hot Drinks Menu Section
+=================================================================== */
+section.hotDrinksMenuSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 7.5rem;
+  margin-top: 10rem;
+}
+
+/*  --------    Hot Drinks Menu    --------  */
+div.hotDrinksMenuWrapper {
+  width: 55%;
+}
+
+div.hotDrinksMenuWrapper h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem;
+}
+
+div.hotDrinksMenuWrapper div.hotDrinksMenu div.productItem {
+  padding-bottom: 2rem;
+}
+
+div.hotDrinksMenuWrapper div.hotDrinksMenu div.productItem div.productTopInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.hotDrinksMenuWrapper div.hotDrinksMenu div.productItem div.productTopInfo p.productName,
+div.hotDrinksMenuWrapper div.hotDrinksMenu div.productItem div.productTopInfo p.productPrice {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+div.hotDrinksMenuWrapper div.hotDrinksMenu div.productItem p.itemDesc {
+  padding-bottom: .2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* ===================================================================
+        Hot Drinks Favourite Section
+=================================================================== */
+div.hotDrinksFaveSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3rem;
+  width: 45%;
+  /*  --------    Hot Drinks Fave Description: Mini Header    --------  */
+}
+
+div.hotDrinksFaveSection div.hotDrinksFaveHdrAndImg {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-right: 4.5rem;
+  /*  --------    Hot Drinks Fave: Header    --------  */
+}
+
+div.hotDrinksFaveSection div.hotDrinksFaveHdrAndImg h2.hotDrinksFaveHdr {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #990000;
+  padding-bottom: 2rem;
+}
+
+div.hotDrinksFaveSection div.hotDrinksFaveHdrAndImg h2.hotDrinksFaveHdr.hotDrinksFaveHdr:before, div.hotDrinksFaveSection div.hotDrinksFaveHdrAndImg h2.hotDrinksFaveHdr.hotDrinksFaveHdr:after {
+  background-color: #990000;
+  display: inline-block;
+  content: '';
+  height: .2rem;
+  width: 2rem;
+  position: relative;
+  vertical-align: middle;
+}
+
+div.hotDrinksFaveSection div.hotDrinksFaveHdrAndImg h2.hotDrinksFaveHdr.hotDrinksFaveHdr:before.hotDrinksFaveHdr:before, div.hotDrinksFaveSection div.hotDrinksFaveHdrAndImg h2.hotDrinksFaveHdr.hotDrinksFaveHdr:after.hotDrinksFaveHdr:before {
+  right: 2rem;
+}
+
+div.hotDrinksFaveSection div.hotDrinksFaveHdrAndImg h2.hotDrinksFaveHdr.hotDrinksFaveHdr:before.hotDrinksFaveHdr:before.hotDrinksFaveHdr:after, div.hotDrinksFaveSection div.hotDrinksFaveHdrAndImg h2.hotDrinksFaveHdr.hotDrinksFaveHdr:after.hotDrinksFaveHdr:before.hotDrinksFaveHdr:after {
+  left: 2rem;
+}
+
+div.hotDrinksFaveSection div.hotDrinksFaveDesc {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+div.hotDrinksFaveSection div.hotDrinksFaveDesc h2.chocOreoDrinkHdr {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+div.hotDrinksFaveSection div.hotDrinksFaveDesc p {
+  width: 30rem;
+  font-size: 1.4rem;
+  margin-top: -4.9rem;
+}
+
+/* ===================================================================
+        Refresher Menu Section
+=================================================================== */
+section.refresherSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 7.5rem 5rem 7.5rem;
+  margin-top: 10rem;
+}
+
+/*  --------    Refresher Special: Section    --------  */
+div.refresherSpecialSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3rem;
+  width: 45%;
+}
+
+div.refresherSpecialSection div.refresherSpecialHdrAndImg h2.refresherSpecialHdr {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #D89033;
+  padding-bottom: 2rem;
+}
+
+div.refresherSpecialSection div.refresherSpecialHdrAndImg h2.refresherSpecialHdr.refresherSpecialHdr:before, div.refresherSpecialSection div.refresherSpecialHdrAndImg h2.refresherSpecialHdr.refresherSpecialHdr:after {
+  background-color: #D89033;
+  display: inline-block;
+  content: '';
+  height: .2rem;
+  width: 2rem;
+  position: relative;
+  vertical-align: middle;
+}
+
+div.refresherSpecialSection div.refresherSpecialHdrAndImg h2.refresherSpecialHdr.refresherSpecialHdr:before.refresherSpecialHdr:before, div.refresherSpecialSection div.refresherSpecialHdrAndImg h2.refresherSpecialHdr.refresherSpecialHdr:after.refresherSpecialHdr:before {
+  right: 2rem;
+}
+
+div.refresherSpecialSection div.refresherSpecialHdrAndImg h2.refresherSpecialHdr.refresherSpecialHdr:before.refresherSpecialHdr:before.refresherSpecialHdr:after, div.refresherSpecialSection div.refresherSpecialHdrAndImg h2.refresherSpecialHdr.refresherSpecialHdr:after.refresherSpecialHdr:before.refresherSpecialHdr:after {
+  left: 2rem;
+}
+
+/*  --------    Refresher Special: Description    --------  */
+div.refresherSpecialDesc h2.IcedTeaHdr {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+div.refresherSpecialDesc p.icedTeaDesc {
+  width: 30rem;
+  font-size: 1.4rem;
+  margin-top: -4.9rem;
+}
+
+/* ===================================================================
+        Refresher Menu
+=================================================================== */
+div.refresherMenuSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+}
+
+div.refresherMenuWrapper {
+  width: 100%;
+}
+
+div.refresherMenuWrapper h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem;
+}
+
+div.refresherMenuWrapper div.refresherMenu div.productItem {
+  padding-bottom: 2rem;
+}
+
+div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.productName,
+div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.productPrice {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+/* ===================================================================
+        For Allergy Info 
+=================================================================== */
+.forAllergyInfo p {
+  width: 90vw;
+  font-size: 1.6rem;
+  color: #c6c6c6;
+  font-weight: 400;
+  padding: 2rem 0 0 7.5rem;
+}
+
+/* ===================================================================
+        Nibbles Menu
+=================================================================== */
+section.nibblesMenuSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10rem;
+  padding: 0 7.5rem;
+}
+
+section.nibblesMenuSection div.nibblesMenuWrapper {
+  width: 55%;
+}
+
+section.nibblesMenuSection div.nibblesMenuWrapper h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem;
+}
+
+section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu {
+  width: 100%;
+}
+
+section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem {
+  padding-bottom: 2rem;
+}
+
+section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem .productTopInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem .productTopInfo .productName,
+section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem .productTopInfo .productPrice {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem .itemDesc {
+  padding-bottom: .2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* ===================================================================
+        Featured Nibbles Section
+=================================================================== */
+div.nibblesFeatImgSection {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper {
+  margin-left: auto;
+}
+
+div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg {
+  width: 100%;
+}
+
+div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 3rem 0 3.7rem 0;
+  color: #990000;
+}
+
+div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before, div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after {
+  background-color: #990000;
+  display: inline-block;
+  content: '';
+  height: .2rem;
+  width: 2rem;
+  position: relative;
+  vertical-align: middle;
+}
+
+div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before.nibblesHdr:before, div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after.nibblesHdr:before {
+  right: 2rem;
+}
+
+div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before.nibblesHdr:before.nibblesHdr:after, div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after.nibblesHdr:before.nibblesHdr:after {
+  left: 2rem;
+}
+
+.featNibblesDesc {
+  margin-bottom: 10rem;
+}
+
+.featNibblesDesc h2.featNibblesHdr {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.featNibblesDesc p {
+  width: 30rem;
+  font-size: 1.4rem;
+  margin: -4.6rem 0;
+}
+
+/* ===================================================================
+        Featured Steak 'N' Beer Section
+=================================================================== */
+section.SnBSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10rem;
+  padding: 0 7.5rem;
+}
+
+section.SnBSection div.featSnBWrapper {
+  width: 55%;
+}
+
+section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg {
+  padding-top: 3rem;
+}
+
+section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 0 3.7rem 0;
+  color: #D89033;
+}
+
+section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:before, section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:after {
+  background-color: #D89033;
+  display: inline-block;
+  content: '';
+  height: .2rem;
+  width: 2rem;
+  position: relative;
+  vertical-align: middle;
+}
+
+section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:before.SnBHdr:before, section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:after.SnBHdr:before {
+  right: 2rem;
+}
+
+section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:before.SnBHdr:before.SnBHdr:after, section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:after.SnBHdr:before.SnBHdr:after {
+  left: 2rem;
+}
+
+div.featSnBDescSection {
+  margin-bottom: 5rem;
+}
+
+div.featSnBDescSection h2.SnBSubHdr {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+div.featSnBDescSection p.featSnBDesc {
+  width: 30rem;
+  font-size: 1.4rem;
+  margin-top: -4.7rem;
+}
+
+/* ===================================================================
+        Steak Mains Menu
+=================================================================== */
+div.SnBMenuSection {
+  width: 55%;
+}
+
+div.SnBMenuSection h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem;
+}
+
+div.SnBMenuSection p.steaksMainsDesc {
+  font-size: 1.6rem;
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+div.SnBMenuSection div.SnBMenu {
+  width: 100%;
+}
+
+div.SnBMenuSection div.SnBMenu .productItem {
+  padding-bottom: 2rem;
+}
+
+div.SnBMenuSection div.SnBMenu .productItem .productTopInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.SnBMenuSection div.SnBMenu .productItem .productTopInfo .productName,
+div.SnBMenuSection div.SnBMenu .productItem .productTopInfo .productPrice {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+div.SnBMenuSection div.SnBMenu .productItem .itemDesc {
+  padding-bottom: .2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* ===================================================================
+        Desserts Menu
+=================================================================== */
+section.dessertsMenuSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10rem;
+  padding: 0 7.5rem 5rem 7.5rem;
+}
+
+section.dessertsMenuSection div.dessertsMenuWrapper {
+  width: 55%;
+}
+
+section.dessertsMenuSection div.dessertsMenuWrapper h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem;
+}
+
+section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu {
+  width: 100%;
+}
+
+section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem {
+  padding-bottom: 2rem;
+}
+
+section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .productTopInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .productTopInfo .productName,
+section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .productTopInfo .productPrice {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .itemDesc {
+  padding-bottom: .2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .itemDesc.banoffePie, section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .itemDesc.chocOreoCake {
+  width: 70%;
+}
+
+/* ===================================================================
+        Desserts - Fatty Favourite Section
+=================================================================== */
+.fattyFaveSection {
+  width: 45%;
+}
+
+.fattyFaveSection div.fattyFaveFlexWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg {
+  margin-left: auto;
+  padding-right: 4.5rem;
+}
+
+.fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 3rem 0 3.7rem 0;
+  color: #990000;
+}
+
+.fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:before, .fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:after {
+  background-color: #990000;
+  display: inline-block;
+  content: '';
+  height: .2rem;
+  width: 2rem;
+  position: relative;
+  vertical-align: middle;
+}
+
+.fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:before.fattyFaveHdr:before, .fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:after.fattyFaveHdr:before {
+  right: 2rem;
+}
+
+.fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:before.fattyFaveHdr:before.fattyFaveHdr:after, .fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:after.fattyFaveHdr:before.fattyFaveHdr:after {
+  left: 2rem;
+}
+
+.fattyFaveDesc {
+  margin-left: auto;
+}
+
+.fattyFaveDesc h2.fattyfaveCakeHdr {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.fattyFaveDesc p {
+  width: 30rem;
+  font-size: 1.4rem;
+  margin: -4.6rem 0;
+}
+
+/* ===================================================================
+        Extensive Range Of Beers
+=================================================================== */
+div.extensiveRangeOfBeers p {
+  width: 85vw;
+  font-size: 1.6rem;
+  color: #c6c6c6;
+  font-weight: 400;
+  padding: 2rem 0 0 7.5rem;
+}
+
+/* ===================================================================
+        Beers Featured Image Section
+=================================================================== */
+section.beersSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6rem;
+  padding: 0 7.5rem;
+}
+
+div.beersFeatImgSection {
+  width: 40%;
+  padding-top: 10rem;
+}
+
+/* ===================================================================
+        Beers Menu
+=================================================================== */
+div.beersMenuSection {
+  width: 60%;
+}
+
+div.beersMenuSection div.beersMenuWrapper {
+  margin-left: auto;
+  padding-left: 5rem;
+}
+
+div.beersMenuSection div.beersMenuWrapper h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+div.beersMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -3.5rem 0 10rem 0;
+  font-size: 1.6rem;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 5rem;
+}
+
+div.beersMenu div.beerNameCol {
+  font-weight: 700;
+}
+
+div.beersMenu div.beerNameCol p.beerName {
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+div.beersMenu div.PintsCol {
+  text-align: right;
+}
+
+div.beersMenu div.PintsCol h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 5rem;
+}
+
+div.beersMenu div.PintsCol .pintPrice {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+div.beersMenu div.PintsCol .emptyPrice {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  color: #010101;
+}
+
+div.beersMenu .halfPintCol {
+  text-align: right;
+}
+
+div.beersMenu .halfPintCol h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 5rem;
+}
+
+div.beersMenu .halfPintCol .halfPintPrice {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+div.beersMenu .halfPintCol .emptyPrice {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  color: #010101;
+}
+
+div.beersMenu .bottlePriceCol {
+  text-align: right;
+}
+
+div.beersMenu .bottlePriceCol h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 5rem;
+}
+
+div.beersMenu .bottlePriceCol .bottlePrice {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+div.beersMenu .bottlePriceCol .emptyPrice {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  color: #010101;
+}
+
+/* ===================================================================
+        Ciders Menu
+=================================================================== */
+section.ciderMenuSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 7.5rem;
+}
+
+section.ciderMenuSection .ciderMenuWrapper {
+  width: 60%;
+}
+
+section.ciderMenuSection .ciderMenuWrapper h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem;
+}
+
+section.ciderMenuSection .ciderMenuWrapper .ciderMenu {
+  margin-bottom: 10rem;
+}
+
+section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem {
+  padding-bottom: 2rem;
+}
+
+section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopInfo {
+  vertical-align: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-right: 5rem;
+}
+
+section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopInfo .productName,
+section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopInfo .productPrice {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+/* ===================================================================
+        Ciders Featured Image Section
+=================================================================== */
+.cidersFeatImgSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  padding-top: 8rem;
+  padding-right: 5rem;
+}
+
+.cidersFeatImgSection .ciderFeatImg {
+  margin-left: auto;
+}
+
+div.bookingsForm {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+div.bookingsForm h1.bookingsHdr {
+  font-size: 3.5rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+div.bookingsForm select.customSelect {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
+  padding: 2rem;
+  border: solid #707070 1px;
+  border-radius: .2rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url(/svg/bookings-select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 2rem top 50%, 0 0;
+  cursor: pointer;
+}
+
+div.BookTableBtn {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+div.BookTableBtn button {
+  width: 100%;
+  padding: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  margin-top: 3rem;
+  text-align: center;
+  cursor: pointer;
+  background: #1E1D21;
+  border: solid #ffffff 0.1rem;
+  outline: none;
+}
+
+div.BookTableBtn button:hover {
+  opacity: .75;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+div.BookTableBtn button a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+div.BookTableBtn button a:visited {
+  color: #ffffff;
+}
+
+div.bookingsImgWrapper {
+  text-align: center;
+}
+
+div.bookingsImgWrapper img.bookATableDesktopImg {
+  max-width: 95.8rem;
+  height: auto;
+}
+
+div.bookingsImgWrapper img.bookATableMobileImg {
+  display: none;
+}
+
+/* ===================================================================
+        Specials Top Section
+=================================================================== */
+div.specialsTopInfo {
+  text-align: center;
+}
+
+div.specialsTopInfo h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1.5rem 0;
+  display: none;
+}
+
+div.specialsTopInfo p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  text-align: left;
+  padding-left: 5rem;
+}
+
+/* ===================================================================
+        Steak Stack Specials Section
+=================================================================== */
+div.specialsFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 5rem;
+}
+
+section.SpecialsBSSection div.SpecialsBSHdrAndImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #D89033;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:before, section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:after {
+  background-color: #D89033;
+  display: inline-block;
+  content: '';
+  height: .2rem;
+  width: 2rem;
+  position: relative;
+  vertical-align: middle;
+}
+
+section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:before.SpecialsBSHdr:before, section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:after.SpecialsBSHdr:before {
+  right: 2rem;
+}
+
+section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:before.SpecialsBSHdr:before.SpecialsBSHdr:after, section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:after.SpecialsBSHdr:before.SpecialsBSHdr:after {
+  left: 2rem;
+}
+
+img.steakStackSpecialImg,
+img.fattyFaveSpecialImg {
+  display: block;
+  max-width: 48.1rem;
+  width: 40vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+div.SpecialsSSDesc {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.SpecialsSSDesc h2.specialsSSHdr {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+div.SpecialsSSDesc p {
+  margin-top: -4.9rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+  width: 55%;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+/* ===================================================================
+        Fatty Fave Specials Section
+=================================================================== */
+section.fattyFaveSpecialSection div.dessertHdrAndImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #990000;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:before, section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:after {
+  background-color: #990000;
+  display: inline-block;
+  content: '';
+  height: .2rem;
+  width: 2rem;
+  position: relative;
+  vertical-align: middle;
+}
+
+section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:before.dessertHdr:before, section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:after.dessertHdr:before {
+  right: 2rem;
+}
+
+section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:before.dessertHdr:before.dessertHdr:after, section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:after.dessertHdr:before.dessertHdr:after {
+  left: 2rem;
+}
+
+div.specialsDessertDesc {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.specialsDessertDesc h2 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+div.specialsDessertDesc p {
+  width: 55%;
+  font-size: 1.4rem;
+  margin: -4.8rem auto;
+  text-align: right;
+}
+
+section.locationsSection h1 {
+  color: #c6c6c6;
+  font-size: 3.5rem;
+  font-weight: 600;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: none;
+}
+
+div.locationsWrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.locationsWrapper .locationHoxtonSq,
+div.locationsWrapper .locationBrixton,
+div.locationsWrapper .locationCroydonCentre,
+div.locationsWrapper .locationClapham {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+div.locationsWrapper .locationHoxtonSq img,
+div.locationsWrapper .locationBrixton img,
+div.locationsWrapper .locationCroydonCentre img,
+div.locationsWrapper .locationClapham img {
+  border: solid #990000 0.1rem;
+  padding: .5rem;
+  opacity: .5;
+  display: block;
+  max-width: 33.6rem;
+  height: auto;
+}
+
+div.locationsWrapper .locationHoxtonSq img:hover,
+div.locationsWrapper .locationBrixton img:hover,
+div.locationsWrapper .locationCroydonCentre img:hover,
+div.locationsWrapper .locationClapham img:hover {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+div.locationsWrapper .locationHoxtonSq h2,
+div.locationsWrapper .locationBrixton h2,
+div.locationsWrapper .locationCroydonCentre h2,
+div.locationsWrapper .locationClapham h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: .5rem 0 1rem 0;
+  color: #4b4b4b;
+  text-transform: uppercase;
+}
+
+div.locationsWrapper .locationHoxtonSq p,
+div.locationsWrapper .locationBrixton p,
+div.locationsWrapper .locationCroydonCentre p,
+div.locationsWrapper .locationClapham p {
+  font-size: 1.6rem;
+  padding-bottom: 5rem;
+}
+
+h1.openingHrsHdr {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  padding-top: 0;
+}
+
+div.openingHrsPageWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+div.openingHrsPageWrapper div.openingHrsImgWrapper {
+  padding: 2rem;
+}
+
+div.openingHrsPageWrapper div.openingHrsImgWrapper img.openingHrsImg {
+  display: block;
+  border: solid #D89033 0.1rem;
+  padding: .5rem;
+}
+
+div.openingHrstextInfo {
+  padding-top: 2rem;
+  width: 47.4rem;
+}
+
+div.openingHrstextInfo .hoxtonSq,
+div.openingHrstextInfo .brixton,
+div.openingHrstextInfo .croydonCentre,
+div.openingHrstextInfo .clapham {
+  padding-bottom: 2rem;
+}
+
+div.openingHrstextInfo h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4b4b4b;
+  text-transform: uppercase;
+}
+
+div.openingHrstextInfo p {
+  font-size: 1.6rem;
+}
+
+div.openingHrstextInfo p.pleaseNote {
+  width: 70%;
+  padding-top: 2rem;
+}
+
+h1.contactPageHdr {
+  color: #c6c6c6;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 7rem 0 1.5rem 0;
+  padding-bottom: 0;
+}
+
+section.ContactFormSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.ContactFormSection div.contactFormWrapper {
+  padding-right: 2rem;
+}
+
+section.ContactFormSection div.contactFormWrapper div.contactForm {
+  margin-bottom: 5rem;
+}
+
+section.ContactFormSection div.contactFormWrapper div.contactForm form .formName,
+section.ContactFormSection div.contactFormWrapper div.contactForm form .formEmail,
+section.ContactFormSection div.contactFormWrapper div.contactForm form .formPhoneNo,
+section.ContactFormSection div.contactFormWrapper div.contactForm form .formMsg {
+  margin: 2rem 0;
+}
+
+section.ContactFormSection div.contactFormWrapper div.contactForm form input[type=text],
+section.ContactFormSection div.contactFormWrapper div.contactForm form input[type=email],
+section.ContactFormSection div.contactFormWrapper div.contactForm form input[type=tel] {
+  width: 42.1rem;
+  height: 3.5rem;
+  background: #414141;
+  border: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding-left: 2rem;
+}
+
+section.ContactFormSection div.contactFormWrapper div.contactForm form #message {
+  padding: 1rem 0 0 2rem;
+}
+
+section.ContactFormSection div.contactFormWrapper div.contactForm form textarea {
+  background: #414141;
+  border: none;
+  color: #ffffff;
+  font-family: inherit;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  width: 42.1rem;
+  height: 11.5rem;
+}
+
+section.ContactFormSection div.contactFormWrapper div.contactForm form input[type=submit] {
+  background: #414141;
+  font-size: 1.4rem;
+  color: #ffffff;
+  border: none;
+  margin-top: 1.5rem;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+section.ContactFormSection div.contactFormWrapper div.contactForm form input[type=submit]:hover {
+  opacity: .7;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+section.ContactFormSection div.contactStoreLocations {
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+}
+
+section.ContactFormSection div.contactStoreLocations h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0 0 .2rem 0;
+  color: #4b4b4b;
+  text-transform: uppercase;
+}
+
+section.ContactFormSection div.contactStoreLocations p {
+  width: 33.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+section.privacyContentSection {
+  margin-top: 10rem;
+}
+
+section.privacyContentSection div.privacyContentWrapper {
+  background-color: #ffffff;
+  padding: 8rem 12rem 1rem 12rem;
+  line-height: 1.4;
+  margin: 0 auto;
+}
+
+section.privacyContentSection div.privacyContentWrapper h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #1f1f1f;
+  margin-bottom: 2rem;
+}
+
+section.privacyContentSection div.privacyContentWrapper p {
+  font-size: 1.6rem;
+  color: #121212;
+  font-weight: 300;
+  padding-bottom: 5rem;
+}
+
+section.privacyContentSection div.privacyContentWrapper .phoneNo {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #121212;
+}
+
+section.privacyContentSection div.privacyContentWrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1f1f1f;
+  padding-bottom: .5rem;
+}
+
+section.privacyContentSection div.privacyContentWrapper h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1f1f1f;
+  padding-bottom: 1rem;
+}
+
+section.privacyContentSection div.privacyContentWrapper a {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #990000;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.blackBoxBottom {
+  background: #010101;
+  height: 15rem;
+}
+
+/* ===================================================================
+            Media Queries: General Styles
+=================================================================== */
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1000px) {
+  div.mobileMenuNavBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav.top-nav {
+    display: none;
+  }
+}
+
+/*  Small Laptop Screens  */
+/*  Tablets  */
+@media only screen and (max-width: 550px) {
+  svg.MobileNavLogo {
+    margin-top: 1rem;
+    width: 10rem !important;
+    height: auto;
+  }
+}
+
+/*  Larger Phones  */
+@media only screen and (max-width: 467px) {
+  div.mobileMenuNavBar {
+    width: 100vw;
+  }
+}
+
+/* ===================================================================
+            Media Queries: Homepage
+=================================================================== */
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1178px) {
+  div.makeReservationCol {
+    padding-top: 1rem;
+  }
+}
+
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1176px) {
+  div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn {
+    padding-top: 1.6rem;
+  }
+}
+
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1120px) {
+  div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn {
+    padding-top: 2.5rem;
+  }
+}
+
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1078px) {
+  div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn {
+    padding-top: 3.5rem;
+  }
+}
+
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1000px) {
+  section.homePageImgSection {
+    margin-top: 15rem;
+  }
+  section.homePageImgSection img.heroImage {
+    width: 60vw;
+    height: auto;
+  }
+  /* ===================================================================
+            See Specials Btn
+=================================================================== */
+  div.seeSpecialsBtnSection {
+    display: none;
+  }
+  /* ===================================================================
+        Socials, Reserve Table and Mini Bio Section
+=================================================================== */
+  section.socials-resrv-minibio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-top: -2rem;
+  }
+  /* ===================================================================
+            Reservation Button
+=================================================================== */
+  div.makeReservationCol {
+    display: block;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  div.makeReservationCol div.resevationBtn {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+  }
+  div.makeReservationCol div.resevationBtn a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #990000;
+    padding: 1.5rem 2.5rem;
+    background-color: #D89033;
+    border-radius: 2rem;
+    text-align: center;
+  }
+  /* ===================================================================
+            Scroll Down Button
+=================================================================== */
+  div.scrollDownCol {
+    display: block;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  div.scrollDownCol h2.homeAboutUsHdr {
+    margin-top: 6rem;
+  }
+  /* ===================================================================
+            Steak 'N' Beer Mini Bio
+=================================================================== */
+  div.miniBioCol {
+    display: block;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  div.miniBioCol div.miniBioImgSection {
+    margin: 0;
+  }
+  div.miniBioCol div.miniBioImgSection img {
+    display: block;
+    margin: 5rem auto;
+    padding-right: 0;
+  }
+  div.miniBioCol div.miniBioImgSection h1 {
+    text-align: center;
+    padding-right: 0;
+    margin: -9rem;
+  }
+  div.miniBiotext {
+    width: 60%;
+    margin: 0 auto;
+  }
+  div.miniBiotext p {
+    color: #990000;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.5;
+    padding-right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 13rem;
+  }
+  /* ===================================================================
+            Socials
+=================================================================== */
+  div.socialsCol {
+    padding-left: 0 !important;
+    padding-right: 0;
+    display: block;
+    margin: 5rem auto 0 auto;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  div.socialsCol div.socialsBtns {
+    width: 50vw !important;
+    text-align: center;
+  }
+  div.socialsCol div.socialsBtns a {
+    display: inline-block !important;
+    padding: 2rem 1rem 5rem 1rem !important;
+    color: #4d4d4d;
+  }
+  /* ===================================================================
+            Responsive See Our Specials Section
+=================================================================== */
+  div.responisveSeeSpecialsBtn {
+    position: relative;
+    margin: 5rem auto 0 auto;
+    display: block;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+/*  Small Laptop Screens  */
+@media only screen and (max-width: 787px) {
+  section.homePageImgSection img.heroImage {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+/*  Tablets  */
+@media only screen and (max-width: 575px) {
+  section.homePageImgSection {
+    margin-top: 15rem;
+  }
+  section.homePageImgSection p {
+    font-size: 1.2rem;
+    padding: 0 2.5rem 1rem 2.5rem;
+    line-height: 1.2;
+  }
+}
+
+/*  Phones  */
+@media only screen and (max-width: 370px) {
+  div.miniBioImgSection img,
+  div.responisveSeeSpecialsBtn img {
+    width: 85vw;
+  }
+}
+
+/* ===================================================================
+            Media Queries: Menu - Menu Nav
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+/*  Tablets  */
+/*  Larger Phones  */
+@media only screen and (max-width: 600px) {
+  ul.menuNav li {
+    padding-left: 0 !important;
+  }
+}
+
+/*  Medium Phones  */
+@media only screen and (max-width: 500px) {
+  ul.menuNav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul.menuNav li {
+    padding-left: 0 !important;
+  }
+  ul.menuNav li a {
+    color: #c6c6c6;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    background: inherit;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 0 1.5rem !important;
+    font-size: 1.8rem !important;
+  }
+}
+
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Menu - Brunch
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+@media only screen and (max-width: 1000px) {
+  nav.menuNavSection {
+    margin-top: 10rem !important;
+  }
+}
+
+/*  Tablets  */
+@media only screen and (max-width: 900px) {
+  section.brunchOpeningHours p {
+    margin-bottom: 5rem;
+  }
+  div.breakfastMenuWrapper h1 {
+    margin-bottom: 2rem !important;
+    padding-bottom: 0;
+  }
+  div.hotDrinksMenuWrapper h2,
+  div.refresherMenuWrapper h2 {
+    margin-bottom: 2rem;
+  }
+  div.bfastSpecialSection,
+  div.hotDrinksFaveSection,
+  div.refresherSpecialSection {
+    display: none;
+  }
+  div.breakfastMenuSection,
+  div.hotDrinksMenuWrapper,
+  div.refresherMenuSection {
+    width: 100%;
+  }
+  section.hotDrinksMenuSection,
+  section.refresherMenuSection,
+  section.refresherSection {
+    margin-top: 3rem;
+  }
+  div.hotDrinksMenu p.itemDesc,
+  div.breakfastMenu p.itemDesc {
+    width: 80%;
+  }
+}
+
+/*  Larger Phones  */
+/*  Medium Phones  */
+@media only screen and (max-width: 600px) {
+  section.brunchOpeningHours p {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  section.bfastMenuSection,
+  section.hotDrinksMenuSection {
+    padding: 0 3rem;
+  }
+  section.refresherSection {
+    padding-bottom: 5rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+/*  Small Phones  */
+@media only screen and (max-width: 400px) {
+  section.brunchOpeningHours p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section.bfastMenuSection,
+  section.hotDrinksMenuSection {
+    padding: 0 2rem;
+  }
+  section.refresherSection {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+/* ===================================================================
+            Media Queries: Menu - Mains
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+/*  Tablets  */
+@media only screen and (max-width: 900px) {
+  section.forAllergyInfo p {
+    margin-bottom: 5rem;
+  }
+  div.nibblesMenuWrapper h2,
+  div.SnBMenuSection h2,
+  div.dessertsMenuWrapper h2 {
+    margin-bottom: 2rem !important;
+  }
+  div.nibblesFeatImgSection,
+  div.featSnBWrapper,
+  div.fattyFaveSection {
+    display: none;
+  }
+  div.nibblesMenuWrapper,
+  div.SnBMenuSection,
+  div.dessertsMenuWrapper {
+    width: 100% !important;
+  }
+  section.nibblesMenuSection,
+  section.SnBSection,
+  section.dessertsMenuSection {
+    margin-top: 3rem;
+  }
+  p.itemDesc {
+    width: 80%;
+  }
+}
+
+/*  Larger Phones  */
+@media only screen and (max-width: 600px) {
+  section.forAllergyInfo p {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+  }
+  section.nibblesMenuSection,
+  section.SnBSection {
+    padding: 0 3rem;
+  }
+  section.dessertsMenuSection {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+/*  Small Phones  */
+@media only screen and (max-width: 400px) {
+  section.forAllergyInfo p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section.nibblesMenuSection,
+  section.SnBSection {
+    padding: 0 2rem;
+  }
+  section.dessertsMenuSection {
+    padding: 0 2rem 5rem 2rem;
+  }
+}
+
+/* ===================================================================
+            Media Queries: Menu - Beers
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+@media only screen and (max-width: 1060px) {
+  div.beersMenuSection {
+    width: 100%;
+  }
+  div.beersMenuWrapper {
+    padding-left: 0 !important;
+  }
+  section.ciderMenuSection {
+    margin-top: -6rem;
+  }
+  div.ciderMenuWrapper {
+    width: 100% !important;
+  }
+  div.ciderMenuWrapper h2 {
+    margin-bottom: 2rem !important;
+  }
+  div.ciderMenu div.productTopInfo {
+    padding-right: 0 !important;
+  }
+  div.beersMenu {
+    padding: 0;
+  }
+  div.beersFeatImgSection,
+  div.cidersFeatImgSection {
+    display: none;
+  }
+}
+
+/*  Tablets  */
+/*  Larger Phones  */
+@media only screen and (max-width: 600px) {
+  div.extensiveRangeOfBeers p {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+  }
+  section.beersSection {
+    padding: 0 3rem;
+  }
+  section.ciderMenuSection {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+/*  Small Phones  */
+@media only screen and (max-width: 490px) {
+  div.extensiveRangeOfBeers p {
+    padding-left: 2rem !important;
+  }
+  section.beersSection {
+    padding: 0 2rem;
+  }
+  div.beersMenuWrapper h2 {
+    font-size: 3.5rem !important;
+  }
+  div.PintsCol h3,
+  div.halfPintCol h3,
+  div.bottlePriceCol h3 {
+    font-size: 1.4rem !important;
+  }
+  .beerName,
+  .pintPrice,
+  .emptyPrice,
+  .halfPintPrice,
+  .bottlePrice {
+    font-size: 1.4rem !important;
+  }
+  section.ciderMenuSection {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+/* ===================================================================
+            Media Queries: Bookings
+=================================================================== */
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1200px) {
+  img.bookATableDesktopImg {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+/*  Small Laptop Screens  */
+@media only screen and (max-width: 1000px) {
+  h1.bookingsHdr {
+    margin-top: 10rem;
+  }
+}
+
+/*  Tablets  */
+@media only screen and (max-width: 800px) {
+  div.bookingsImgWrapper img.bookATableDesktopImg {
+    display: none;
+  }
+  div.bookingsImgWrapper img.bookATableMobileImg {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/*  Larger Phones  */
+@media only screen and (max-width: 650px) {
+  div.bookingsImgWrapper img.bookATableDesktopImg {
+    display: none;
+  }
+}
+
+/*  Small Phones  */
+@media only screen and (max-width: 375px) {
+  img.bookATableMobileImg {
+    max-width: 30rem;
+    height: auto;
+  }
+}
+
+/*  Small Phones  */
+@media only screen and (max-width: 350px) {
+  div.bookingsForm {
+    width: 80vw;
+  }
+  div.BookTableBtn {
+    width: 80vw;
+  }
+  div.BookTableBtn button {
+    margin-top: 2rem;
+  }
+  img.bookATableMobileImg {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+/* ===================================================================
+            Media Queries: Specials
+=================================================================== */
+/*  Small Laptop Screens  */
+@media only screen and (max-width: 1024px) {
+  div.specialsTopInfo p {
+    text-align: center;
+    padding-left: 0;
+  }
+  section.SpecialsBSSection {
+    padding-bottom: 7rem;
+    border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+  }
+  section.fattyFaveSpecialSection {
+    margin: 5rem 0;
+  }
+}
+
+/*  Small Laptop Screens  */
+@media only screen and (max-width: 1000px) {
+  section.steakStackSpecialSec {
+    margin-top: 10rem;
+  }
+  section.steakStackSpecialSec div.specialsTopInfo h1 {
+    display: block;
+  }
+}
+
+/*  Larger Phones  */
+@media only screen and (max-width: 529px) {
+  img.specialsSSTxtOutlineImg,
+  img.specialFFTxtOutlineImg {
+    display: none;
+  }
+  div.SpecialsSSDesc p,
+  div.specialsDessertDesc p {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Locations
+=================================================================== */
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1110px) {
+  div.locationsWrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+/*  Small Laptop Screens  */
+@media only screen and (max-width: 1000px) {
+  section.locationsSection {
+    margin-top: 10rem;
+  }
+  section.locationsSection h1 {
+    display: block;
+    text-align: center;
+  }
+}
+
+/*  Tablets  */
+/*  Larger Phones  */
+/*  Small Phones  */
+@media only screen and (max-width: 400px) {
+  .locationHoxtonSq img,
+  .locationBrixton img,
+  .locationCroydonCentre img,
+  .locationClapham img {
+    width: 80vw;
+  }
+  .locationHoxtonSq h2,
+  .locationBrixton h2,
+  .locationCroydonCentre h2,
+  .locationClapham h2 {
+    width: 80vw;
+  }
+}
+
+/* ===================================================================
+            Media Queries: Opening Hours
+=================================================================== */
+/*  Small Laptop Screens  */
+@media only screen and (max-width: 1145px) {
+  div.openingHrsImgWrapper {
+    padding: 0;
+  }
+  p.pleaseNote {
+    width: 100% !important;
+    padding-bottom: 5rem;
+  }
+}
+
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1000px) {
+  section.openingHrsSection {
+    margin-top: 10rem;
+  }
+  section.openingHrsSection h1.openingHrsHdr {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+/*  Tablets  */
+/*  Larger Phones  */
+@media only screen and (max-width: 600px) {
+  div.openingHrstextInfo {
+    padding-top: 2rem;
+    width: 80vw;
+  }
+  img.openingHrsImg {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Privacy
+=================================================================== */
+/*  Small Laptop Screens  */
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1000px) {
+  div.privacyContentWrapper {
+    padding: 2rem 5rem 1rem 5rem !important;
+  }
+}
+
+/*  Tablets  */
+@media only screen and (max-width: 900px) {
+  section.privacyContentSection {
+    margin-top: 5rem;
+  }
+  section.privacyContentSection div.privacyContentWrapper {
+    padding: 5rem 5rem 1rem 5rem !important;
+    width: 90vw;
+  }
+}
+
+/*  Larger Phones  */
+/*  Small Phones  */
+@media only screen and (max-width: 450px) {
+  section.privacyContentSection {
+    margin-top: 10rem;
+  }
+  section.privacyContentSection div.privacyContentWrapper {
+    padding: 0 2rem 1rem 2rem !important;
+    width: 90vw;
+  }
+  section.privacyContentSection div.privacyContentWrapper h1 {
+    margin-bottom: 0;
+  }
+}
+
+/* ===================================================================
+            Media Queries: Contact
+=================================================================== */
+/*  Small Laptop Screens  */
+@media only screen and (max-width: 1000px) {
+  h1.contactPageHdr {
+    margin-top: 10rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/*  Tablets  */
+@media only screen and (max-width: 838px) {
+  div.contactFormWrapper {
+    padding-right: 0 !important;
+  }
+  div.contactStoreLocations {
+    width: 42.1rem;
+    padding-left: 0 !important;
+    padding-bottom: 5rem;
+  }
+}
+
+/*  Larger Phones  */
+/*  Small Phones  */
+@media only screen and (max-width: 465px) {
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  textarea {
+    width: 90vw !important;
+  }
+  div.contactStoreLocations {
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -23,3 +23,22 @@ footer.privacy {
         }
     }
 }
+
+/* ===================================================================
+            Contact Form Alerts
+=================================================================== */
+
+h2.success-alert {
+    background: #A6D785;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+h2.error-alert {
+    background: #F31431;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}

@@ -43,20 +43,22 @@ div.side-nav {
     position: fixed;
     z-index: 102;
 
+    div.mobileMenuLinks {
 
-    .mobileMenuLinks a:first-child {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 4rem;
-        font-weight: 300;
-        opacity: .5;
-        border: none;
-        cursor: pointer;
+        a.close-btn {
+            position: absolute;
+            top: 1.5rem;
+            left: 0;
+            font-size: 4rem;
+            font-weight: 300;
+            opacity: .5;
+            border: none;
+            cursor: pointer;
 
-        &:hover {
-            color: #fff;
-            opacity: 1;
+            &:hover {
+                color: #fff;
+                opacity: 1;
+            }
         }
     }
 }
@@ -75,6 +77,10 @@ div.side-nav a {
     &:hover {
         color: $clr-site-yellow;
         opacity: 1;
+    }
+
+    &:first-child {
+        border-bottom: none;
     }
 }
 
@@ -98,14 +104,17 @@ div.sideMenuLogoLink {
     a {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         opacity: .5;
         cursor: pointer;
         padding-top: 2rem;
+        text-decoration: none;
 
         svg.sideMenuLogo {
             fill: #676767;
-            width: 8rem;
+            margin-top: 1rem;
+            width: 10rem;
+            height: auto;
         }
     }
 }

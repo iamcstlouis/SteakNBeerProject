@@ -414,10 +414,10 @@ div.side-nav {
   z-index: 102;
 }
 
-div.side-nav .mobileMenuLinks a:first-child {
+div.side-nav div.mobileMenuLinks a.close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1.5rem;
+  left: 0;
   font-size: 4rem;
   font-weight: 300;
   opacity: .5;
@@ -425,7 +425,7 @@ div.side-nav .mobileMenuLinks a:first-child {
   cursor: pointer;
 }
 
-div.side-nav .mobileMenuLinks a:first-child:hover {
+div.side-nav div.mobileMenuLinks a.close-btn:hover {
   color: #fff;
   opacity: 1;
 }
@@ -448,6 +448,10 @@ div.side-nav a:hover {
   opacity: 1;
 }
 
+div.side-nav a:first-child {
+  border-bottom: none;
+}
+
 div.mobileMenuSocialsBtns {
   margin-top: 5rem;
 }
@@ -467,15 +471,18 @@ div.mobileMenuSocialsBtns a:hover {
 div.sideMenuLogoLink a {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   opacity: .5;
   cursor: pointer;
   padding-top: 2rem;
+  text-decoration: none;
 }
 
 div.sideMenuLogoLink a svg.sideMenuLogo {
   fill: #676767;
-  width: 8rem;
+  margin-top: 1rem;
+  width: 10rem;
+  height: auto;
 }
 
 /* ===================================================================
@@ -502,11 +509,30 @@ footer.privacy div.privacyLinkWrapper a.privacyLink {
 }
 
 /* ===================================================================
+            Contact Form Alerts
+=================================================================== */
+h2.success-alert {
+  background: #A6D785;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+h2.error-alert {
+  background: #F31431;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ===================================================================
             Home Page Main Content
 =================================================================== */
 #homepage {
   width: 100vw;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 section.homePageImgSection {
@@ -720,6 +746,10 @@ div.scrollDownCol a.scrollDownLink div.scrollDownBtn svg.svgHomepageScroll:hover
 /* ===================================================================
             Steak 'N' Beer Mini Bio
 =================================================================== */
+#homepageAboutUs {
+  outline: none;
+}
+
 div.miniBioCol {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -2143,6 +2173,12 @@ section.ContactFormSection div.contactFormWrapper div.contactForm form .formMsg 
   margin: 2rem 0;
 }
 
+section.ContactFormSection div.contactFormWrapper div.contactForm form label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
+}
+
 section.ContactFormSection div.contactFormWrapper div.contactForm form input[type=text],
 section.ContactFormSection div.contactFormWrapper div.contactForm form input[type=email],
 section.ContactFormSection div.contactFormWrapper div.contactForm form input[type=tel] {
@@ -2152,7 +2188,7 @@ section.ContactFormSection div.contactFormWrapper div.contactForm form input[typ
   border: none;
   color: #ffffff;
   font-size: 1.4rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 section.ContactFormSection div.contactFormWrapper div.contactForm form #message {
@@ -2164,11 +2200,11 @@ section.ContactFormSection div.contactFormWrapper div.contactForm form textarea 
   border: none;
   color: #ffffff;
   font-family: inherit;
-  padding-left: 2rem;
-  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-top: 2rem;
   font-size: 1.4rem;
   width: 42.1rem;
-  height: 11.5rem;
+  height: 20rem;
 }
 
 section.ContactFormSection div.contactFormWrapper div.contactForm form input[type=submit] {
@@ -2811,6 +2847,10 @@ section.privacyContentSection div.privacyContentWrapper a {
   div.bookingsForm {
     width: 80vw;
   }
+  div.bookingsForm select.customSelect {
+    padding-left: 1rem;
+    background-position: right 1rem top 50%, 0 0;
+  }
   div.BookTableBtn {
     width: 80vw;
   }
@@ -3012,10 +3052,10 @@ section.privacyContentSection div.privacyContentWrapper a {
   input[type=email],
   input[type=tel],
   textarea {
-    width: 90vw !important;
+    width: 80vw !important;
   }
   div.contactStoreLocations {
-    width: 90vw;
+    width: 80vw;
   }
 }
 /*# sourceMappingURL=main.css.map */

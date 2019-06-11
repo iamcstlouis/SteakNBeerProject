@@ -733,6 +733,12 @@
 
     div.bookingsForm {
         width: 80vw;
+
+        select.customSelect {
+            padding-left: 1rem;
+            background-position: right 1rem top 50%,
+                0 0;
+        }
     }
 
     div.BookTableBtn {
@@ -1008,10 +1014,10 @@
     input[type=email],
     input[type=tel],
     textarea {
-        width: 90vw !important;
+        width: 80vw !important;
     }
 
     div.contactStoreLocations {
-        width: 90vw;
+        width: 80vw;
     }
 }

@@ -471,7 +471,7 @@ div.mobileMenuSocialsBtns a:hover {
 div.sideMenuLogoLink a {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1rem;
   opacity: .5;
   cursor: pointer;
   padding-top: 2rem;
@@ -2654,6 +2654,13 @@ section.privacyContentSection div.privacyContentWrapper a {
 =================================================================== */
 /*  Large Screens & Desktop  */
 /*  Small Laptop Screens  */
+@media only screen and (max-width: 921px) {
+  div.nibblesMenuWrapper,
+  div.dessertsMenuWrapper {
+    padding-right: 1.5rem;
+  }
+}
+
 /*  Tablets  */
 @media only screen and (max-width: 900px) {
   section.forAllergyInfo p {

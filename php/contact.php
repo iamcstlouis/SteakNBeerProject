@@ -10,7 +10,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
 
-    $toEmail = 'iamcstlouis@gmail.com';
+    $toEmail = 'misscstlouis@gmail.com';
     $subject = 'Contact Request From '.$name;
     $body = '<h2>Contact Request</h2>
             <h4>Name</h4><p>'.$name.'</p>
@@ -22,14 +22,14 @@ if(filter_has_var(INPUT_POST, 'submit')){
         $headers = "MIME-Version:1.0" ."\r\n";
         $headers .="Content-Type:text/html;charset=UTF-8" . "
             \r\n";
-            
+
             // Additional Headers
             $headers .= "From: " .$name. "<".$email.">". "\r\n";
 
             //Email Sent
             if(mail($toEmail, $subject, $body, $headers)){
                 $msg = '<h2 class="success-alert">Your email has successfully been sent!</h2>';
-                $_POST = array(); 
+                $_POST = array();
             } else {
                 //Failed
                 $msg = '<h2 class="error-alert">Your email was not sent</h2>';

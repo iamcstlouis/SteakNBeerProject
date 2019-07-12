@@ -535,20 +535,20 @@ h2.error-alert {
   overflow: hidden;
 }
 
-section.homePageImgSection {
+div.homePageImgSection {
   width: 100%;
   margin: 7rem auto 0 auto;
   text-align: center;
 }
 
-section.homePageImgSection p.bestSteakHouseSub {
+div.homePageImgSection p.bestSteakHouseSub {
   font-size: 2.6rem;
   font-weight: 300;
   color: #990000;
   margin-top: 4rem;
 }
 
-section.homePageImgSection img.heroImage {
+div.homePageImgSection img.heroImage {
   margin: 0 auto;
   display: block;
   height: auto;
@@ -857,7 +857,7 @@ p.homepageCopyright {
 /* ===================================================================
         Brunch Opening hours
 =================================================================== */
-section.brunchOpeningHours p {
+div.brunchOpeningHours p {
   width: 80%;
   font-size: 1.6rem;
   color: #c6c6c6;
@@ -1203,7 +1203,7 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
 /* ===================================================================
         For Allergy Info 
 =================================================================== */
-.forAllergyInfo p {
+div.forAllergyInfo p {
   width: 90vw;
   font-size: 1.6rem;
   color: #c6c6c6;
@@ -1784,46 +1784,43 @@ div.bookingsForm select.customSelect {
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
-  background-image: url(/svg/bookings-select-arrow.svg);
+  background-image: url(../svg/bookings-select-arrow.svg);
   background-repeat: no-repeat;
   background-position: right 2rem top 50%, 0 0;
   cursor: pointer;
 }
 
-div.BookTableBtn {
+div.BookTableBtnWrapper {
   max-width: 30rem;
-  margin: 0 auto;
-}
-
-div.BookTableBtn button {
-  width: 100%;
-  padding: 2rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  display: block;
   margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  cursor: pointer;
-  background: #1E1D21;
-  border: solid #ffffff 0.1rem;
-  outline: none;
 }
 
-div.BookTableBtn button:hover {
-  opacity: .75;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-div.BookTableBtn button a {
+div.BookTableBtnWrapper a.BookTableBtn {
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
+  padding: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  background: #1E1D21;
+  border: solid #ffffff 0.1rem;
+  outline: none;
+  cursor: pointer;
 }
 
-div.BookTableBtn button a:visited {
+div.BookTableBtnWrapper a.BookTableBtn:hover {
+  opacity: .75;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+div.BookTableBtnWrapper a.BookTableBtn:visited {
   color: #ffffff;
 }
 
@@ -2436,7 +2433,9 @@ section.privacyContentSection div.privacyContentWrapper a {
 =================================================================== */
   div.miniBioCol {
     display: block;
-    margin: 0 auto;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -2580,7 +2579,7 @@ section.privacyContentSection div.privacyContentWrapper a {
 
 /*  Tablets  */
 @media only screen and (max-width: 900px) {
-  section.brunchOpeningHours p {
+  div.brunchOpeningHours p {
     margin-bottom: 5rem;
   }
   div.breakfastMenuWrapper h1 {
@@ -2615,7 +2614,7 @@ section.privacyContentSection div.privacyContentWrapper a {
 /*  Larger Phones  */
 /*  Medium Phones  */
 @media only screen and (max-width: 600px) {
-  section.brunchOpeningHours p {
+  div.brunchOpeningHours p {
     padding-top: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -2635,7 +2634,7 @@ section.privacyContentSection div.privacyContentWrapper a {
 
 /*  Small Phones  */
 @media only screen and (max-width: 400px) {
-  section.brunchOpeningHours p {
+  div.brunchOpeningHours p {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -2663,7 +2662,7 @@ section.privacyContentSection div.privacyContentWrapper a {
 
 /*  Tablets  */
 @media only screen and (max-width: 900px) {
-  section.forAllergyInfo p {
+  div.forAllergyInfo p {
     margin-bottom: 5rem;
   }
   div.nibblesMenuWrapper h2,
@@ -2693,7 +2692,7 @@ section.privacyContentSection div.privacyContentWrapper a {
 
 /*  Larger Phones  */
 @media only screen and (max-width: 600px) {
-  section.forAllergyInfo p {
+  div.forAllergyInfo p {
     padding-top: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -2711,7 +2710,7 @@ section.privacyContentSection div.privacyContentWrapper a {
 
 /*  Small Phones  */
 @media only screen and (max-width: 400px) {
-  section.forAllergyInfo p {
+  div.forAllergyInfo p {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -2858,10 +2857,8 @@ section.privacyContentSection div.privacyContentWrapper a {
     padding-left: 1rem;
     background-position: right 1rem top 50%, 0 0;
   }
-  div.BookTableBtn {
+  div.BookTableBtnWrapper {
     width: 80vw;
-  }
-  div.BookTableBtn button {
     margin-top: 2rem;
   }
   img.bookATableMobileImg {

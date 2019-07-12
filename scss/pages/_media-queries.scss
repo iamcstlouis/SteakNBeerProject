@@ -174,7 +174,9 @@
 
     div.miniBioCol {
         display: block;
-        margin: 0 auto;
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
         order: 2;
 
         div.miniBioImgSection {
@@ -366,7 +368,7 @@
 
 @media only screen and (max-width: 900px) {
 
-    section.brunchOpeningHours {
+    div.brunchOpeningHours {
         p {
             margin-bottom: 5rem;
         }
@@ -415,7 +417,7 @@
 /*  Medium Phones  */
 
 @media only screen and (max-width: 600px) {
-    section.brunchOpeningHours {
+    div.brunchOpeningHours {
         p {
             padding-top: 2rem;
             padding-left: 3rem;
@@ -441,7 +443,7 @@
 /*  Small Phones  */
 
 @media only screen and (max-width: 400px) {
-    section.brunchOpeningHours {
+    div.brunchOpeningHours {
         p {
             padding-left: 2rem;
             padding-right: 2rem;
@@ -482,7 +484,7 @@
 
 @media only screen and (max-width: 900px) {
 
-    section.forAllergyInfo {
+    div.forAllergyInfo {
         p {
             margin-bottom: 5rem;
         }
@@ -520,7 +522,7 @@
 /*  Larger Phones  */
 
 @media only screen and (max-width: 600px) {
-    section.forAllergyInfo {
+    div.forAllergyInfo {
         p {
             padding-top: 2rem;
             padding-left: 3rem;
@@ -544,7 +546,7 @@
 /*  Small Phones  */
 
 @media only screen and (max-width: 400px) {
-    section.forAllergyInfo {
+    div.forAllergyInfo {
         p {
             padding-left: 2rem;
             padding-right: 2rem;
@@ -748,12 +750,9 @@
         }
     }
 
-    div.BookTableBtn {
+    div.BookTableBtnWrapper {
         width: 80vw;
-
-        button {
-            margin-top: 2rem;
-        }
+        margin-top: 2rem;
     }
 
     img.bookATableMobileImg {

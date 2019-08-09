@@ -37,7 +37,7 @@ div.side-nav {
     top: 0;
     left: 0;
     background: #070707;
-    overflow: hidden;
+    overflow-y: scroll;
     padding-top: 15rem;
     transition: 0.5s;
     position: fixed;

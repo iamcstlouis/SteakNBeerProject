@@ -299,11 +299,27 @@ div.responisveSeeSpecialsBtn {
 
 p.homepageCopyright {
     margin-top: auto;
-    padding-bottom: 1rem;
+    padding-bottom: 1.6rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     letter-spacing: 1px;
     font-size: 1.2rem;
     font-weight: 300;
     color: $clr-site-offWhite;
     text-align: center;
-    opacity: .15;
+    // opacity: .5;
+
+    a {
+        text-decoration: none;
+        color: $clr-site-offWhite;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+        font-weight: 300;
+        transition: all .4s;
+
+        &:hover {
+            color: $clr-site-yellow;
+            opacity: 1;
+        }
+    }
 }

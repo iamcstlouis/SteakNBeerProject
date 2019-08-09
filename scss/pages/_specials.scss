@@ -73,8 +73,9 @@ section.SpecialsBSSection {
 img.steakStackSpecialImg,
 img.fattyFaveSpecialImg {
     display: block;
-    max-width: 48.1rem;
-    width: 40vw;
+    max-width: 40vw;
+    max-height: 50vh;
+    width: auto;
     height: auto;
     margin: 0 auto;
 }

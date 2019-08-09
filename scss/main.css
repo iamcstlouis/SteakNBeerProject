@@ -406,7 +406,7 @@ div.side-nav {
   top: 0;
   left: 0;
   background: #070707;
-  overflow: hidden;
+  overflow-y: scroll;
   padding-top: 15rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -845,13 +845,29 @@ div.responisveSeeSpecialsBtn img {
 =================================================================== */
 p.homepageCopyright {
   margin-top: auto;
-  padding-bottom: 1rem;
+  padding-bottom: 1.6rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   letter-spacing: 1px;
   font-size: 1.2rem;
   font-weight: 300;
   color: #c6c6c6;
   text-align: center;
-  opacity: .15;
+}
+
+p.homepageCopyright a {
+  text-decoration: none;
+  color: #c6c6c6;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+p.homepageCopyright a:hover {
+  color: #D89033;
+  opacity: 1;
 }
 
 /* ===================================================================
@@ -1917,8 +1933,9 @@ section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr
 img.steakStackSpecialImg,
 img.fattyFaveSpecialImg {
   display: block;
-  max-width: 48.1rem;
-  width: 40vw;
+  max-width: 40vw;
+  max-height: 50vh;
+  width: auto;
   height: auto;
   margin: 0 auto;
 }
@@ -2892,6 +2909,18 @@ section.privacyContentSection div.privacyContentWrapper a {
   }
   section.steakStackSpecialSec div.specialsTopInfo h1 {
     display: block;
+  }
+}
+
+/*  Larger Phones  */
+@media only screen and (max-width: 700px) {
+  img.steakStackSpecialImg,
+  img.fattyFaveSpecialImg {
+    max-width: 80vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
   }
 }
 

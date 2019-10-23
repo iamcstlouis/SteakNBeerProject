@@ -242,9 +242,13 @@ nav.top-nav {
   text-align: center;
 }
 
-.topNavLogoWrapper svg.topNavLogo {
+.topNavLogoWrapper .topNavlogoLink {
+  display: inline-block;
+}
+
+.topNavLogoWrapper .topNavlogoLink svg.topNavLogo {
   fill: #676767;
-  width: 14rem;
+  width: 8rem;
   height: auto;
 }
 
@@ -365,42 +369,13 @@ nav.top-nav {
   font-size: 2rem;
 }
 
-div.mobileMenuNavBar {
-  z-index: 100;
-  width: 90vw;
-  height: 10rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: #010101;
-  display: none;
-}
-
-div.mobileMenuNavBar div.hamburger-icon {
-  padding-top: 4rem;
-  padding-left: 2rem;
-  cursor: pointer;
-}
-
-div.mobileMenuNavBar div.MobileNavLogoWrapper {
-  margin-left: auto;
-  padding: 2rem;
-}
-
-div.mobileMenuNavBar div.MobileNavLogoWrapper svg.MobileNavLogo {
-  fill: #676767;
-  width: 14rem;
-  height: auto;
-}
-
 /* ===================================================================
-        Side Nav Styles
+        mobile Nav Styles
 =================================================================== */
-div.side-nav {
+/* ===================================================================
+        mobile Menu Styles
+=================================================================== */
+div.mobile-menu {
   height: 100vh;
   width: 0;
   top: 0;
@@ -414,7 +389,7 @@ div.side-nav {
   z-index: 102;
 }
 
-div.side-nav div.mobileMenuLinks a.close-btn {
+div.mobile-menu div.mobileMenuLinks a.close-btn {
   position: absolute;
   top: 1.5rem;
   left: 0;
@@ -425,12 +400,12 @@ div.side-nav div.mobileMenuLinks a.close-btn {
   cursor: pointer;
 }
 
-div.side-nav div.mobileMenuLinks a.close-btn:hover {
+div.mobile-menu div.mobileMenuLinks a.close-btn:hover {
   color: #fff;
   opacity: 1;
 }
 
-div.side-nav a {
+div.mobile-menu a {
   padding: .5rem 0;
   text-decoration: none;
   font-size: 2rem;
@@ -443,12 +418,12 @@ div.side-nav a {
   margin: 0 2rem;
 }
 
-div.side-nav a:hover {
+div.mobile-menu a:hover {
   color: #D89033;
   opacity: 1;
 }
 
-div.side-nav a:first-child {
+div.mobile-menu a:first-child {
   border-bottom: none;
 }
 
@@ -468,7 +443,7 @@ div.mobileMenuSocialsBtns a:hover {
   color: #fff;
 }
 
-div.sideMenuLogoLink a {
+div.mobileMenuLogoLink a {
   position: absolute;
   top: 0;
   right: 1rem;
@@ -478,7 +453,7 @@ div.sideMenuLogoLink a {
   text-decoration: none;
 }
 
-div.sideMenuLogoLink a svg.sideMenuLogo {
+div.mobileMenuLogoLink a svg.mobileMenuLogo {
   fill: #676767;
   margin-top: 1rem;
   width: 10rem;
@@ -524,6 +499,75 @@ h2.error-alert {
   color: #fff;
   padding: 2rem;
   text-align: center;
+}
+
+.menu-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border: solid #676767 1px;
+}
+
+.menu-btn__burger {
+  width: 50px;
+  height: 6px;
+  background: #676767;
+  border-radius: 5px;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+}
+
+.menu-btn__burger::before, .menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #676767;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+
+.menu-btn__burger::after {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+}
+
+/* ===================================================================
+            Hamburger Toggler Animation
+=================================================================== */
+.menu-btn.open .menu-btn__burger {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  -webkit-transform: rotate(45deg) translate(-35px, 35px);
+          transform: rotate(45deg) translate(-35px, 35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  -webkit-transform: rotate(-45deg) translate(-35px, -35px);
+          transform: rotate(-45deg) translate(-35px, -35px);
 }
 
 /* ===================================================================
@@ -2322,33 +2366,29 @@ section.privacyContentSection div.privacyContentWrapper a {
 =================================================================== */
 /*  Large Screens & Desktop  */
 @media only screen and (max-width: 1000px) {
-  div.mobileMenuNavBar {
+  .menu-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  nav.top-nav {
+  .leftTopNav,
+  .rightTopNav {
     display: none;
+  }
+  .topNavLogoWrapper {
+    text-align: right;
+    padding-right: 2rem;
+  }
+  .topNavLogoWrapper svg.topNavLogo {
+    fill: #676767;
+    width: 10rem;
+    height: auto;
   }
 }
 
 /*  Small Laptop Screens  */
 /*  Tablets  */
-@media only screen and (max-width: 550px) {
-  svg.MobileNavLogo {
-    margin-top: 1rem;
-    width: 10rem !important;
-    height: auto;
-  }
-}
-
 /*  Larger Phones  */
-@media only screen and (max-width: 467px) {
-  div.mobileMenuNavBar {
-    width: 100vw;
-  }
-}
-
 /* ===================================================================
             Media Queries: Homepage
 =================================================================== */
@@ -2382,9 +2422,6 @@ section.privacyContentSection div.privacyContentWrapper a {
 
 /*  Large Screens & Desktop  */
 @media only screen and (max-width: 1000px) {
-  div.homePageImgSection {
-    margin-top: 15rem;
-  }
   div.homePageImgSection img.heroImage {
     width: 60vw;
     height: auto;
@@ -2528,9 +2565,6 @@ section.privacyContentSection div.privacyContentWrapper a {
 
 /*  Tablets  */
 @media only screen and (max-width: 575px) {
-  div.homePageImgSection {
-    margin-top: 15rem;
-  }
   div.homePageImgSection p {
     font-size: 1.2rem;
     padding: 0 2.5rem 1rem 2.5rem;

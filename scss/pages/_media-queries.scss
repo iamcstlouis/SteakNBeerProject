@@ -6,12 +6,32 @@
 
 @media only screen and (max-width: 1000px) {
 
-    div.mobileMenuNavBar {
+    // div.mobileMenuNavBar {
+    //     display: flex;
+    // } // fix and get rid
+
+    // nav.top-nav {
+    //     display: none;
+    // } // fix and get rid
+
+    .menu-btn {
         display: flex;
     }
 
-    nav.top-nav {
+    .leftTopNav,
+    .rightTopNav {
         display: none;
+    }
+
+    .topNavLogoWrapper {
+        text-align: right;
+        padding-right: 2rem;
+
+        svg.topNavLogo {
+            fill: #676767;
+            width: 10rem;
+            height: auto;
+        }
     }
 }
 
@@ -22,20 +42,16 @@
 /*  Tablets  */
 
 @media only screen and (max-width: 550px) {
-    svg.MobileNavLogo {
-        margin-top: 1rem;
-        width: 10rem !important;
-        height: auto;
-    }
+    // svg.MobileNavLogo {
+    //     margin-top: 1rem;
+    //     width: 10rem !important;
+    //     height: auto;
+    // }
 }
 
 /*  Larger Phones  */
 
-@media only screen and (max-width: 467px) {
-    div.mobileMenuNavBar {
-        width: 100vw;
-    }
-}
+@media only screen and (max-width: 467px) {}
 
 /* ===================================================================
             Media Queries: Homepage
@@ -100,7 +116,6 @@
 @media only screen and (max-width: 1000px) {
 
     div.homePageImgSection {
-        margin-top: 15rem;
 
         img.heroImage {
             width: 60vw;
@@ -265,7 +280,6 @@
 @media only screen and (max-width: 575px) {
 
     div.homePageImgSection {
-        margin-top: 15rem;
 
         p {
             font-size: 1.2rem;

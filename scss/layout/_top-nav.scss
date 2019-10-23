@@ -53,10 +53,14 @@ nav.top-nav {
     flex: 3 0 20vw;
     text-align: center;
 
-    svg.topNavLogo {
-        fill: #676767;
-        width: 14rem;
-        height: auto;
+    .topNavlogoLink {
+        display: inline-block;
+
+        svg.topNavLogo {
+            fill: #676767;
+            width: 8rem;
+            height: auto;
+        }
     }
 }
 

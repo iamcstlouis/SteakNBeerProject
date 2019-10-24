@@ -1,10 +1,4 @@
-function openSlideMenu() {
-    document.getElementById('side-menu').style.width = '100vw';
-}
 
-function closeSlideMenu() {
-    document.getElementById('side-menu').style.width = '0';
-}
 
 
 
@@ -12,18 +6,19 @@ function closeSlideMenu() {
             Hamburger Toggler Animation
 =================================================================== */
 
-const hamburgerBtn = document.querySelector('.menu-btn');
+// const menuBtn = document.querySelector('.menu-btn');
 // const hamburgerToggler = document.querySelector('.hamburger-toggler');
-let menuOpen = false;
+// const lineTop = document.querySelector('.line-top');
+// const menu = document.querySelector('.menu');
+// const lineBtm = document.querySelector('.line-btm');
 
-hamburgerBtn.addEventListener('click', () => {
-    if (!menuOpen) {
-        hamburgerBtn.classList.add('open');
-        // hamburgerToggler.classList.add('open');
-        menuOpen = true;
-    } else {
-        hamburgerBtn.classList.remove('open');
-        // hamburgerBtn.classList.remove('open');
-        menuOpen = false;
-    }
+const selectElement = (element) => document.querySelector(element);
+
+selectElement('.hamburger-btn').addEventListener('click', () => {
+    // selectElement('.menu-btn').classList.toggle('open');
+    // selectElement('.hamburger-toggler').classList.toggle('open');
+    selectElement('.mobile-menu').classList.toggle('open');
+    selectElement('.line-top').classList.toggle('open');
+    selectElement('.menu').classList.toggle('open');
+    selectElement('.line-btm').classList.toggle('open');
 });

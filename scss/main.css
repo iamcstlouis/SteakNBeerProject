@@ -176,12 +176,24 @@ main {
 =================================================================== */
 /*  --------    Top Nav: Left Side    --------  */
 nav.top-nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  background-color: #010101;
+  z-index: 100;
+}
+
+nav.top-nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin: 2rem auto;
-  z-index: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
 }
 
 .leftTopNav {
@@ -240,6 +252,7 @@ nav.top-nav {
       -ms-flex: 3 0 20vw;
           flex: 3 0 20vw;
   text-align: center;
+  z-index: 1500;
 }
 
 .topNavLogoWrapper .topNavlogoLink {
@@ -370,94 +383,93 @@ nav.top-nav {
 }
 
 /* ===================================================================
-        mobile Nav Styles
-=================================================================== */
-/* ===================================================================
         mobile Menu Styles
 =================================================================== */
-div.mobile-menu {
-  height: 100vh;
-  width: 0;
+.mobile-menu {
+  position: fixed;
+  height: 0;
+  width: 100vw;
   top: 0;
   left: 0;
   background: #070707;
+  opacity: 0;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
   overflow-y: scroll;
   padding-top: 15rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  position: fixed;
   z-index: 102;
+  visibility: hidden;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
 }
 
-div.mobile-menu div.mobileMenuLinks a.close-btn {
-  position: absolute;
-  top: 1.5rem;
-  left: 0;
-  font-size: 4rem;
-  font-weight: 300;
-  opacity: .5;
-  border: none;
-  cursor: pointer;
-}
-
-div.mobile-menu div.mobileMenuLinks a.close-btn:hover {
-  color: #fff;
+.mobile-menu.open {
+  height: 100vh;
+  visibility: visible;
   opacity: 1;
 }
 
-div.mobile-menu a {
-  padding: .5rem 0;
-  text-decoration: none;
-  font-size: 2rem;
-  color: var(--site-light-grey);
-  display: block;
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-  opacity: .5;
-  border-bottom: solid rgba(255, 255, 255, 0.3) 0.1px;
-  margin: 0 2rem;
+.mobile-menu .mobileMenuLinks {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-div.mobile-menu a:hover {
+.mobileMenuLinks a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: var(--site-light-grey);
+  display: block;
+  opacity: .5;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobileMenuLinks a::after {
+  content: '';
+  background: rgba(255, 255, 255, 0.2);
+  width: 70%;
+  height: .1rem;
+  display: block;
+  margin: 3rem auto 3rem auto;
+}
+
+.mobileMenuLinks a:hover {
   color: #D89033;
   opacity: 1;
 }
 
-div.mobile-menu a:first-child {
-  border-bottom: none;
+.mobileMenuLinks a:active {
+  color: #D89033;
+  opacity: 1;
 }
 
-div.mobileMenuSocialsBtns {
-  margin-top: 5rem;
+.mobileMenuSocialsBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
 }
 
-div.mobileMenuSocialsBtns i.fab,
-div.mobileMenuSocialsBtns a {
+.mobileMenuSocialsBtns i.fab,
+.mobileMenuSocialsBtns a {
+  color: rgba(255, 255, 255, 0.3);
   font-size: 2rem;
-  border: none;
-  display: inline-block;
-}
-
-div.mobileMenuSocialsBtns i.fab:hover,
-div.mobileMenuSocialsBtns a:hover {
-  color: #fff;
-}
-
-div.mobileMenuLogoLink a {
-  position: absolute;
-  top: 0;
-  right: 1rem;
-  opacity: .5;
-  cursor: pointer;
-  padding-top: 2rem;
   text-decoration: none;
+  display: block;
+  padding: 2rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-div.mobileMenuLogoLink a svg.mobileMenuLogo {
-  fill: #676767;
-  margin-top: 1rem;
-  width: 10rem;
-  height: auto;
+.mobileMenuSocialsBtns i.fab:hover,
+.mobileMenuSocialsBtns a:hover {
+  color: #fff;
 }
 
 /* ===================================================================
@@ -501,98 +513,105 @@ h2.error-alert {
   text-align: center;
 }
 
-.menu-btn {
+/* ===================================================================
+            Hamburger Menu Two
+=================================================================== */
+.hamburger-btn {
+  padding: 1rem 5rem 1rem 2rem;
+  cursor: pointer;
+  display: none;
+  z-index: 1500;
+}
+
+.hamburger-btn .hamburger-toggler {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  border: solid #676767 1px;
-}
-
-.menu-btn__burger {
-  width: 50px;
-  height: 6px;
-  background: #676767;
-  border-radius: 5px;
-  -webkit-transition: .5s all ease-in-out;
-  transition: .5s all ease-in-out;
-}
-
-.menu-btn__burger::before, .menu-btn__burger::after {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 6px;
-  background: #676767;
-  border-radius: 5px;
-  cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-.menu-btn__burger::before {
-  -webkit-transform: translateY(-16px);
-          transform: translateY(-16px);
+.hamburger-btn .line-top {
+  width: 100%;
+  height: .2rem;
+  border-radius: .8rem;
+  background: #676767;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.menu-btn__burger::after {
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
+.hamburger-btn .line-top.open {
+  -webkit-transform: rotate(45deg) translateX(16px);
+          transform: rotate(45deg) translateX(16px);
+  width: 70%;
 }
 
-/* ===================================================================
-            Hamburger Toggler Animation
-=================================================================== */
-.menu-btn.open .menu-btn__burger {
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
-  background: transparent;
+.hamburger-btn .menu {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: .25rem;
+  color: #676767;
+  text-transform: uppercase;
+  display: block;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.menu-btn.open .menu-btn__burger::before {
-  -webkit-transform: rotate(45deg) translate(-35px, 35px);
-          transform: rotate(45deg) translate(-35px, 35px);
+.hamburger-btn .menu.open {
+  -webkit-transform: translateX(5rem);
+          transform: translateX(5rem);
+  opacity: 0;
 }
 
-.menu-btn.open .menu-btn__burger::after {
-  -webkit-transform: rotate(-45deg) translate(-35px, -35px);
-          transform: rotate(-45deg) translate(-35px, -35px);
+.hamburger-btn .line-btm {
+  width: 100%;
+  height: .2rem;
+  border-radius: .8rem;
+  background: #676767;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.hamburger-btn .line-btm.open {
+  -webkit-transform: rotate(-45deg) translateX(16px);
+          transform: rotate(-45deg) translateX(16px);
+  width: 70%;
 }
 
 /* ===================================================================
             Home Page Main Content
 =================================================================== */
-#homepage {
+.homepage {
   width: 100vw;
   margin: 0 auto;
   overflow: hidden;
 }
 
-div.homePageImgSection {
+.homePageImgSection {
   width: 100%;
-  margin: 7rem auto 0 auto;
+  margin: 13rem auto 0 auto;
   text-align: center;
 }
 
-div.homePageImgSection p.bestSteakHouseSub {
+.homePageImgSection p.bestSteakHouseSub {
   font-size: 2.6rem;
   font-weight: 300;
   color: #990000;
   margin-top: 4rem;
 }
 
-div.homePageImgSection img.heroImage {
+.homePageImgSection .heroImage {
   margin: 0 auto;
   display: block;
   height: auto;
@@ -885,9 +904,9 @@ div.responisveSeeSpecialsBtn img {
 }
 
 /* ===================================================================
-            Copyright Info
+                        Footer
 =================================================================== */
-p.homepageCopyright {
+.homepage-footer p.homepageCopyright {
   margin-top: auto;
   padding-bottom: 1.6rem;
   padding-left: 2.5rem;
@@ -899,7 +918,7 @@ p.homepageCopyright {
   text-align: center;
 }
 
-p.homepageCopyright a {
+.homepage-footer p.homepageCopyright a {
   text-decoration: none;
   color: #c6c6c6;
   letter-spacing: 1px;
@@ -909,7 +928,7 @@ p.homepageCopyright a {
   transition: all .4s;
 }
 
-p.homepageCopyright a:hover {
+.homepage-footer p.homepageCopyright a:hover {
   color: #D89033;
   opacity: 1;
 }
@@ -1818,18 +1837,18 @@ section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopIn
   margin-left: auto;
 }
 
-div.bookingsForm {
+.bookingsForm {
   max-width: 30rem;
   margin: 0 auto;
 }
 
-div.bookingsForm h1.bookingsHdr {
+.bookingsForm .bookingsHdr {
   font-size: 3.5rem;
   font-weight: 600;
   padding-bottom: 2rem;
 }
 
-div.bookingsForm select.customSelect {
+.bookingsForm select.customSelect {
   display: block;
   width: 100%;
   max-width: 100%;
@@ -1850,7 +1869,7 @@ div.bookingsForm select.customSelect {
   cursor: pointer;
 }
 
-div.BookTableBtnWrapper {
+.BookTableBtnWrapper {
   max-width: 30rem;
   margin-top: 3rem;
   margin-left: auto;
@@ -1858,7 +1877,7 @@ div.BookTableBtnWrapper {
   text-align: center;
 }
 
-div.BookTableBtnWrapper a.BookTableBtn {
+.BookTableBtnWrapper .BookTableBtn {
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 400;
@@ -1874,26 +1893,26 @@ div.BookTableBtnWrapper a.BookTableBtn {
   cursor: pointer;
 }
 
-div.BookTableBtnWrapper a.BookTableBtn:hover {
+.BookTableBtnWrapper .BookTableBtn:hover {
   opacity: .75;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-div.BookTableBtnWrapper a.BookTableBtn:visited {
+.BookTableBtnWrapper .BookTableBtn:visited {
   color: #ffffff;
 }
 
-div.bookingsImgWrapper {
+.bookingsImgWrapper {
   text-align: center;
 }
 
-div.bookingsImgWrapper img.bookATableDesktopImg {
+.bookingsImgWrapper .bookATableDesktopImg {
   max-width: 95.8rem;
   height: auto;
 }
 
-div.bookingsImgWrapper img.bookATableMobileImg {
+.bookingsImgWrapper .bookATableMobileImg {
   display: none;
 }
 
@@ -2366,7 +2385,7 @@ section.privacyContentSection div.privacyContentWrapper a {
 =================================================================== */
 /*  Large Screens & Desktop  */
 @media only screen and (max-width: 1000px) {
-  .menu-btn {
+  .hamburger-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

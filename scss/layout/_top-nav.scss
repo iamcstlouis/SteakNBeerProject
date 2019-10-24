@@ -5,10 +5,19 @@
 /*  --------    Top Nav: Left Side    --------  */
 
 nav.top-nav {
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    margin: 2rem auto;
+    background-color: #010101;
     z-index: 100;
+
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+    }
 }
 
 .leftTopNav {
@@ -52,6 +61,7 @@ nav.top-nav {
     order: 1;
     flex: 3 0 20vw;
     text-align: center;
+    z-index: 1500;
 
     .topNavlogoLink {
         display: inline-block;

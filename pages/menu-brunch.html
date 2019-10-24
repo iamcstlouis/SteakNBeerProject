@@ -13,58 +13,25 @@
 </head>
 
 <body>
-    <!--    /////////////////////////////////////////////////////////////////////
-                                    Hamburger Menu: SVG
-///////////////////////////////////////////////////////////////////////////-->
-
-    <div class="mobileMenuNavBar">
-        <div class="hamburger-icon">
-            <a href="#" onclick="openSlideMenu()">
-                <svg width="30" height="30">
-                    <path d="M0,5 30,5" stroke="rgb(198, 198, 198)" stroke-width="2" />
-                    <path d="M0,14 30,14" stroke="rgb(198, 198, 198)" stroke-width="2" />
-                    <path d="M0,23 30,23" stroke="rgb(198, 198, 198)" stroke-width="2" />
-                </svg>
-            </a>
-        </div>
-        <div class="MobileNavLogoWrapper">
-            <a href="../index.html" class="mobileNavlogoLink">
-                <svg class="MobileNavLogo" viewBox="0 0 257.12 129.07">
-                    <path class="cls-1"
-                        d="M185.89,92.67a7.82,7.82,0,0,1-2.22,5.78,9.3,9.3,0,0,1-7,2.53H165V58.9h10.88a11.16,11.16,0,0,1,7.13,2,6.58,6.58,0,0,1,2.55,5.41v5.82a6,6,0,0,1-.78,3.18,8.5,8.5,0,0,1-4.59,3.06c2.35.6,4,1.53,4.83,2.77a5.71,5.71,0,0,1,.84,3.31Zm-9-19V66.48c0-1-.23-1.68-.69-1.9a4.81,4.81,0,0,0-2-.33v11.6a5.18,5.18,0,0,0,1.76-.18A2.06,2.06,0,0,0,176.93,73.63Zm0,19.77V82.71c0-1-.23-1.67-.69-1.9a4.81,4.81,0,0,0-2-.33V95.63a5.18,5.18,0,0,0,1.76-.18A2.08,2.08,0,0,0,176.93,93.4Z" />
-                    <path class="cls-1"
-                        d="M207.35,94.55a5.92,5.92,0,0,1-3,5.53,13.89,13.89,0,0,1-6.85,1.38,13,13,0,0,1-6.85-1.5,6.26,6.26,0,0,1-2.89-5.71V73.87a6.21,6.21,0,0,1,2.83-5.65,12.91,12.91,0,0,1,6.91-1.56A14.1,14.1,0,0,1,204.34,68a5.84,5.84,0,0,1,3,5.53v13H196.11v7.89a2,2,0,0,0,.36,1.28,1.52,1.52,0,0,0,2.16,0,2,2,0,0,0,.36-1.28V87.63h8.36ZM199,81.38V73.62a1.89,1.89,0,0,0-.36-1.26,1.37,1.37,0,0,0-1.08-.41,1.42,1.42,0,0,0-1,.41,1.71,1.71,0,0,0-.42,1.26v7.76Z" />
-                    <path class="cls-1"
-                        d="M228.81,94.55a5.92,5.92,0,0,1-3,5.53,13.92,13.92,0,0,1-6.85,1.38,13,13,0,0,1-6.85-1.5,6.24,6.24,0,0,1-2.89-5.71V73.87A6.21,6.21,0,0,1,212,68.22,12.88,12.88,0,0,1,219,66.66,14.13,14.13,0,0,1,225.8,68a5.84,5.84,0,0,1,3,5.53v13H217.57v7.89a2,2,0,0,0,.36,1.28,1.52,1.52,0,0,0,2.16,0,2,2,0,0,0,.36-1.28V87.63h8.36Zm-8.36-13.17V73.62a1.89,1.89,0,0,0-.36-1.26A1.37,1.37,0,0,0,219,72a1.42,1.42,0,0,0-1,.41,1.71,1.71,0,0,0-.42,1.26v7.76Z" />
-                    <path class="cls-1"
-                        d="M250.39,81H242V73.58c0-1-.48-1.57-1.44-1.57a1.47,1.47,0,0,0-1.08.36,1.56,1.56,0,0,0-.36,1.14V101h-8.36V66.9h8.36V68a5.87,5.87,0,0,1,2.07-1,11.59,11.59,0,0,1,3.1-.38,6.61,6.61,0,0,1,4.35,1.41,4.33,4.33,0,0,1,1.72,3.46Z" />
-                    <path class="cls-1"
-                        d="M22.09,78.32c-1.49-1.53-3.09-3.15-4.78-4.87a5.82,5.82,0,0,1-1.81-4V65.52a1.19,1.19,0,0,1,.38-1,1.76,1.76,0,0,1,1.12-.3,1.55,1.55,0,0,1,1,.34,1.14,1.14,0,0,1,.41.93v7.81H26.8V66.06a6.73,6.73,0,0,0-2.1-5.23c-1.65-1.49-4.13-2.23-7.46-2.23-3.84,0-6.65.74-8.41,2.23-1.52,1.28-2.29,3.26-2.29,6v4.75a8.4,8.4,0,0,0,2.12,5q.48.62,4.47,4.81,2.41,2.59,4.53,4.77a4.5,4.5,0,0,1,.79,2.78v5A1.34,1.34,0,0,1,18,95a2,2,0,0,1-1.31.36A2.08,2.08,0,0,1,15.43,95a1.28,1.28,0,0,1-.53-1.06V84.21H6.54v9.62a6.69,6.69,0,0,0,2,4.92c1.76,1.81,4.55,2.71,8.35,2.71q6,0,8.54-2.28c1.44-1.33,2.16-3.37,2.16-6.14V87.69a8.75,8.75,0,0,0-1.75-5.16A42.65,42.65,0,0,0,22.09,78.32Z" />
-                    <path class="cls-1"
-                        d="M42.19,94.85a2.24,2.24,0,0,1-1-2.11V72h4.51V66.9H41.17V60H32.81V66.9H29.09V72h3.72V92.76q0,5.28,1.23,6.75c.83,1,3,1.47,6.65,1.47H46V95.27H44.41A4.54,4.54,0,0,1,42.19,94.85Z" />
-                    <path class="cls-1"
-                        d="M64.25,68a14.16,14.16,0,0,0-6.85-1.38,12.94,12.94,0,0,0-6.92,1.56,6.22,6.22,0,0,0-2.82,5.65V94.25A6.25,6.25,0,0,0,50.54,100a13,13,0,0,0,6.86,1.5,14,14,0,0,0,6.85-1.38,5.93,5.93,0,0,0,3-5.53V87.63H58.9v6.81a2,2,0,0,1-.36,1.28,1.3,1.3,0,0,1-1.08.45,1.32,1.32,0,0,1-1.09-.45A2,2,0,0,1,56,94.44V86.55H67.25v-13A5.85,5.85,0,0,0,64.25,68ZM58.9,81.38H56V73.62a1.71,1.71,0,0,1,.42-1.26,1.43,1.43,0,0,1,1-.41,1.37,1.37,0,0,1,1.08.41,1.89,1.89,0,0,1,.36,1.26Z" />
-                    <path class="cls-1"
-                        d="M86.19,68.16q-2.23-1.5-6.67-1.5A14.33,14.33,0,0,0,72.6,68a5.89,5.89,0,0,0-3.06,5.53v6.79h8.11V73.63a1.75,1.75,0,0,1,.41-1.26,1.36,1.36,0,0,1,1-.42,1.29,1.29,0,0,1,1.06.42,1.89,1.89,0,0,1,.36,1.26v5.05c0,.72-1.88,2-5.62,3.79s-5.62,4.06-5.62,6.79v6.85a5,5,0,0,0,1.56,4q1.56,1.32,5.29,1.32a14.46,14.46,0,0,0,3.52-.33,2.81,2.81,0,0,0,1.83-1.47V101h7.39V73.87Q88.83,69.9,86.19,68.16ZM80.48,94.61a1.59,1.59,0,0,1-.39,1.17,1.36,1.36,0,0,1-1,.39A1.5,1.5,0,0,1,78,95.78a1.59,1.59,0,0,1-.39-1.17V88.42a2.13,2.13,0,0,1,.6-1.57,5.06,5.06,0,0,1,2.29-1Z" />
-                    <path class="cls-1"
-                        d="M85.63,19H75.38a13.92,13.92,0,0,1,3.46-7.18,30.22,30.22,0,0,1,3.09-3.25L76.76,4.61A47.9,47.9,0,0,0,66.59,12.3,17.55,17.55,0,0,0,62,24.44v12H85.63Z" />
-                    <path class="cls-1"
-                        d="M139.43,59.2,123.16,4.61H90.81V124.25h23.66V60.44l19.41,63.81h29.21V4.61H139.43ZM104.34,101,99.17,88.66V101H90.82V58.9h8.35V77.84L103.5,66.9h8.59l-6,14.94L114.14,101Z" />
-                    <path class="cls-1"
-                        d="M167.53,4.61V22h10.25a13.89,13.89,0,0,1-3.46,7.18,30.22,30.22,0,0,1-3.09,3.25l5.17,3.93a47.9,47.9,0,0,0,10.17-7.69,17.53,17.53,0,0,0,4.62-12.14v-12Z" />
-                </svg>
-            </a>
-        </div>
-    </div>
 
     <!--    /////////////////////////////////////////////////////////////////////
-                        Top Nav
+                                    Top Nav
 ///////////////////////////////////////////////////////////////////////////-->
 
-    <header class="container">
-        <nav class="top-nav">
+    <nav class="top-nav">
+        <div class="container">
+
+            <!-- ***** Hamburger Toggler ***** -->
+            <div class="hamburger-btn">
+                <div class="hamburger-toggler">
+                    <div class="line-top"></div>
+                    <span class="menu">Menu</span>
+                    <div class="line-btm"></div>
+                </div>
+            </div>
+
             <ul class="leftTopNav">
-                <li><a href="../pages/menu-brunch.html" class="topNav-Active-tab">Menu</a></li>
+                <li><a href="../pages/menu-brunch.html" class="topNavBtn">Menu</a></li>
                 <li><a href="../pages/bookings.html" class="topNavBtn">Book</a></li>
                 <li><a href="../pages/specials.html" class="topNavBtn">Specials</a></li>
             </ul>
@@ -103,404 +70,379 @@
                 <li><a href="../pages/opening-hours.html" class="topNavBtn">Opening Hours</a></li>
                 <li><a href="../php/contact.php" class="topNavBtn">Contact</a></li>
             </ul>
-        </nav>
-    </header>
 
-    <!--    /////////////////////////////////////////////////////////////////////
-                                    Side Menu
+            <!--    /////////////////////////////////////////////////////////////////////
+                                    Mobile Menu
 ///////////////////////////////////////////////////////////////////////////-->
 
-    <div id="side-menu" class="side-nav">
+            <div id="mobile-menu" class="mobile-menu">
 
-        <div class="mobileMenuLinks">
-            <a href="#" class="close-btn" onclick="closeSlideMenu()">&times;</a>
-            <div class="sideMenuLogoLink">
-                <a href="../index.html">
-                    <svg class="sideMenuLogo" viewBox="0 0 257.12 129.07">
-                        <path class="cls-1"
-                            d="M185.89,92.67a7.82,7.82,0,0,1-2.22,5.78,9.3,9.3,0,0,1-7,2.53H165V58.9h10.88a11.16,11.16,0,0,1,7.13,2,6.58,6.58,0,0,1,2.55,5.41v5.82a6,6,0,0,1-.78,3.18,8.5,8.5,0,0,1-4.59,3.06c2.35.6,4,1.53,4.83,2.77a5.71,5.71,0,0,1,.84,3.31Zm-9-19V66.48c0-1-.23-1.68-.69-1.9a4.81,4.81,0,0,0-2-.33v11.6a5.18,5.18,0,0,0,1.76-.18A2.06,2.06,0,0,0,176.93,73.63Zm0,19.77V82.71c0-1-.23-1.67-.69-1.9a4.81,4.81,0,0,0-2-.33V95.63a5.18,5.18,0,0,0,1.76-.18A2.08,2.08,0,0,0,176.93,93.4Z" />
-                        <path class="cls-1"
-                            d="M207.35,94.55a5.92,5.92,0,0,1-3,5.53,13.89,13.89,0,0,1-6.85,1.38,13,13,0,0,1-6.85-1.5,6.26,6.26,0,0,1-2.89-5.71V73.87a6.21,6.21,0,0,1,2.83-5.65,12.91,12.91,0,0,1,6.91-1.56A14.1,14.1,0,0,1,204.34,68a5.84,5.84,0,0,1,3,5.53v13H196.11v7.89a2,2,0,0,0,.36,1.28,1.52,1.52,0,0,0,2.16,0,2,2,0,0,0,.36-1.28V87.63h8.36ZM199,81.38V73.62a1.89,1.89,0,0,0-.36-1.26,1.37,1.37,0,0,0-1.08-.41,1.42,1.42,0,0,0-1,.41,1.71,1.71,0,0,0-.42,1.26v7.76Z" />
-                        <path class="cls-1"
-                            d="M228.81,94.55a5.92,5.92,0,0,1-3,5.53,13.92,13.92,0,0,1-6.85,1.38,13,13,0,0,1-6.85-1.5,6.24,6.24,0,0,1-2.89-5.71V73.87A6.21,6.21,0,0,1,212,68.22,12.88,12.88,0,0,1,219,66.66,14.13,14.13,0,0,1,225.8,68a5.84,5.84,0,0,1,3,5.53v13H217.57v7.89a2,2,0,0,0,.36,1.28,1.52,1.52,0,0,0,2.16,0,2,2,0,0,0,.36-1.28V87.63h8.36Zm-8.36-13.17V73.62a1.89,1.89,0,0,0-.36-1.26A1.37,1.37,0,0,0,219,72a1.42,1.42,0,0,0-1,.41,1.71,1.71,0,0,0-.42,1.26v7.76Z" />
-                        <path class="cls-1"
-                            d="M250.39,81H242V73.58c0-1-.48-1.57-1.44-1.57a1.47,1.47,0,0,0-1.08.36,1.56,1.56,0,0,0-.36,1.14V101h-8.36V66.9h8.36V68a5.87,5.87,0,0,1,2.07-1,11.59,11.59,0,0,1,3.1-.38,6.61,6.61,0,0,1,4.35,1.41,4.33,4.33,0,0,1,1.72,3.46Z" />
-                        <path class="cls-1"
-                            d="M22.09,78.32c-1.49-1.53-3.09-3.15-4.78-4.87a5.82,5.82,0,0,1-1.81-4V65.52a1.19,1.19,0,0,1,.38-1,1.76,1.76,0,0,1,1.12-.3,1.55,1.55,0,0,1,1,.34,1.14,1.14,0,0,1,.41.93v7.81H26.8V66.06a6.73,6.73,0,0,0-2.1-5.23c-1.65-1.49-4.13-2.23-7.46-2.23-3.84,0-6.65.74-8.41,2.23-1.52,1.28-2.29,3.26-2.29,6v4.75a8.4,8.4,0,0,0,2.12,5q.48.62,4.47,4.81,2.41,2.59,4.53,4.77a4.5,4.5,0,0,1,.79,2.78v5A1.34,1.34,0,0,1,18,95a2,2,0,0,1-1.31.36A2.08,2.08,0,0,1,15.43,95a1.28,1.28,0,0,1-.53-1.06V84.21H6.54v9.62a6.69,6.69,0,0,0,2,4.92c1.76,1.81,4.55,2.71,8.35,2.71q6,0,8.54-2.28c1.44-1.33,2.16-3.37,2.16-6.14V87.69a8.75,8.75,0,0,0-1.75-5.16A42.65,42.65,0,0,0,22.09,78.32Z" />
-                        <path class="cls-1"
-                            d="M42.19,94.85a2.24,2.24,0,0,1-1-2.11V72h4.51V66.9H41.17V60H32.81V66.9H29.09V72h3.72V92.76q0,5.28,1.23,6.75c.83,1,3,1.47,6.65,1.47H46V95.27H44.41A4.54,4.54,0,0,1,42.19,94.85Z" />
-                        <path class="cls-1"
-                            d="M64.25,68a14.16,14.16,0,0,0-6.85-1.38,12.94,12.94,0,0,0-6.92,1.56,6.22,6.22,0,0,0-2.82,5.65V94.25A6.25,6.25,0,0,0,50.54,100a13,13,0,0,0,6.86,1.5,14,14,0,0,0,6.85-1.38,5.93,5.93,0,0,0,3-5.53V87.63H58.9v6.81a2,2,0,0,1-.36,1.28,1.3,1.3,0,0,1-1.08.45,1.32,1.32,0,0,1-1.09-.45A2,2,0,0,1,56,94.44V86.55H67.25v-13A5.85,5.85,0,0,0,64.25,68ZM58.9,81.38H56V73.62a1.71,1.71,0,0,1,.42-1.26,1.43,1.43,0,0,1,1-.41,1.37,1.37,0,0,1,1.08.41,1.89,1.89,0,0,1,.36,1.26Z" />
-                        <path class="cls-1"
-                            d="M86.19,68.16q-2.23-1.5-6.67-1.5A14.33,14.33,0,0,0,72.6,68a5.89,5.89,0,0,0-3.06,5.53v6.79h8.11V73.63a1.75,1.75,0,0,1,.41-1.26,1.36,1.36,0,0,1,1-.42,1.29,1.29,0,0,1,1.06.42,1.89,1.89,0,0,1,.36,1.26v5.05c0,.72-1.88,2-5.62,3.79s-5.62,4.06-5.62,6.79v6.85a5,5,0,0,0,1.56,4q1.56,1.32,5.29,1.32a14.46,14.46,0,0,0,3.52-.33,2.81,2.81,0,0,0,1.83-1.47V101h7.39V73.87Q88.83,69.9,86.19,68.16ZM80.48,94.61a1.59,1.59,0,0,1-.39,1.17,1.36,1.36,0,0,1-1,.39A1.5,1.5,0,0,1,78,95.78a1.59,1.59,0,0,1-.39-1.17V88.42a2.13,2.13,0,0,1,.6-1.57,5.06,5.06,0,0,1,2.29-1Z" />
-                        <path class="cls-1"
-                            d="M85.63,19H75.38a13.92,13.92,0,0,1,3.46-7.18,30.22,30.22,0,0,1,3.09-3.25L76.76,4.61A47.9,47.9,0,0,0,66.59,12.3,17.55,17.55,0,0,0,62,24.44v12H85.63Z" />
-                        <path class="cls-1"
-                            d="M139.43,59.2,123.16,4.61H90.81V124.25h23.66V60.44l19.41,63.81h29.21V4.61H139.43ZM104.34,101,99.17,88.66V101H90.82V58.9h8.35V77.84L103.5,66.9h8.59l-6,14.94L114.14,101Z" />
-                        <path class="cls-1"
-                            d="M167.53,4.61V22h10.25a13.89,13.89,0,0,1-3.46,7.18,30.22,30.22,0,0,1-3.09,3.25l5.17,3.93a47.9,47.9,0,0,0,10.17-7.69,17.53,17.53,0,0,0,4.62-12.14v-12Z" />
-                    </svg>
-                </a>
+                <div class="mobileMenuLinks">
+                    <a href="../pages/menu-brunch.html">Menu</a>
+                    <a href="../pages/bookings.html">Book</a>
+                    <a href="../pages/specials.html">Specials</a>
+                    <a href="../pages/locations.html">Locations</a>
+                    <a href="../pages/opening-hours.html">Opening Hours</a>
+                    <a href="../php/contact.php">Contact</a>
+                </div>
+                <div class="mobileMenuSocialsBtns">
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div>
+
             </div>
-            <a href="../pages/menu-brunch.html">Menu</a>
-            <a href="../pages/bookings.html">Book</a>
-            <a href="../pages/specials.html">Specials</a>
-            <a href="../pages/locations.html">Locations</a>
-            <a href="../pages/opening-hours.html">Opening Hours</a>
-            <a href="../php/contact.php">Contact</a>
         </div>
-        <div class="mobileMenuSocialsBtns">
-            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
-        </div>
-
-    </div>
+    </nav>
 
     <!--    /////////////////////////////////////////////////////////////////////
                         Main Content
 ///////////////////////////////////////////////////////////////////////////-->
 
-    <main class="container">
+    <main>
+        <div class="container">
 
-        <!--    /////////////////////////////////////////////////////////////////////
+            <!--    /////////////////////////////////////////////////////////////////////
                         Menu Nav
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <nav class="menuNavSection">
-            <ul class="menuNav">
-                <li class="brunch"><a href="../pages/menu-brunch.html" class="active-tab">Brunch</a></li>
-                <li class="mains"><a href="../pages/menu-mains.html">Mains</a></li>
-                <li class="beers"><a href="../pages/menu-beers.html">Beers</a></li>
-            </ul>
-        </nav>
+            <nav class="menuNavSection">
+                <ul class="menuNav">
+                    <li class="brunch"><a href="../pages/menu-brunch.html" class="active-tab">Brunch</a></li>
+                    <li class="mains"><a href="../pages/menu-mains.html">Mains</a></li>
+                    <li class="beers"><a href="../pages/menu-beers.html">Beers</a></li>
+                </ul>
+            </nav>
 
-        <!--    /////////////////////////////////////////////////////////////////////
+            <!--    /////////////////////////////////////////////////////////////////////
                         Opening Hours Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <div class="brunchOpeningHours">
-            <p>
-                Available from 9.30am - 1pm every weekend and Bank Holidays. Steak ’n’ Beer Clapham offers breakfast
-                every weekday from 8am - 12pm and weekends from 9am - 12pm.
-            </p>
-        </div>
+            <div class="brunchOpeningHours">
+                <p>
+                    Available from 9.30am - 1pm every weekend and Bank Holidays. Steak ’n’ Beer Clapham offers breakfast
+                    every weekday from 8am - 12pm and weekends from 9am - 12pm.
+                </p>
+            </div>
 
-        <!--    /////////////////////////////////////////////////////////////////////
+            <!--    /////////////////////////////////////////////////////////////////////
                         Breakfast Menu Special Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <section class="bfastMenuSection">
-            <div class="bfastSpecialSection">
-                <div class="bfastSpecialHdrAndImg">
-                    <h2 class="bfastSpecialHdr">Breakfast Special</h2>
-                    <img src="../img/menus/brunch/steak-stack-menu.png" alt="Steak Stack Breakfast Special">
+            <section class="bfastMenuSection">
+                <div class="bfastSpecialSection">
+                    <div class="bfastSpecialHdrAndImg">
+                        <h2 class="bfastSpecialHdr">Breakfast Special</h2>
+                        <img src="../img/menus/brunch/steak-stack-menu.png" alt="Steak Stack Breakfast Special">
+                    </div>
+
+                    <div class="bfastSpecialDesc">
+                        <h2 class="steakStackHdr">Steak Stack</h2>
+                        <img src="../img/component/yellow-text-outline-box-right.png"
+                            alt="Steak Stack Breakfast Special" width="315" height="51"
+                            class="bFastSpecialTxtOutlineImg">
+                        <p>
+                            Maple syrup topped pancake steak, egg, cheese &amp; bacon burger
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bfastSpecialDesc">
-                    <h2 class="steakStackHdr">Steak Stack</h2>
-                    <img src="../img/component/yellow-text-outline-box-right.png" alt="Steak Stack Breakfast Special"
-                        width="315" height="51" class="bFastSpecialTxtOutlineImg">
-                    <p>
-                        Maple syrup topped pancake steak, egg, cheese &amp; bacon burger
-                    </p>
-                </div>
-            </div>
-
-            <!--    /////////////////////////////////////////////////////////////////////
+                <!--    /////////////////////////////////////////////////////////////////////
                     Breakfast Menu
 ///////////////////////////////////////////////////////////////////////////-->
 
-            <div class="breakfastMenuSection">
-                <div class="breakfastMenuWrapper">
-                    <h1>Breakfast</h1>
-                    <div class="breakfastMenu">
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Steak ’N’ Eggs</p>
-                                <p class="productPrice">5.5</p>
+                <div class="breakfastMenuSection">
+                    <div class="breakfastMenuWrapper">
+                        <h1>Breakfast</h1>
+                        <div class="breakfastMenu">
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Steak ’N’ Eggs</p>
+                                    <p class="productPrice">5.5</p>
+                                </div>
+                                <p class="itemDesc">Steak, eggs (fried or scrambled), with chips</p>
                             </div>
-                            <p class="itemDesc">Steak, eggs (fried or scrambled), with chips</p>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Steak ’N’ Bacon</p>
-                                <p class="productPrice">5.7</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Steak ’N’ Bacon</p>
+                                    <p class="productPrice">5.7</p>
+                                </div>
+                                <p class="itemDesc">Steak &amp; bacon, with chips</p>
                             </div>
-                            <p class="itemDesc">Steak &amp; bacon, with chips</p>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Steak ’N’ Hash</p>
-                                <p class="productPrice">5.65</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Steak ’N’ Hash</p>
+                                    <p class="productPrice">5.65</p>
+                                </div>
+                                <p class="itemDesc">Steak with a side of hash browns</p>
                             </div>
-                            <p class="itemDesc">Steak with a side of hash browns</p>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Steak ’N’ Potatoes</p>
-                                <p class="productPrice">5.45</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Steak ’N’ Potatoes</p>
+                                    <p class="productPrice">5.45</p>
+                                </div>
+                                <p class="itemDesc">Steak with onion fried potatoes</p>
                             </div>
-                            <p class="itemDesc">Steak with onion fried potatoes</p>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Steak ’N’ Pancakes</p>
-                                <p class="productPrice">7</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Steak ’N’ Pancakes</p>
+                                    <p class="productPrice">7</p>
+                                </div>
+                                <p class="itemDesc">Steak &amp; eggs (fried or scrambled) with pancakes &amp; syrup</p>
                             </div>
-                            <p class="itemDesc">Steak &amp; eggs (fried or scrambled) with pancakes &amp; syrup</p>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Steak ’N’ Waffles</p>
-                                <p class="productPrice">7</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Steak ’N’ Waffles</p>
+                                    <p class="productPrice">7</p>
+                                </div>
+                                <p class="itemDesc">Steak &amp; eggs (fried or scrambled) with waffles &amp; syrup</p>
                             </div>
-                            <p class="itemDesc">Steak &amp; eggs (fried or scrambled) with waffles &amp; syrup</p>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">The Full Steak Brekky</p>
-                                <p class="productPrice">8.5</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">The Full Steak Brekky</p>
+                                    <p class="productPrice">8.5</p>
+                                </div>
+                                <p class="itemDesc">The full english... with a twist</p>
                             </div>
-                            <p class="itemDesc">The full english... with a twist</p>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">The Steak Stack</p>
-                                <p class="productPrice">8.5</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">The Steak Stack</p>
+                                    <p class="productPrice">8.5</p>
+                                </div>
+                                <p class="itemDesc">Maple syrup topped pancake steak, egg, cheese &amp; bacon burger</p>
                             </div>
-                            <p class="itemDesc">Maple syrup topped pancake steak, egg, cheese &amp; bacon burger</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--    /////////////////////////////////////////////////////////////////////
+            <!--    /////////////////////////////////////////////////////////////////////
                     Hot Drinks Menu
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <section class="hotDrinksMenuSection">
-            <div class="hotDrinksMenuWrapper">
-                <h2>Hot Drinks</h2>
-                <div class="hotDrinksMenu">
+            <section class="hotDrinksMenuSection">
+                <div class="hotDrinksMenuWrapper">
+                    <h2>Hot Drinks</h2>
+                    <div class="hotDrinksMenu">
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Latte</p>
-                            <p class="productPrice">2.75</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Latte</p>
+                                <p class="productPrice">2.75</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Cappuccino</p>
-                            <p class="productPrice">2.75</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Cappuccino</p>
+                                <p class="productPrice">2.75</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Flat White</p>
-                            <p class="productPrice">2.7</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Flat White</p>
+                                <p class="productPrice">2.7</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Espresso</p>
-                            <p class="productPrice">2.5</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Espresso</p>
+                                <p class="productPrice">2.5</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Double Espresso</p>
-                            <p class="productPrice">2.95</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Double Espresso</p>
+                                <p class="productPrice">2.95</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Macchiatto</p>
-                            <p class="productPrice">2.55</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Macchiatto</p>
+                                <p class="productPrice">2.55</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Americano</p>
-                            <p class="productPrice">2.7</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Americano</p>
+                                <p class="productPrice">2.7</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Mocha</p>
-                            <p class="productPrice">2.95</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Mocha</p>
+                                <p class="productPrice">2.95</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Tea</p>
-                            <p class="productPrice">2.5</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Tea</p>
+                                <p class="productPrice">2.5</p>
+                            </div>
+                            <p class="itemDesc">English tea - Earl Grey - Rooibos</p>
                         </div>
-                        <p class="itemDesc">English tea - Earl Grey - Rooibos</p>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Herbal Tea</p>
-                            <p class="productPrice">2.5</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Herbal Tea</p>
+                                <p class="productPrice">2.5</p>
+                            </div>
+                            <p class="itemDesc">Strawberry - Fresh Mint - Green </p>
                         </div>
-                        <p class="itemDesc">Strawberry - Fresh Mint - Green </p>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Hot Chocolate</p>
-                            <p class="productPrice">2.75</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Hot Chocolate</p>
+                                <p class="productPrice">2.75</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="productItem">
-                        <div class="productTopInfo">
-                            <p class="productName">Hot Chocolate Oreo Wonder</p>
-                            <p class="productPrice">3.5</p>
+                        <div class="productItem">
+                            <div class="productTopInfo">
+                                <p class="productName">Hot Chocolate Oreo Wonder</p>
+                                <p class="productPrice">3.5</p>
+                            </div>
+                            <p class="itemDesc">Oreo flavoured hot chocolate, topped with Marshmallows </p>
                         </div>
-                        <p class="itemDesc">Oreo flavoured hot chocolate, topped with Marshmallows </p>
                     </div>
                 </div>
-            </div>
 
-            <!--    /////////////////////////////////////////////////////////////////////
+                <!--    /////////////////////////////////////////////////////////////////////
                     Hot Drinks Favourite Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-            <div class="hotDrinksFaveSection">
-                <div class="hotDrinksFaveHdrAndImg">
-                    <h2 class="hotDrinksFaveHdr">Breakfast Favourite</h2>
-                    <img src="../img/menus/brunch/oreo-choc-drink-menu.png"
-                        alt="Hot Chocholate Oreo Wonder Breakfast Favourite">
-                </div>
+                <div class="hotDrinksFaveSection">
+                    <div class="hotDrinksFaveHdrAndImg">
+                        <h2 class="hotDrinksFaveHdr">Breakfast Favourite</h2>
+                        <img src="../img/menus/brunch/oreo-choc-drink-menu.png"
+                            alt="Hot Chocholate Oreo Wonder Breakfast Favourite">
+                    </div>
 
-                <div class="hotDrinksFaveDesc">
-                    <h2 class="chocOreoDrinkHdr">Hot Chocolate Oreo Wonder</h2>
-                    <img src="../img/component/red-text-outline-box-right.png" alt="Hot Chocolate Oreo Wonder"
-                        width="315" height="51" class="hotDrinksSpecialTxtOutlineImg">
-                    <p>
-                        Oreo flavoured hot chocolate, topped
-                        with melting Marshmallows
-                    </p>
+                    <div class="hotDrinksFaveDesc">
+                        <h2 class="chocOreoDrinkHdr">Hot Chocolate Oreo Wonder</h2>
+                        <img src="../img/component/red-text-outline-box-right.png" alt="Hot Chocolate Oreo Wonder"
+                            width="315" height="51" class="hotDrinksSpecialTxtOutlineImg">
+                        <p>
+                            Oreo flavoured hot chocolate, topped
+                            with melting Marshmallows
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--    /////////////////////////////////////////////////////////////////////
+            <!--    /////////////////////////////////////////////////////////////////////
                         Refresher Special Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <section class="refresherSection">
-            <div class="refresherSpecialSection">
-                <div class="refresherSpecialHdrAndImg">
-                    <h2 class="refresherSpecialHdr">Refresher Special</h2>
-                    <img src="../img/menus/brunch/iced-tea-menu.png" alt="Iced Tea Refresher Special">
+            <section class="refresherSection">
+                <div class="refresherSpecialSection">
+                    <div class="refresherSpecialHdrAndImg">
+                        <h2 class="refresherSpecialHdr">Refresher Special</h2>
+                        <img src="../img/menus/brunch/iced-tea-menu.png" alt="Iced Tea Refresher Special">
+                    </div>
+
+                    <div class="refresherSpecialDesc">
+                        <h2 class="IcedTeaHdr">Tropical Iced Tea</h2>
+                        <img src="../img/component/yellow-text-outline-box-right.png"
+                            alt="Tropical Iced Tea Refresher Special" width="315" height="51"
+                            class="refresherSpecialTxtOutlineImg">
+                        <p class="icedTeaDesc">
+                            Homemade tropical iced tea, topped with
+                            fresh fruit, served with crushed ice
+                        </p>
+                    </div>
                 </div>
 
-                <div class="refresherSpecialDesc">
-                    <h2 class="IcedTeaHdr">Tropical Iced Tea</h2>
-                    <img src="../img/component/yellow-text-outline-box-right.png"
-                        alt="Tropical Iced Tea Refresher Special" width="315" height="51"
-                        class="refresherSpecialTxtOutlineImg">
-                    <p class="icedTeaDesc">
-                        Homemade tropical iced tea, topped with
-                        fresh fruit, served with crushed ice
-                    </p>
-                </div>
-            </div>
-
-            <!--    /////////////////////////////////////////////////////////////////////
+                <!--    /////////////////////////////////////////////////////////////////////
                     Refresher Menu
 ///////////////////////////////////////////////////////////////////////////-->
 
-            <div class="refresherMenuSection">
-                <div class="refresherMenuWrapper">
-                    <h2>Cold Drinks</h2>
-                    <div class="refresherMenu">
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Freshly Squeezed Orange Juice</p>
-                                <p class="productPrice">2.75</p>
+                <div class="refresherMenuSection">
+                    <div class="refresherMenuWrapper">
+                        <h2>Cold Drinks</h2>
+                        <div class="refresherMenu">
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Freshly Squeezed Orange Juice</p>
+                                    <p class="productPrice">2.75</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Pressed Apple Juice</p>
-                                <p class="productPrice">2</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Pressed Apple Juice</p>
+                                    <p class="productPrice">2</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Cranberry Juice</p>
-                                <p class="productPrice">2.5</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Cranberry Juice</p>
+                                    <p class="productPrice">2.5</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Tomato Juice</p>
-                                <p class="productPrice">2.5</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Tomato Juice</p>
+                                    <p class="productPrice">2.5</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Water - Still / Sparkling 330ml</p>
-                                <p class="productPrice">2</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Water - Still / Sparkling 330ml</p>
+                                    <p class="productPrice">2</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Water - Still / Sparkling 750ml</p>
-                                <p class="productPrice">2.5</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Water - Still / Sparkling 750ml</p>
+                                    <p class="productPrice">2.5</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Coke / Diet Coke / Pepsi / Sprite</p>
-                                <p class="productPrice">1.5</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Coke / Diet Coke / Pepsi / Sprite</p>
+                                    <p class="productPrice">1.5</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">Tropical Iced Tea</p>
-                                <p class="productPrice">2.75</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">Tropical Iced Tea</p>
+                                    <p class="productPrice">2.75</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="productItem">
-                            <div class="productTopInfo">
-                                <p class="productName">French Lemonade</p>
-                                <p class="productPrice">2.5</p>
+                            <div class="productItem">
+                                <div class="productTopInfo">
+                                    <p class="productName">French Lemonade</p>
+                                    <p class="productPrice">2.5</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+        </div>
     </main>
 
     <!--    /////////////////////////////////////////////////////////////////////
@@ -514,7 +456,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
-
 </body>
 
 </html>

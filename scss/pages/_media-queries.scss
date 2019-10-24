@@ -5,14 +5,12 @@
 /*  Large Screens & Desktop  */
 
 @media only screen and (max-width: 1000px) {
+    nav.top-nav {
 
-    // div.mobileMenuNavBar {
-    //     display: flex;
-    // } // fix and get rid
-
-    // nav.top-nav {
-    //     display: none;
-    // } // fix and get rid
+        .container {
+            padding: 1.5rem 0;
+        }
+    }
 
     .hamburger-btn {
         display: flex;
@@ -366,15 +364,14 @@
             Media Queries: Menu - Brunch
 =================================================================== */
 
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1200px) {}
-
 /*  Small Laptop Screens  */
 
 @media only screen and (max-width: 1000px) {
-    nav.menuNavSection {
-        margin-top: 10rem !important;
+    .brunchOpeningHours {
+
+        p {
+            padding-left: 0;
+        }
     }
 }
 
@@ -382,96 +379,66 @@
 
 @media only screen and (max-width: 900px) {
 
-    div.brunchOpeningHours {
-        p {
-            margin-bottom: 5rem;
+    .bfastMenuSection {
+        padding: 0;
+        margin-top: 5rem;
+
+        div.bfastSpecialSection {
+            display: none;
+        }
+
+        .breakfastMenuWrapper {
+            padding-left: 0;
+
+            h1 {
+                margin-bottom: 2rem;
+            }
         }
     }
 
-    div.breakfastMenuWrapper h1 {
-        margin-bottom: 2rem !important;
-        padding-bottom: 0;
+    .hotDrinksMenuSection {
+        padding: 0;
+        margin-top: 5rem;
+
+        .hotDrinksMenuWrapper {
+            h2 {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .hotDrinksFaveSection {
+            display: none;
+        }
     }
 
-    div.hotDrinksMenuWrapper h2,
-    div.refresherMenuWrapper h2 {
-        margin-bottom: 2rem;
-    }
+    .refresherSection {
+        padding: 0;
+        margin-top: 5rem;
 
-    div.bfastSpecialSection,
-    div.hotDrinksFaveSection,
-    div.refresherSpecialSection {
-        display: none;
-    }
+        .refresherSpecialSection {
+            display: none;
+        }
 
-    div.breakfastMenuSection,
-    div.hotDrinksMenuWrapper,
-    div.refresherMenuSection {
-        width: 100%;
-    }
+        .refresherMenuSection {
+            padding: 0;
 
-    section.hotDrinksMenuSection,
-    section.refresherMenuSection,
-    section.refresherSection {
-        margin-top: 3rem;
-    }
-
-    div.hotDrinksMenu,
-    div.breakfastMenu {
-        p.itemDesc {
-            width: 80%;
+            .refresherMenuWrapper {
+                h2 {
+                    margin-bottom: 2rem;
+                }
+            }
         }
     }
 }
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 768px) {}
 
 /*  Medium Phones  */
 
-@media only screen and (max-width: 600px) {
-    div.brunchOpeningHours {
+@media only screen and (max-width: 650px) {
+    .brunchOpeningHours {
+
         p {
-            padding-top: 2rem;
-            padding-left: 3rem;
-            padding-right: 3rem;
             width: 100%;
-            margin-bottom: 2rem;
-            ;
         }
-    }
-
-    section.bfastMenuSection,
-    section.hotDrinksMenuSection {
-        padding: 0 3rem;
-    }
-
-    section.refresherSection {
-        padding-bottom: 5rem;
-        padding-right: 3rem;
-        padding-left: 3rem;
-    }
-}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 400px) {
-    div.brunchOpeningHours {
-        p {
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }
-    }
-
-    section.bfastMenuSection,
-    section.hotDrinksMenuSection {
-        padding: 0 2rem;
-    }
-
-    section.refresherSection {
-        padding-right: 2rem;
-        padding-left: 2rem;
     }
 }
 

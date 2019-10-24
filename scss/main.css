@@ -158,6 +158,7 @@ header {
 }
 
 main {
+  margin-top: 15rem;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -327,16 +328,7 @@ nav.top-nav .container {
 /* ===================================================================
         Menu Nav
 =================================================================== */
-.menuNavSection {
-  margin: 0 auto;
-  width: 90vw;
-  max-width: 1200px;
-}
-
 .menuNavSection ul.menuNav {
-  margin-top: 8rem;
-  padding-left: 2rem;
-  padding-top: 1.5rem;
   border-bottom: solid rgba(255, 255, 255, 0.5) 0.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,7 +338,6 @@ nav.top-nav .container {
 }
 
 .menuNavSection ul.menuNav li {
-  padding-left: 3rem;
   font-size: 2rem;
 }
 
@@ -359,7 +350,7 @@ nav.top-nav .container {
   background: inherit;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  padding: 0 2.5rem;
+  padding: 0 5rem;
   font-size: 2rem;
 }
 
@@ -378,7 +369,6 @@ nav.top-nav .container {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   margin-bottom: 1.5rem;
-  padding: 0 2.5rem;
   font-size: 2rem;
 }
 
@@ -470,6 +460,36 @@ nav.top-nav .container {
 .mobileMenuSocialsBtns i.fab:hover,
 .mobileMenuSocialsBtns a:hover {
   color: #fff;
+}
+
+/* ===================================================================
+                        Homepage Footer
+=================================================================== */
+.homepage-footer p.homepageCopyright {
+  margin-top: auto;
+  padding-bottom: 1.6rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #c6c6c6;
+  text-align: center;
+}
+
+.homepage-footer p.homepageCopyright a {
+  text-decoration: none;
+  color: #c6c6c6;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.homepage-footer p.homepageCopyright a:hover {
+  color: #D89033;
+  opacity: 1;
 }
 
 /* ===================================================================
@@ -594,13 +614,12 @@ h2.error-alert {
 =================================================================== */
 .homepage {
   width: 100vw;
-  margin: 0 auto;
   overflow: hidden;
 }
 
 .homePageImgSection {
   width: 100%;
-  margin: 13rem auto 0 auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -608,7 +627,6 @@ h2.error-alert {
   font-size: 2.6rem;
   font-weight: 300;
   color: #990000;
-  margin-top: 4rem;
 }
 
 .homePageImgSection .heroImage {
@@ -904,59 +922,26 @@ div.responisveSeeSpecialsBtn img {
 }
 
 /* ===================================================================
-                        Footer
-=================================================================== */
-.homepage-footer p.homepageCopyright {
-  margin-top: auto;
-  padding-bottom: 1.6rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: #c6c6c6;
-  text-align: center;
-}
-
-.homepage-footer p.homepageCopyright a {
-  text-decoration: none;
-  color: #c6c6c6;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
-  font-weight: 300;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.homepage-footer p.homepageCopyright a:hover {
-  color: #D89033;
-  opacity: 1;
-}
-
-/* ===================================================================
         Brunch Opening hours
 =================================================================== */
-div.brunchOpeningHours p {
+.brunchOpeningHours p {
   width: 80%;
   font-size: 1.6rem;
   color: #c6c6c6;
   font-weight: 400;
-  padding-top: 2rem;
-  padding-left: 7.5rem;
-  margin-bottom: 10rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
 }
 
 /* ===================================================================
         Breakfast Special Section
 =================================================================== */
-section.bfastMenuSection {
+.bfastMenuSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 7.5rem;
+  padding: 0 2rem;
+  margin-top: 8rem;
 }
 
 /*  --------    Breakfast Special: Header    --------  */
@@ -969,17 +954,16 @@ div.bfastSpecialSection {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 3rem;
-  width: 45%;
 }
 
-div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr {
+div.bfastSpecialSection div.bfastSpecialHdrAndImg .bfastSpecialHdr {
   font-size: 2.5rem;
   font-weight: 400;
   color: #D89033;
   padding-bottom: 2rem;
 }
 
-div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:before, div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:after {
+div.bfastSpecialSection div.bfastSpecialHdrAndImg .bfastSpecialHdr:before, div.bfastSpecialSection div.bfastSpecialHdrAndImg .bfastSpecialHdr:after {
   background-color: #D89033;
   display: inline-block;
   content: '';
@@ -989,11 +973,11 @@ div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecia
   vertical-align: middle;
 }
 
-div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:before.bfastSpecialHdr:before, div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:after.bfastSpecialHdr:before {
+div.bfastSpecialSection div.bfastSpecialHdrAndImg .bfastSpecialHdr:before:before, div.bfastSpecialSection div.bfastSpecialHdrAndImg .bfastSpecialHdr:after:before {
   right: 2rem;
 }
 
-div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:before.bfastSpecialHdr:before.bfastSpecialHdr:after, div.bfastSpecialSection div.bfastSpecialHdrAndImg h2.bfastSpecialHdr.bfastSpecialHdr:after.bfastSpecialHdr:before.bfastSpecialHdr:after {
+div.bfastSpecialSection div.bfastSpecialHdrAndImg .bfastSpecialHdr:before:before:after, div.bfastSpecialSection div.bfastSpecialHdrAndImg .bfastSpecialHdr:after:before:after {
   left: 2rem;
 }
 
@@ -1013,11 +997,11 @@ div.bfastSpecialDesc p {
 /* ===================================================================
         Breakfast Menu
 =================================================================== */
-div.breakfastMenuSection {
-  width: 55%;
+.breakfastMenuSection {
+  width: 100%;
 }
 
-div.breakfastMenuSection div.breakfastMenuWrapper {
+.breakfastMenuSection .breakfastMenuWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1025,9 +1009,13 @@ div.breakfastMenuSection div.breakfastMenuWrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 6rem;
 }
 
-div.breakfastMenuSection div.breakfastMenuWrapper h1 {
+.breakfastMenuSection .breakfastMenuWrapper h1 {
   font-size: 3.5rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1036,7 +1024,15 @@ div.breakfastMenuSection div.breakfastMenuWrapper h1 {
   padding-bottom: 0;
 }
 
-div.breakfastMenuSection div.breakfastMenuWrapper div.breakfastMenu div.productItem div.productTopInfo {
+.breakfastMenuSection .breakfastMenuWrapper div.breakfastMenu div.productItem {
+  padding-bottom: 2rem;
+}
+
+.breakfastMenuSection .breakfastMenuWrapper div.breakfastMenu div.productItem:last-child {
+  padding-bottom: 0;
+}
+
+.breakfastMenuSection .breakfastMenuWrapper div.breakfastMenu div.productItem div.productTopInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1045,36 +1041,31 @@ div.breakfastMenuSection div.breakfastMenuWrapper div.breakfastMenu div.productI
           justify-content: space-between;
 }
 
-div.breakfastMenuSection div.breakfastMenuWrapper div.breakfastMenu div.productItem div.productTopInfo p.productName,
-div.breakfastMenuSection div.breakfastMenuWrapper div.breakfastMenu div.productItem div.productTopInfo p.productPrice {
+.breakfastMenuSection .breakfastMenuWrapper div.breakfastMenu div.productItem div.productTopInfo p.productName,
+.breakfastMenuSection .breakfastMenuWrapper div.breakfastMenu div.productItem div.productTopInfo p.productPrice {
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-div.breakfastMenuSection div.breakfastMenuWrapper div.breakfastMenu div.productItem p.itemDesc {
-  padding-bottom: .2rem;
+.breakfastMenuSection .breakfastMenuWrapper div.breakfastMenu div.productItem p.itemDesc {
   font-size: 1.4rem;
-  padding: 0 0 2rem 0;
   font-weight: 300;
 }
 
 /* ===================================================================
         Hot Drinks Menu Section
 =================================================================== */
-section.hotDrinksMenuSection {
+.hotDrinksMenuSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 7.5rem;
+  padding: 0 2rem;
   margin-top: 10rem;
 }
 
 /*  --------    Hot Drinks Menu    --------  */
 div.hotDrinksMenuWrapper {
-  width: 55%;
+  width: 100%;
 }
 
 div.hotDrinksMenuWrapper h2 {
@@ -1086,6 +1077,10 @@ div.hotDrinksMenuWrapper h2 {
 
 div.hotDrinksMenuWrapper div.hotDrinksMenu div.productItem {
   padding-bottom: 2rem;
+}
+
+div.hotDrinksMenuWrapper div.hotDrinksMenu div.productItem:last-child {
+  padding-bottom: 0;
 }
 
 div.hotDrinksMenuWrapper div.hotDrinksMenu div.productItem div.productTopInfo {
@@ -1121,7 +1116,7 @@ div.hotDrinksFaveSection {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 3rem;
-  width: 45%;
+  padding-left: 6rem;
   /*  --------    Hot Drinks Fave Description: Mini Header    --------  */
 }
 
@@ -1177,14 +1172,11 @@ div.hotDrinksFaveSection div.hotDrinksFaveDesc p {
 /* ===================================================================
         Refresher Menu Section
 =================================================================== */
-section.refresherSection {
+.refresherSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 7.5rem 5rem 7.5rem;
+  padding: 0 2rem;
   margin-top: 10rem;
 }
 
@@ -1198,7 +1190,6 @@ div.refresherSpecialSection {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 3rem;
-  width: 45%;
 }
 
 div.refresherSpecialSection div.refresherSpecialHdrAndImg h2.refresherSpecialHdr {
@@ -1242,11 +1233,12 @@ div.refresherSpecialDesc p.icedTeaDesc {
 /* ===================================================================
         Refresher Menu
 =================================================================== */
-div.refresherMenuSection {
+.refresherMenuSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 55%;
+  width: 100%;
+  padding-left: 6rem;
 }
 
 div.refresherMenuWrapper {
@@ -2385,6 +2377,9 @@ section.privacyContentSection div.privacyContentWrapper a {
 =================================================================== */
 /*  Large Screens & Desktop  */
 @media only screen and (max-width: 1000px) {
+  nav.top-nav .container {
+    padding: 1.5rem 0;
+  }
   .hamburger-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2639,82 +2634,57 @@ section.privacyContentSection div.privacyContentWrapper a {
 /* ===================================================================
             Media Queries: Menu - Brunch
 =================================================================== */
-/*  Large Screens & Desktop  */
 /*  Small Laptop Screens  */
 @media only screen and (max-width: 1000px) {
-  nav.menuNavSection {
-    margin-top: 10rem !important;
+  .brunchOpeningHours p {
+    padding-left: 0;
   }
 }
 
 /*  Tablets  */
 @media only screen and (max-width: 900px) {
-  div.brunchOpeningHours p {
-    margin-bottom: 5rem;
+  .bfastMenuSection {
+    padding: 0;
+    margin-top: 5rem;
   }
-  div.breakfastMenuWrapper h1 {
-    margin-bottom: 2rem !important;
-    padding-bottom: 0;
-  }
-  div.hotDrinksMenuWrapper h2,
-  div.refresherMenuWrapper h2 {
-    margin-bottom: 2rem;
-  }
-  div.bfastSpecialSection,
-  div.hotDrinksFaveSection,
-  div.refresherSpecialSection {
+  .bfastMenuSection div.bfastSpecialSection {
     display: none;
   }
-  div.breakfastMenuSection,
-  div.hotDrinksMenuWrapper,
-  div.refresherMenuSection {
-    width: 100%;
+  .bfastMenuSection .breakfastMenuWrapper {
+    padding-left: 0;
   }
-  section.hotDrinksMenuSection,
-  section.refresherMenuSection,
-  section.refresherSection {
-    margin-top: 3rem;
-  }
-  div.hotDrinksMenu p.itemDesc,
-  div.breakfastMenu p.itemDesc {
-    width: 80%;
-  }
-}
-
-/*  Larger Phones  */
-/*  Medium Phones  */
-@media only screen and (max-width: 600px) {
-  div.brunchOpeningHours p {
-    padding-top: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    width: 100%;
+  .bfastMenuSection .breakfastMenuWrapper h1 {
     margin-bottom: 2rem;
   }
-  section.bfastMenuSection,
-  section.hotDrinksMenuSection {
-    padding: 0 3rem;
+  .hotDrinksMenuSection {
+    padding: 0;
+    margin-top: 5rem;
   }
-  section.refresherSection {
-    padding-bottom: 5rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+  .hotDrinksMenuSection .hotDrinksMenuWrapper h2 {
+    margin-bottom: 2rem;
+  }
+  .hotDrinksMenuSection .hotDrinksFaveSection {
+    display: none;
+  }
+  .refresherSection {
+    padding: 0;
+    margin-top: 5rem;
+  }
+  .refresherSection .refresherSpecialSection {
+    display: none;
+  }
+  .refresherSection .refresherMenuSection {
+    padding: 0;
+  }
+  .refresherSection .refresherMenuSection .refresherMenuWrapper h2 {
+    margin-bottom: 2rem;
   }
 }
 
-/*  Small Phones  */
-@media only screen and (max-width: 400px) {
-  div.brunchOpeningHours p {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  section.bfastMenuSection,
-  section.hotDrinksMenuSection {
-    padding: 0 2rem;
-  }
-  section.refresherSection {
-    padding-right: 2rem;
-    padding-left: 2rem;
+/*  Medium Phones  */
+@media only screen and (max-width: 650px) {
+  .brunchOpeningHours p {
+    width: 100%;
   }
 }
 

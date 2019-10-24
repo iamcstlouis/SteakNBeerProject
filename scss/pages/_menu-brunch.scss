@@ -2,16 +2,15 @@
         Brunch Opening hours
 =================================================================== */
 
-div.brunchOpeningHours {
+.brunchOpeningHours {
 
     p {
         width: 80%;
         font-size: 1.6rem;
         color: $clr-site-offWhite;
         font-weight: 400;
-        padding-top: 2rem;
-        padding-left: 7.5rem;
-        margin-bottom: 10rem;
+        padding-left: 2rem;
+        margin-top: 2rem;
     }
 }
 
@@ -19,10 +18,10 @@ div.brunchOpeningHours {
         Breakfast Special Section
 =================================================================== */
 
-section.bfastMenuSection {
+.bfastMenuSection {
     display: flex;
-    justify-content: space-between;
-    padding: 0 7.5rem;
+    padding: 0 2rem;
+    margin-top: 8rem;
 }
 
 /*  --------    Breakfast Special: Header    --------  */
@@ -31,18 +30,17 @@ div.bfastSpecialSection {
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
-    width: 45%;
 
     div.bfastSpecialHdrAndImg {
 
-        h2.bfastSpecialHdr {
+        .bfastSpecialHdr {
             font-size: 2.5rem;
             font-weight: 400;
             color: $clr-site-yellow;
             padding-bottom: 2rem;
 
-            &.bfastSpecialHdr:before,
-            &.bfastSpecialHdr:after {
+            &:before,
+            &:after {
                 background-color: $clr-site-yellow;
                 display: inline-block;
                 content: '';
@@ -51,10 +49,10 @@ div.bfastSpecialSection {
                 position: relative;
                 vertical-align: middle;
 
-                &.bfastSpecialHdr:before {
+                &:before {
                     right: 2rem;
 
-                    &.bfastSpecialHdr:after {
+                    &:after {
                         left: 2rem;
                     }
                 }
@@ -84,12 +82,14 @@ div.bfastSpecialDesc {
         Breakfast Menu
 =================================================================== */
 
-div.breakfastMenuSection {
-    width: 55%;
+.breakfastMenuSection {
+    width: 100%;
 
-    div.breakfastMenuWrapper {
+    .breakfastMenuWrapper {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        padding-left: 6rem;
 
         h1 {
             font-size: 3.5rem;
@@ -103,6 +103,11 @@ div.breakfastMenuSection {
         div.breakfastMenu {
 
             div.productItem {
+                padding-bottom: 2rem;
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
 
                 div.productTopInfo {
                     display: flex;
@@ -117,9 +122,7 @@ div.breakfastMenuSection {
                 }
 
                 p.itemDesc {
-                    padding-bottom: .2rem;
                     font-size: 1.4rem;
-                    padding: 0 0 2rem 0;
                     font-weight: 300;
                 }
             }
@@ -131,17 +134,16 @@ div.breakfastMenuSection {
         Hot Drinks Menu Section
 =================================================================== */
 
-section.hotDrinksMenuSection {
+.hotDrinksMenuSection {
     display: flex;
-    justify-content: space-between;
-    padding: 0 7.5rem;
+    padding: 0 2rem;
     margin-top: 10rem;
 }
 
 /*  --------    Hot Drinks Menu    --------  */
 
 div.hotDrinksMenuWrapper {
-    width: 55%;
+    width: 100%;
 
     h2 {
         font-size: 3.5rem;
@@ -154,6 +156,10 @@ div.hotDrinksMenuWrapper {
 
         div.productItem {
             padding-bottom: 2rem;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
 
             div.productTopInfo {
                 display: flex;
@@ -184,7 +190,7 @@ div.hotDrinksFaveSection {
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
-    width: 45%;
+    padding-left: 6rem;
 
     div.hotDrinksFaveHdrAndImg {
         align-self: flex-end;
@@ -243,10 +249,9 @@ div.hotDrinksFaveSection {
         Refresher Menu Section
 =================================================================== */
 
-section.refresherSection {
+.refresherSection {
     display: flex;
-    justify-content: space-between;
-    padding: 0 7.5rem 5rem 7.5rem;
+    padding: 0 2rem;
     margin-top: 10rem;
 }
 
@@ -256,7 +261,6 @@ div.refresherSpecialSection {
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
-    width: 45%;
 
     div.refresherSpecialHdrAndImg {
 
@@ -309,9 +313,10 @@ div.refresherSpecialDesc {
         Refresher Menu
 =================================================================== */
 
-div.refresherMenuSection {
+.refresherMenuSection {
     display: flex;
-    width: 55%;
+    width: 100%;
+    padding-left: 6rem;
 }
 
 div.refresherMenuWrapper {

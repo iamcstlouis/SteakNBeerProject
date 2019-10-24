@@ -2,14 +2,15 @@
         Extensive Range Of Beers
 =================================================================== */
 
-div.extensiveRangeOfBeers {
+.extensiveRangeOfBeers {
 
     p {
         width: 85vw;
         font-size: 1.6rem;
         color: $clr-site-offWhite;
         font-weight: 400;
-        padding: 2rem 0 0 7.5rem;
+        padding-left: 2rem;
+        margin-top: 2rem;
     }
 }
 
@@ -17,14 +18,13 @@ div.extensiveRangeOfBeers {
         Beers Featured Image Section
 =================================================================== */
 
-section.beersSection {
+.beersSection {
     display: flex;
     margin-top: 6rem;
-    padding: 0 7.5rem;
+    padding: 0 2rem;
 }
 
-div.beersFeatImgSection {
-    width: 40%;
+.beersFeatImgSection {
     padding-top: 10rem;
 }
 
@@ -32,12 +32,11 @@ div.beersFeatImgSection {
         Beers Menu
 =================================================================== */
 
-div.beersMenuSection {
-    width: 60%;
+.beersMenuSection {
+    width: 100%;
 
-    div.beersMenuWrapper {
-        margin-left: auto;
-        padding-left: 5rem;
+    .beersMenuWrapper {
+        padding-left: 6rem;
 
         h2 {
             font-size: 3.5rem;
@@ -47,25 +46,24 @@ div.beersMenuSection {
     }
 }
 
-div.beersMenu {
+.beersMenu {
     display: flex;
     margin: -3.5rem 0 10rem 0;
     font-size: 1.6rem;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-right: 5rem;
 
-    div.beerNameCol {
+    .beerNameCol {
         font-weight: 700;
 
-        p.beerName {
+        .beerName {
             padding-bottom: 2rem;
             font-size: 1.6rem;
         }
     }
 
-    div.PintsCol {
+    .PintsCol {
         text-align: right;
 
         h3 {
@@ -142,12 +140,12 @@ div.beersMenu {
         Ciders Menu
 =================================================================== */
 
-section.ciderMenuSection {
+.ciderMenuSection {
     display: flex;
-    padding: 0 7.5rem;
+    padding: 0 2rem;
 
     .ciderMenuWrapper {
-        width: 60%;
+        width: 100%;
 
         h2 {
             font-size: 3.5rem;
@@ -157,7 +155,7 @@ section.ciderMenuSection {
         }
 
         .ciderMenu {
-            margin-bottom: 10rem;
+            padding-right: 6rem;
 
             .productItem {
                 padding-bottom: 2rem;
@@ -169,8 +167,6 @@ section.ciderMenuSection {
                     align-items: flex-end;
                     -webkit-box-pack: justify;
                     justify-content: space-between;
-                    padding-right: 5rem;
-
 
                     .productName,
                     .productPrice {
@@ -189,11 +185,5 @@ section.ciderMenuSection {
 
 .cidersFeatImgSection {
     display: flex;
-    width: 40%;
     padding-top: 8rem;
-    padding-right: 5rem;
-
-    .ciderFeatImg {
-        margin-left: auto;
-    }
 }

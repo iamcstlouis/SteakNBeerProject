@@ -4,7 +4,6 @@
 
 .homepage {
     width: 100vw;
-    // margin: 13rem auto 0 auto;
     overflow: hidden;
 }
 
@@ -30,9 +29,9 @@
             See Specials Btn
 =================================================================== */
 
-div.seeSpecialsBtnSection {
+.seeSpecialsBtnSection {
 
-    div.seeSpecialsWrapper {
+    .seeSpecialsWrapper {
         position: relative;
         top: -42rem;
         left: 8rem;

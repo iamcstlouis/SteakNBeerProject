@@ -638,13 +638,13 @@ h2.error-alert {
 /* ===================================================================
             See Specials Btn
 =================================================================== */
-div.seeSpecialsBtnSection div.seeSpecialsWrapper {
+.seeSpecialsBtnSection .seeSpecialsWrapper {
   position: relative;
   top: -42rem;
   left: 8rem;
 }
 
-div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn {
+.seeSpecialsBtnSection .seeSpecialsWrapper a.seeSpecialsBtn {
   font-size: 1.6rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -660,17 +660,17 @@ div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn {
           transform: rotate(-90deg);
 }
 
-div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn:visited {
+.seeSpecialsBtnSection .seeSpecialsWrapper a.seeSpecialsBtn:visited {
   color: #990000;
 }
 
-div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn:hover {
+.seeSpecialsBtnSection .seeSpecialsWrapper a.seeSpecialsBtn:hover {
   color: #3e0303;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn:active {
+.seeSpecialsBtnSection .seeSpecialsWrapper a.seeSpecialsBtn:active {
   color: #990000;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
@@ -1274,48 +1274,43 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
 /* ===================================================================
         For Allergy Info 
 =================================================================== */
-div.forAllergyInfo p {
+.forAllergyInfo p {
   width: 90vw;
   font-size: 1.6rem;
   color: #c6c6c6;
   font-weight: 400;
-  padding: 2rem 0 0 7.5rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
 }
 
 /* ===================================================================
         Nibbles Menu
 =================================================================== */
-section.nibblesMenuSection {
+.nibblesMenuSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 10rem;
-  padding: 0 7.5rem;
+  margin-top: 8rem;
+  padding: 0 2rem;
 }
 
-section.nibblesMenuSection div.nibblesMenuWrapper {
-  width: 55%;
+.nibblesMenuSection .nibblesMenuWrapper {
+  width: 100%;
+  padding-right: 6rem;
 }
 
-section.nibblesMenuSection div.nibblesMenuWrapper h2 {
+.nibblesMenuSection .nibblesMenuWrapper h2 {
   font-size: 3.5rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 4.5rem;
 }
 
-section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu {
-  width: 100%;
-}
-
-section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem {
+.nibblesMenuSection .nibblesMenuWrapper .nibblesMenu .productItem {
   padding-bottom: 2rem;
 }
 
-section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem .productTopInfo {
+.nibblesMenuSection .nibblesMenuWrapper .nibblesMenu .productItem .productTopInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1324,13 +1319,13 @@ section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem .pro
           justify-content: space-between;
 }
 
-section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem .productTopInfo .productName,
-section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem .productTopInfo .productPrice {
+.nibblesMenuSection .nibblesMenuWrapper .nibblesMenu .productItem .productTopInfo .productName,
+.nibblesMenuSection .nibblesMenuWrapper .nibblesMenu .productItem .productTopInfo .productPrice {
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem .itemDesc {
+.nibblesMenuSection .nibblesMenuWrapper .nibblesMenu .productItem .itemDesc {
   padding-bottom: .2rem;
   font-size: 1.4rem;
   font-weight: 300;
@@ -1339,29 +1334,28 @@ section.nibblesMenuSection div.nibblesMenuWrapper .nibblesMenu .productItem .ite
 /* ===================================================================
         Featured Nibbles Section
 =================================================================== */
-div.nibblesFeatImgSection {
-  width: 45%;
+.nibblesFeatImgSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper {
+.nibblesFeatImgSection .nibblesHdrAndImgWrapper {
   margin-left: auto;
 }
 
-div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg {
+.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg {
   width: 100%;
 }
 
-div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr {
+.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr {
   font-size: 2.5rem;
   font-weight: 400;
   margin: 3rem 0 3.7rem 0;
   color: #990000;
 }
 
-div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before, div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after {
+.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before, .nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after {
   background-color: #990000;
   display: inline-block;
   content: '';
@@ -1371,11 +1365,11 @@ div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.ni
   vertical-align: middle;
 }
 
-div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before.nibblesHdr:before, div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after.nibblesHdr:before {
+.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before.nibblesHdr:before, .nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after.nibblesHdr:before {
   right: 2rem;
 }
 
-div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before.nibblesHdr:before.nibblesHdr:after, div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after.nibblesHdr:before.nibblesHdr:after {
+.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before.nibblesHdr:before.nibblesHdr:after, .nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after.nibblesHdr:before.nibblesHdr:after {
   left: 2rem;
 }
 
@@ -1398,30 +1392,26 @@ div.nibblesFeatImgSection div.nibblesHdrAndImgWrapper div.nibblesHdrAndImg h2.ni
 /* ===================================================================
         Featured Steak 'N' Beer Section
 =================================================================== */
-section.SnBSection {
+.SnBSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 10rem;
-  padding: 0 7.5rem;
+  padding: 0 2rem;
 }
 
-section.SnBSection div.featSnBWrapper {
-  width: 55%;
-}
-
-section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg {
+.SnBSection .featSnBWrapper .featSnBHdrAndImg {
   padding-top: 3rem;
 }
 
-section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr {
+.SnBSection .featSnBWrapper .featSnBHdrAndImg .SnBHdr {
   font-size: 2.5rem;
   font-weight: 400;
   margin: 0 0 3.7rem 0;
   color: #D89033;
 }
 
-section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:before, section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:after {
+.SnBSection .featSnBWrapper .featSnBHdrAndImg .SnBHdr.SnBHdr:before, .SnBSection .featSnBWrapper .featSnBHdrAndImg .SnBHdr.SnBHdr:after {
   background-color: #D89033;
   display: inline-block;
   content: '';
@@ -1431,25 +1421,25 @@ section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:befo
   vertical-align: middle;
 }
 
-section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:before.SnBHdr:before, section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:after.SnBHdr:before {
+.SnBSection .featSnBWrapper .featSnBHdrAndImg .SnBHdr.SnBHdr:before.SnBHdr:before, .SnBSection .featSnBWrapper .featSnBHdrAndImg .SnBHdr.SnBHdr:after.SnBHdr:before {
   right: 2rem;
 }
 
-section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:before.SnBHdr:before.SnBHdr:after, section.SnBSection div.featSnBWrapper div.featSnBHdrAndImg h2.SnBHdr.SnBHdr:after.SnBHdr:before.SnBHdr:after {
+.SnBSection .featSnBWrapper .featSnBHdrAndImg .SnBHdr.SnBHdr:before.SnBHdr:before.SnBHdr:after, .SnBSection .featSnBWrapper .featSnBHdrAndImg .SnBHdr.SnBHdr:after.SnBHdr:before.SnBHdr:after {
   left: 2rem;
 }
 
-div.featSnBDescSection {
+.featSnBDescSection {
   margin-bottom: 5rem;
 }
 
-div.featSnBDescSection h2.SnBSubHdr {
+.featSnBDescSection h2.SnBSubHdr {
   margin: 2rem 0;
   font-size: 2rem;
   font-weight: 700;
 }
 
-div.featSnBDescSection p.featSnBDesc {
+.featSnBDescSection p.featSnBDesc {
   width: 30rem;
   font-size: 1.4rem;
   margin-top: -4.7rem;
@@ -1458,32 +1448,33 @@ div.featSnBDescSection p.featSnBDesc {
 /* ===================================================================
         Steak Mains Menu
 =================================================================== */
-div.SnBMenuSection {
-  width: 55%;
+.SnBMenuSection {
+  width: 100%;
+  padding-left: 6rem;
 }
 
-div.SnBMenuSection h2 {
+.SnBMenuSection h2 {
   font-size: 3.5rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 4.5rem;
 }
 
-div.SnBMenuSection p.steaksMainsDesc {
+.SnBMenuSection .steaksMainsDesc {
   font-size: 1.6rem;
   width: 90%;
   margin-bottom: 3rem;
 }
 
-div.SnBMenuSection div.SnBMenu {
+.SnBMenuSection .SnBMenu {
   width: 100%;
 }
 
-div.SnBMenuSection div.SnBMenu .productItem {
+.SnBMenuSection .SnBMenu .productItem {
   padding-bottom: 2rem;
 }
 
-div.SnBMenuSection div.SnBMenu .productItem .productTopInfo {
+.SnBMenuSection .SnBMenu .productItem .productTopInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1492,13 +1483,13 @@ div.SnBMenuSection div.SnBMenu .productItem .productTopInfo {
           justify-content: space-between;
 }
 
-div.SnBMenuSection div.SnBMenu .productItem .productTopInfo .productName,
-div.SnBMenuSection div.SnBMenu .productItem .productTopInfo .productPrice {
+.SnBMenuSection .SnBMenu .productItem .productTopInfo .productName,
+.SnBMenuSection .SnBMenu .productItem .productTopInfo .productPrice {
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-div.SnBMenuSection div.SnBMenu .productItem .itemDesc {
+.SnBMenuSection .SnBMenu .productItem .itemDesc {
   padding-bottom: .2rem;
   font-size: 1.4rem;
   font-weight: 300;
@@ -1507,34 +1498,31 @@ div.SnBMenuSection div.SnBMenu .productItem .itemDesc {
 /* ===================================================================
         Desserts Menu
 =================================================================== */
-section.dessertsMenuSection {
+.dessertsMenuSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 10rem;
-  padding: 0 7.5rem 5rem 7.5rem;
+  padding: 0 2rem;
 }
 
-section.dessertsMenuSection div.dessertsMenuWrapper {
-  width: 55%;
+.dessertsMenuSection .dessertsMenuWrapper {
+  width: 100%;
+  padding-right: 6rem;
 }
 
-section.dessertsMenuSection div.dessertsMenuWrapper h2 {
+.dessertsMenuSection .dessertsMenuWrapper h2 {
   font-size: 3.5rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 4.5rem;
 }
 
-section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu {
-  width: 100%;
-}
-
-section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem {
+.dessertsMenuSection .dessertsMenuWrapper .dessertsMenu .productItem {
   padding-bottom: 2rem;
 }
 
-section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .productTopInfo {
+.dessertsMenuSection .dessertsMenuWrapper .dessertsMenu .productItem .productTopInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1543,29 +1531,25 @@ section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .
           justify-content: space-between;
 }
 
-section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .productTopInfo .productName,
-section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .productTopInfo .productPrice {
+.dessertsMenuSection .dessertsMenuWrapper .dessertsMenu .productItem .productTopInfo .productName,
+.dessertsMenuSection .dessertsMenuWrapper .dessertsMenu .productItem .productTopInfo .productPrice {
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .itemDesc {
+.dessertsMenuSection .dessertsMenuWrapper .dessertsMenu .productItem .itemDesc {
   padding-bottom: .2rem;
   font-size: 1.4rem;
   font-weight: 300;
 }
 
-section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .itemDesc.banoffePie, section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .itemDesc.chocOreoCake {
+.dessertsMenuSection .dessertsMenuWrapper .dessertsMenu .productItem .itemDesc.banoffePie, .dessertsMenuSection .dessertsMenuWrapper .dessertsMenu .productItem .itemDesc.chocOreoCake {
   width: 70%;
 }
 
 /* ===================================================================
         Desserts - Fatty Favourite Section
 =================================================================== */
-.fattyFaveSection {
-  width: 45%;
-}
-
 .fattyFaveSection div.fattyFaveFlexWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1625,49 +1609,48 @@ section.dessertsMenuSection div.dessertsMenuWrapper .dessertsMenu .productItem .
 /* ===================================================================
         Extensive Range Of Beers
 =================================================================== */
-div.extensiveRangeOfBeers p {
+.extensiveRangeOfBeers p {
   width: 85vw;
   font-size: 1.6rem;
   color: #c6c6c6;
   font-weight: 400;
-  padding: 2rem 0 0 7.5rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
 }
 
 /* ===================================================================
         Beers Featured Image Section
 =================================================================== */
-section.beersSection {
+.beersSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 6rem;
-  padding: 0 7.5rem;
+  padding: 0 2rem;
 }
 
-div.beersFeatImgSection {
-  width: 40%;
+.beersFeatImgSection {
   padding-top: 10rem;
 }
 
 /* ===================================================================
         Beers Menu
 =================================================================== */
-div.beersMenuSection {
-  width: 60%;
+.beersMenuSection {
+  width: 100%;
 }
 
-div.beersMenuSection div.beersMenuWrapper {
-  margin-left: auto;
-  padding-left: 5rem;
+.beersMenuSection .beersMenuWrapper {
+  padding-left: 6rem;
 }
 
-div.beersMenuSection div.beersMenuWrapper h2 {
+.beersMenuSection .beersMenuWrapper h2 {
   font-size: 3.5rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-div.beersMenu {
+.beersMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1680,84 +1663,83 @@ div.beersMenu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 5rem;
 }
 
-div.beersMenu div.beerNameCol {
+.beersMenu .beerNameCol {
   font-weight: 700;
 }
 
-div.beersMenu div.beerNameCol p.beerName {
+.beersMenu .beerNameCol .beerName {
   padding-bottom: 2rem;
   font-size: 1.6rem;
 }
 
-div.beersMenu div.PintsCol {
+.beersMenu .PintsCol {
   text-align: right;
 }
 
-div.beersMenu div.PintsCol h3 {
+.beersMenu .PintsCol h3 {
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
   padding-bottom: 5rem;
 }
 
-div.beersMenu div.PintsCol .pintPrice {
+.beersMenu .PintsCol .pintPrice {
   font-size: 1.6rem;
   font-weight: 700;
   padding-bottom: 2rem;
 }
 
-div.beersMenu div.PintsCol .emptyPrice {
+.beersMenu .PintsCol .emptyPrice {
   font-size: 1.6rem;
   font-weight: 700;
   padding-bottom: 2rem;
   color: #010101;
 }
 
-div.beersMenu .halfPintCol {
+.beersMenu .halfPintCol {
   text-align: right;
 }
 
-div.beersMenu .halfPintCol h3 {
+.beersMenu .halfPintCol h3 {
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
   padding-bottom: 5rem;
 }
 
-div.beersMenu .halfPintCol .halfPintPrice {
+.beersMenu .halfPintCol .halfPintPrice {
   font-size: 1.6rem;
   font-weight: 700;
   padding-bottom: 2rem;
 }
 
-div.beersMenu .halfPintCol .emptyPrice {
+.beersMenu .halfPintCol .emptyPrice {
   font-size: 1.6rem;
   font-weight: 700;
   padding-bottom: 2rem;
   color: #010101;
 }
 
-div.beersMenu .bottlePriceCol {
+.beersMenu .bottlePriceCol {
   text-align: right;
 }
 
-div.beersMenu .bottlePriceCol h3 {
+.beersMenu .bottlePriceCol h3 {
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
   padding-bottom: 5rem;
 }
 
-div.beersMenu .bottlePriceCol .bottlePrice {
+.beersMenu .bottlePriceCol .bottlePrice {
   font-size: 1.6rem;
   font-weight: 700;
   padding-bottom: 2rem;
 }
 
-div.beersMenu .bottlePriceCol .emptyPrice {
+.beersMenu .bottlePriceCol .emptyPrice {
   font-size: 1.6rem;
   font-weight: 700;
   padding-bottom: 2rem;
@@ -1767,33 +1749,33 @@ div.beersMenu .bottlePriceCol .emptyPrice {
 /* ===================================================================
         Ciders Menu
 =================================================================== */
-section.ciderMenuSection {
+.ciderMenuSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 7.5rem;
+  padding: 0 2rem;
 }
 
-section.ciderMenuSection .ciderMenuWrapper {
-  width: 60%;
+.ciderMenuSection .ciderMenuWrapper {
+  width: 100%;
 }
 
-section.ciderMenuSection .ciderMenuWrapper h2 {
+.ciderMenuSection .ciderMenuWrapper h2 {
   font-size: 3.5rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 4.5rem;
 }
 
-section.ciderMenuSection .ciderMenuWrapper .ciderMenu {
-  margin-bottom: 10rem;
+.ciderMenuSection .ciderMenuWrapper .ciderMenu {
+  padding-right: 6rem;
 }
 
-section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem {
+.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem {
   padding-bottom: 2rem;
 }
 
-section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopInfo {
+.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopInfo {
   vertical-align: top;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1804,11 +1786,10 @@ section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopIn
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding-right: 5rem;
 }
 
-section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopInfo .productName,
-section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopInfo .productPrice {
+.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopInfo .productName,
+.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopInfo .productPrice {
   font-weight: 700;
   font-size: 1.6rem;
 }
@@ -1820,13 +1801,7 @@ section.ciderMenuSection .ciderMenuWrapper .ciderMenu .productItem .productTopIn
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40%;
   padding-top: 8rem;
-  padding-right: 5rem;
-}
-
-.cidersFeatImgSection .ciderFeatImg {
-  margin-left: auto;
 }
 
 .bookingsForm {
@@ -2393,26 +2368,11 @@ section.privacyContentSection div.privacyContentWrapper a {
     text-align: right;
     padding-right: 2rem;
   }
-  .topNavLogoWrapper svg.topNavLogo {
-    fill: #676767;
-    width: 10rem;
-    height: auto;
-  }
 }
 
-/*  Small Laptop Screens  */
-/*  Tablets  */
-/*  Larger Phones  */
 /* ===================================================================
             Media Queries: Homepage
 =================================================================== */
-/*  Large Screens & Desktop  */
-@media only screen and (max-width: 1178px) {
-  div.makeReservationCol {
-    padding-top: 1rem;
-  }
-}
-
 /*  Large Screens & Desktop  */
 @media only screen and (max-width: 1176px) {
   div.seeSpecialsBtnSection div.seeSpecialsWrapper a.seeSpecialsBtn {
@@ -2691,155 +2651,136 @@ section.privacyContentSection div.privacyContentWrapper a {
 /* ===================================================================
             Media Queries: Menu - Mains
 =================================================================== */
-/*  Large Screens & Desktop  */
-/*  Small Laptop Screens  */
-@media only screen and (max-width: 921px) {
-  div.nibblesMenuWrapper,
-  div.dessertsMenuWrapper {
-    padding-right: 1.5rem;
-  }
-}
-
 /*  Tablets  */
 @media only screen and (max-width: 900px) {
-  div.forAllergyInfo p {
+  .forAllergyInfo p {
     margin-bottom: 5rem;
+    padding-left: 0;
   }
-  div.nibblesMenuWrapper h2,
-  div.SnBMenuSection h2,
-  div.dessertsMenuWrapper h2 {
-    margin-bottom: 2rem !important;
+  .nibblesMenuSection {
+    margin-top: 3rem;
+    padding: 0;
   }
-  div.nibblesFeatImgSection,
-  div.featSnBWrapper,
-  div.fattyFaveSection {
+  .nibblesMenuSection .nibblesMenuWrapper {
+    padding-right: 0;
+  }
+  .nibblesMenuSection .nibblesMenuWrapper h2 {
+    margin-bottom: 2rem;
+  }
+  .nibblesMenuSection .nibblesFeatImgSection {
     display: none;
   }
-  div.nibblesMenuWrapper,
-  div.SnBMenuSection,
-  div.dessertsMenuWrapper {
-    width: 100% !important;
-  }
-  section.nibblesMenuSection,
-  section.SnBSection,
-  section.dessertsMenuSection {
+  .SnBSection {
     margin-top: 3rem;
+    padding: 0;
   }
-  p.itemDesc {
-    width: 80%;
+  .SnBSection .featSnBWrapper {
+    display: none;
   }
-}
-
-/*  Larger Phones  */
-@media only screen and (max-width: 600px) {
-  div.forAllergyInfo p {
-    padding-top: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    width: 100%;
+  .SnBSection .SnBMenuSection {
+    padding-left: 0;
   }
-  section.nibblesMenuSection,
-  section.SnBSection {
-    padding: 0 3rem;
+  .SnBSection .SnBMenuSection h2 {
+    margin-bottom: 2rem;
   }
-  section.dessertsMenuSection {
-    padding-right: 2rem;
-    padding-left: 2rem;
+  .dessertsMenuSection {
+    margin-top: 3rem;
+    padding: 0;
   }
-}
-
-/*  Small Phones  */
-@media only screen and (max-width: 400px) {
-  div.forAllergyInfo p {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .dessertsMenuSection .dessertsMenuWrapper {
+    padding-right: 0;
   }
-  section.nibblesMenuSection,
-  section.SnBSection {
-    padding: 0 2rem;
+  .dessertsMenuSection .dessertsMenuWrapper h2 {
+    margin-bottom: 2rem;
   }
-  section.dessertsMenuSection {
-    padding: 0 2rem 5rem 2rem;
+  .dessertsMenuSection .fattyFaveSection {
+    display: none;
   }
 }
 
 /* ===================================================================
             Media Queries: Menu - Beers
 =================================================================== */
-/*  Large Screens & Desktop  */
 /*  Small Laptop Screens  */
-@media only screen and (max-width: 1060px) {
-  div.beersMenuSection {
-    width: 100%;
+@media only screen and (max-width: 1000px) {
+  .beersSection .beersFeatImgSection {
+    display: none;
   }
-  div.beersMenuWrapper {
-    padding-left: 0 !important;
+  .beersSection .beersMenuSection .beersMenuWrapper {
+    padding-left: 0;
   }
-  section.ciderMenuSection {
+  .ciderMenuSection {
     margin-top: -6rem;
   }
-  div.ciderMenuWrapper {
-    width: 100% !important;
+  .ciderMenuSection .ciderMenuWrapper h2 {
+    margin-bottom: 2rem;
   }
-  div.ciderMenuWrapper h2 {
-    margin-bottom: 2rem !important;
+  .ciderMenuSection .ciderMenuWrapper .ciderMenu {
+    padding-right: 0;
   }
-  div.ciderMenu div.productTopInfo {
-    padding-right: 0 !important;
-  }
-  div.beersMenu {
-    padding: 0;
-  }
-  div.beersFeatImgSection,
-  div.cidersFeatImgSection {
+  .ciderMenuSection .cidersFeatImgSection {
     display: none;
   }
 }
 
 /*  Tablets  */
+@media only screen and (max-width: 900px) {
+  .extensiveRangeOfBeers p {
+    padding-left: 0;
+  }
+  .beersSection {
+    padding: 0;
+  }
+  .ciderMenuSection {
+    padding: 0;
+  }
+}
+
 /*  Larger Phones  */
 @media only screen and (max-width: 600px) {
   div.extensiveRangeOfBeers p {
-    padding-top: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
     width: 100%;
-  }
-  section.beersSection {
-    padding: 0 3rem;
-  }
-  section.ciderMenuSection {
-    padding-right: 3rem;
-    padding-left: 3rem;
   }
 }
 
 /*  Small Phones  */
 @media only screen and (max-width: 490px) {
-  div.extensiveRangeOfBeers p {
-    padding-left: 2rem !important;
+  .beersMenu {
+    font-size: 1.4rem;
   }
-  section.beersSection {
-    padding: 0 2rem;
+  .beersMenu .beerNameCol,
+  .beersMenu .PintsCol,
+  .beersMenu .halfPintCol,
+  .beersMenu .bottlePriceCol {
+    font-size: 1.4rem;
   }
-  div.beersMenuWrapper h2 {
-    font-size: 3.5rem !important;
+  .beersMenu .beerNameCol h3,
+  .beersMenu .PintsCol h3,
+  .beersMenu .halfPintCol h3,
+  .beersMenu .bottlePriceCol h3 {
+    font-size: 1.4rem;
   }
-  div.PintsCol h3,
-  div.halfPintCol h3,
-  div.bottlePriceCol h3 {
-    font-size: 1.4rem !important;
-  }
-  .beerName,
-  .pintPrice,
-  .emptyPrice,
-  .halfPintPrice,
-  .bottlePrice {
-    font-size: 1.4rem !important;
-  }
-  section.ciderMenuSection {
-    padding-right: 2rem;
-    padding-left: 2rem;
+  .beersMenu .beerNameCol .beerName,
+  .beersMenu .beerNameCol .pintPrice,
+  .beersMenu .beerNameCol .emptyPrice,
+  .beersMenu .beerNameCol .halfPintPrice,
+  .beersMenu .beerNameCol .bottlePrice,
+  .beersMenu .PintsCol .beerName,
+  .beersMenu .PintsCol .pintPrice,
+  .beersMenu .PintsCol .emptyPrice,
+  .beersMenu .PintsCol .halfPintPrice,
+  .beersMenu .PintsCol .bottlePrice,
+  .beersMenu .halfPintCol .beerName,
+  .beersMenu .halfPintCol .pintPrice,
+  .beersMenu .halfPintCol .emptyPrice,
+  .beersMenu .halfPintCol .halfPintPrice,
+  .beersMenu .halfPintCol .bottlePrice,
+  .beersMenu .bottlePriceCol .beerName,
+  .beersMenu .bottlePriceCol .pintPrice,
+  .beersMenu .bottlePriceCol .emptyPrice,
+  .beersMenu .bottlePriceCol .halfPintPrice,
+  .beersMenu .bottlePriceCol .bottlePrice {
+    font-size: 1.4rem;
   }
 }
 

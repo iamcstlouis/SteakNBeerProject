@@ -72,7 +72,7 @@
         .nibblesHdrAndImg {
             width: 100%;
 
-            h2.nibblesHdr {
+            .nibblesHdr {
                 font-size: 2.5rem;
                 font-weight: 400;
                 margin: 3rem 0 3.7rem 0;
@@ -104,7 +104,7 @@
 .featNibblesDesc {
     margin-bottom: 10rem;
 
-    h2.featNibblesHdr {
+    .featNibblesHdr {
         margin: 2rem 0;
         font-size: 2rem;
         font-weight: 700;
@@ -163,13 +163,13 @@
 .featSnBDescSection {
     margin-bottom: 5rem;
 
-    h2.SnBSubHdr {
+    .SnBSubHdr {
         margin: 2rem 0;
         font-size: 2rem;
         font-weight: 700;
     }
 
-    p.featSnBDesc {
+    .featSnBDesc {
         width: 30rem;
         font-size: 1.4rem;
         margin-top: -4.7rem;
@@ -281,7 +281,7 @@
 
 .fattyFaveSection {
 
-    div.fattyFaveFlexWrapper {
+    .fattyFaveWrapper {
         display: flex;
         flex-direction: column;
 
@@ -289,7 +289,7 @@
             margin-left: auto;
             padding-right: 4.5rem;
 
-            h2.fattyFaveHdr {
+            .fattyFaveHdr {
                 font-size: 2.5rem;
                 font-weight: 400;
                 margin: 3rem 0 3.7rem 0;
@@ -321,7 +321,7 @@
 .fattyFaveDesc {
     margin-left: auto;
 
-    h2.fattyfaveCakeHdr {
+    .fattyfaveCakeHdr {
         margin: 2rem 0;
         font-size: 2rem;
         font-weight: 700;

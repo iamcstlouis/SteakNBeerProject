@@ -1,34 +1,39 @@
-h1.openingHrsHdr {
+.openingHrsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.openingHrsHdr {
     font-size: 3.5rem;
     font-weight: 700;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 4rem;
-    padding-top: 0;
 }
 
-div.openingHrsPageWrapper {
-    display: flex;
+.openingHrsPageWrapper {
+    display: inline-flex;
     flex-wrap: wrap;
+    flex-basis: 100%;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 4rem auto 0 auto;
 
-    div.openingHrsImgWrapper {
+    .openingHrsImgWrapper {
         padding: 2rem;
 
-
-        img.openingHrsImg {
+        .openingHrsImg {
             display: block;
             border: solid $clr-site-yellow .1rem;
             padding: .5rem;
+            max-width: 47.4rem;
+            width: 100%;
+            height: auto;
         }
-
     }
 }
 
-div.openingHrstextInfo {
-    padding-top: 2rem;
-    width: 47.4rem;
+.openingHrstextInfo {
+    margin-top: 2rem;
+    max-width: 47.4rem;
 
     .hoxtonSq,
     .brixton,
@@ -48,8 +53,8 @@ div.openingHrstextInfo {
         font-size: 1.6rem;
     }
 
-    p.pleaseNote {
+    .pleaseNote {
+        margin-top: 2rem;
         width: 70%;
-        padding-top: 2rem;
     }
 }

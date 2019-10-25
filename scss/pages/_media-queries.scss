@@ -579,51 +579,17 @@
             Media Queries: Bookings
 =================================================================== */
 
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1200px) {
-
-    img.bookATableDesktopImg {
-        width: 80vw;
-        height: auto;
-    }
-}
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1000px) {
-
-
-    h1.bookingsHdr {
-        margin-top: 10rem;
-    }
-}
-
 /*  Tablets  */
 
 @media only screen and (max-width: 800px) {
-    div.bookingsImgWrapper {
+    .bookingsImgWrapper {
 
-        img.bookATableDesktopImg {
+        .bookATableDesktopImg {
             display: none;
         }
 
-        img.bookATableMobileImg {
+        .bookATableMobileImg {
             display: block;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
-}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 650px) {
-
-    div.bookingsImgWrapper {
-
-        img.bookATableDesktopImg {
-            display: none;
         }
     }
 }
@@ -669,36 +635,14 @@
 /*  Small Laptop Screens  */
 
 @media only screen and (max-width: 1024px) {
-    div.specialsTopInfo {
 
-        p {
-            text-align: center;
-            padding-left: 0;
-        }
-    }
-
-    section.SpecialsBSSection {
+    .SpecialsBSSection {
         padding-bottom: 7rem;
         border-bottom: solid rgba(255, 255, 255, .3) 1px;
     }
 
-    section.fattyFaveSpecialSection {
+    .fattyFaveSpecialSection {
         margin: 5rem 0;
-    }
-}
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1000px) {
-    section.steakStackSpecialSec {
-        margin-top: 10rem;
-
-        div.specialsTopInfo {
-
-            h1 {
-                display: block;
-            }
-        }
     }
 }
 
@@ -706,13 +650,10 @@
 
 @media only screen and (max-width: 700px) {
 
-    img.steakStackSpecialImg,
-    img.fattyFaveSpecialImg {
+    .steakStackSpecialImg,
+    .fattyFaveSpecialImg {
         max-width: 80vw;
         max-height: 90vh;
-        width: auto;
-        height: auto;
-        margin: 0 auto;
     }
 }
 
@@ -720,22 +661,21 @@
 
 @media only screen and (max-width: 529px) {
 
-    img.specialsSSTxtOutlineImg,
-    img.specialFFTxtOutlineImg {
+    .specialsSSTxtOutlineImg,
+    .specialFFTxtOutlineImg {
         display: none;
     }
 
-    div.SpecialsSSDesc p,
-    div.specialsDessertDesc p {
-        margin: 0 auto;
-        text-align: center;
-        padding: 0;
+    .SpecialsSSDesc,
+    .specialsDessertDesc {
+
+        p {
+            margin: 0 auto;
+            text-align: center;
+            padding: 0;
+        }
     }
 }
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 350px) {}
 
 /* ===================================================================
             Media Queries: Locations
@@ -745,7 +685,7 @@
 
 @media only screen and (max-width: 1110px) {
 
-    div.locationsWrapper {
+    .locationsWrapper {
         justify-content: space-around;
     }
 }
@@ -753,8 +693,7 @@
 /*  Small Laptop Screens  */
 
 @media only screen and (max-width: 1000px) {
-    section.locationsSection {
-        margin-top: 10rem;
+    .locationsSection {
 
         h1 {
             display: block;
@@ -762,14 +701,6 @@
         }
     }
 }
-
-/*  Tablets  */
-
-@media only screen and (max-width: 850px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
 
 /*  Small Phones  */
 
@@ -793,55 +724,17 @@
             Media Queries: Opening Hours
 =================================================================== */
 
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1145px) {
-    div.openingHrsImgWrapper {
-        padding: 0;
-    }
-
-    p.pleaseNote {
-        width: 100% !important;
-        padding-bottom: 5rem;
-    }
-}
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1000px) {
-    section.openingHrsSection {
-        margin-top: 10rem;
-
-        h1.openingHrsHdr {
-            margin-bottom: 0;
-            padding-bottom: 1rem;
-        }
-    }
-}
-
-/*  Tablets  */
-
-@media only screen and (max-width: 850px) {}
-
 /*  Larger Phones  */
 
 @media only screen and (max-width: 600px) {
 
-    div.openingHrstextInfo {
-        padding-top: 2rem;
-        width: 80vw;
-    }
+    .openingHrsPageWrapper {
 
-    img.openingHrsImg {
-        width: 80vw;
-        height: auto;
+        .openingHrsImgWrapper {
+            padding: 0;
+        }
     }
 }
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 400px) {}
-
 
 /* ===================================================================
             Media Queries: Privacy

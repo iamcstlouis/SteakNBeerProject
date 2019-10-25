@@ -362,7 +362,9 @@ nav.top-nav .container {
   transition: 0.4s ease-in-out;
 }
 
-/*  --------    Menu Nav: Active Tab    --------  */
+/* ===================================================================
+                Menu Nav: Active Tab
+=================================================================== */
 .menuNavSection .menuNav a.active-tab {
   color: #990000;
   background: #D89033;
@@ -389,8 +391,8 @@ nav.top-nav .container {
   padding-top: 15rem;
   z-index: 102;
   visibility: hidden;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .mobile-menu.open {
@@ -1348,14 +1350,14 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
   width: 100%;
 }
 
-.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr {
+.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg .nibblesHdr {
   font-size: 2.5rem;
   font-weight: 400;
   margin: 3rem 0 3.7rem 0;
   color: #990000;
 }
 
-.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before, .nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after {
+.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg .nibblesHdr.nibblesHdr:before, .nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg .nibblesHdr.nibblesHdr:after {
   background-color: #990000;
   display: inline-block;
   content: '';
@@ -1365,11 +1367,11 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
   vertical-align: middle;
 }
 
-.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before.nibblesHdr:before, .nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after.nibblesHdr:before {
+.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg .nibblesHdr.nibblesHdr:before.nibblesHdr:before, .nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg .nibblesHdr.nibblesHdr:after.nibblesHdr:before {
   right: 2rem;
 }
 
-.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:before.nibblesHdr:before.nibblesHdr:after, .nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg h2.nibblesHdr.nibblesHdr:after.nibblesHdr:before.nibblesHdr:after {
+.nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg .nibblesHdr.nibblesHdr:before.nibblesHdr:before.nibblesHdr:after, .nibblesFeatImgSection .nibblesHdrAndImgWrapper .nibblesHdrAndImg .nibblesHdr.nibblesHdr:after.nibblesHdr:before.nibblesHdr:after {
   left: 2rem;
 }
 
@@ -1377,7 +1379,7 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
   margin-bottom: 10rem;
 }
 
-.featNibblesDesc h2.featNibblesHdr {
+.featNibblesDesc .featNibblesHdr {
   margin: 2rem 0;
   font-size: 2rem;
   font-weight: 700;
@@ -1433,13 +1435,13 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
   margin-bottom: 5rem;
 }
 
-.featSnBDescSection h2.SnBSubHdr {
+.featSnBDescSection .SnBSubHdr {
   margin: 2rem 0;
   font-size: 2rem;
   font-weight: 700;
 }
 
-.featSnBDescSection p.featSnBDesc {
+.featSnBDescSection .featSnBDesc {
   width: 30rem;
   font-size: 1.4rem;
   margin-top: -4.7rem;
@@ -1550,7 +1552,7 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
 /* ===================================================================
         Desserts - Fatty Favourite Section
 =================================================================== */
-.fattyFaveSection div.fattyFaveFlexWrapper {
+.fattyFaveSection .fattyFaveWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1560,19 +1562,19 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
           flex-direction: column;
 }
 
-.fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg {
+.fattyFaveSection .fattyFaveWrapper .fattyFaveHdrAndImg {
   margin-left: auto;
   padding-right: 4.5rem;
 }
 
-.fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr {
+.fattyFaveSection .fattyFaveWrapper .fattyFaveHdrAndImg .fattyFaveHdr {
   font-size: 2.5rem;
   font-weight: 400;
   margin: 3rem 0 3.7rem 0;
   color: #990000;
 }
 
-.fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:before, .fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:after {
+.fattyFaveSection .fattyFaveWrapper .fattyFaveHdrAndImg .fattyFaveHdr.fattyFaveHdr:before, .fattyFaveSection .fattyFaveWrapper .fattyFaveHdrAndImg .fattyFaveHdr.fattyFaveHdr:after {
   background-color: #990000;
   display: inline-block;
   content: '';
@@ -1582,11 +1584,11 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
   vertical-align: middle;
 }
 
-.fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:before.fattyFaveHdr:before, .fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:after.fattyFaveHdr:before {
+.fattyFaveSection .fattyFaveWrapper .fattyFaveHdrAndImg .fattyFaveHdr.fattyFaveHdr:before.fattyFaveHdr:before, .fattyFaveSection .fattyFaveWrapper .fattyFaveHdrAndImg .fattyFaveHdr.fattyFaveHdr:after.fattyFaveHdr:before {
   right: 2rem;
 }
 
-.fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:before.fattyFaveHdr:before.fattyFaveHdr:after, .fattyFaveSection div.fattyFaveFlexWrapper .fattyFaveHdrAndImg h2.fattyFaveHdr.fattyFaveHdr:after.fattyFaveHdr:before.fattyFaveHdr:after {
+.fattyFaveSection .fattyFaveWrapper .fattyFaveHdrAndImg .fattyFaveHdr.fattyFaveHdr:before.fattyFaveHdr:before.fattyFaveHdr:after, .fattyFaveSection .fattyFaveWrapper .fattyFaveHdrAndImg .fattyFaveHdr.fattyFaveHdr:after.fattyFaveHdr:before.fattyFaveHdr:after {
   left: 2rem;
 }
 
@@ -1594,7 +1596,7 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
   margin-left: auto;
 }
 
-.fattyFaveDesc h2.fattyfaveCakeHdr {
+.fattyFaveDesc .fattyfaveCakeHdr {
   margin: 2rem 0;
   font-size: 2rem;
   font-weight: 700;
@@ -1876,40 +1878,38 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
 
 .bookingsImgWrapper .bookATableDesktopImg {
   max-width: 95.8rem;
+  width: 80vw;
   height: auto;
 }
 
 .bookingsImgWrapper .bookATableMobileImg {
+  margin: 0 auto;
   display: none;
 }
 
 /* ===================================================================
         Specials Top Section
 =================================================================== */
-div.specialsTopInfo {
+.specialsTopInfo {
   text-align: center;
+  margin: 0 auto;
 }
 
-div.specialsTopInfo h1 {
+.specialsTopInfo h1 {
   font-size: 3.5rem;
   font-weight: 600;
-  margin: 2rem 0 1.5rem 0;
-  display: none;
 }
 
-div.specialsTopInfo p {
-  font-size: 1.6rem;
+.specialsTopInfo p {
+  font-size: 1.8rem;
   font-weight: 300;
-  margin-top: 5rem;
-  margin-bottom: 6rem;
-  text-align: left;
-  padding-left: 5rem;
+  margin-top: 1.5rem;
 }
 
 /* ===================================================================
         Steak Stack Specials Section
 =================================================================== */
-div.specialsFlexContainer {
+.specialsWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1917,10 +1917,10 @@ div.specialsFlexContainer {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-bottom: 5rem;
+  margin-top: 6rem;
 }
 
-section.SpecialsBSSection div.SpecialsBSHdrAndImg {
+.SpecialsBSSection .SpecialsBSHdrAndImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1934,7 +1934,7 @@ section.SpecialsBSSection div.SpecialsBSHdrAndImg {
   text-align: center;
 }
 
-section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr {
+.SpecialsBSSection .SpecialsBSHdrAndImg .SpecialsBSHdr {
   font-size: 2.5rem;
   font-weight: 400;
   color: #D89033;
@@ -1942,7 +1942,7 @@ section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr {
   text-align: center;
 }
 
-section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:before, section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:after {
+.SpecialsBSSection .SpecialsBSHdrAndImg .SpecialsBSHdr.SpecialsBSHdr:before, .SpecialsBSSection .SpecialsBSHdrAndImg .SpecialsBSHdr.SpecialsBSHdr:after {
   background-color: #D89033;
   display: inline-block;
   content: '';
@@ -1952,16 +1952,16 @@ section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr
   vertical-align: middle;
 }
 
-section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:before.SpecialsBSHdr:before, section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:after.SpecialsBSHdr:before {
+.SpecialsBSSection .SpecialsBSHdrAndImg .SpecialsBSHdr.SpecialsBSHdr:before.SpecialsBSHdr:before, .SpecialsBSSection .SpecialsBSHdrAndImg .SpecialsBSHdr.SpecialsBSHdr:after.SpecialsBSHdr:before {
   right: 2rem;
 }
 
-section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:before.SpecialsBSHdr:before.SpecialsBSHdr:after, section.SpecialsBSSection div.SpecialsBSHdrAndImg h2.SpecialsBSHdr.SpecialsBSHdr:after.SpecialsBSHdr:before.SpecialsBSHdr:after {
+.SpecialsBSSection .SpecialsBSHdrAndImg .SpecialsBSHdr.SpecialsBSHdr:before.SpecialsBSHdr:before.SpecialsBSHdr:after, .SpecialsBSSection .SpecialsBSHdrAndImg .SpecialsBSHdr.SpecialsBSHdr:after.SpecialsBSHdr:before.SpecialsBSHdr:after {
   left: 2rem;
 }
 
-img.steakStackSpecialImg,
-img.fattyFaveSpecialImg {
+.steakStackSpecialImg,
+.fattyFaveSpecialImg {
   display: block;
   max-width: 40vw;
   max-height: 50vh;
@@ -1970,19 +1970,19 @@ img.fattyFaveSpecialImg {
   margin: 0 auto;
 }
 
-div.SpecialsSSDesc {
+.SpecialsSSDesc {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-div.SpecialsSSDesc h2.specialsSSHdr {
+.SpecialsSSDesc .specialsSSHdr {
   margin: 2rem 0;
   font-size: 2rem;
   font-weight: 700;
 }
 
-div.SpecialsSSDesc p {
+.SpecialsSSDesc p {
   margin-top: -4.9rem;
   margin-left: auto;
   margin-right: auto;
@@ -1995,7 +1995,7 @@ div.SpecialsSSDesc p {
 /* ===================================================================
         Fatty Fave Specials Section
 =================================================================== */
-section.fattyFaveSpecialSection div.dessertHdrAndImg {
+.fattyFaveSpecialSection .dessertHdrAndImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2008,7 +2008,7 @@ section.fattyFaveSpecialSection div.dessertHdrAndImg {
           justify-content: center;
 }
 
-section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr {
+.fattyFaveSpecialSection .dessertHdrAndImg .dessertHdr {
   font-size: 2.5rem;
   font-weight: 400;
   color: #990000;
@@ -2016,7 +2016,7 @@ section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr {
   text-align: center;
 }
 
-section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:before, section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:after {
+.fattyFaveSpecialSection .dessertHdrAndImg .dessertHdr.dessertHdr:before, .fattyFaveSpecialSection .dessertHdrAndImg .dessertHdr.dessertHdr:after {
   background-color: #990000;
   display: inline-block;
   content: '';
@@ -2026,47 +2026,42 @@ section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:be
   vertical-align: middle;
 }
 
-section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:before.dessertHdr:before, section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:after.dessertHdr:before {
+.fattyFaveSpecialSection .dessertHdrAndImg .dessertHdr.dessertHdr:before.dessertHdr:before, .fattyFaveSpecialSection .dessertHdrAndImg .dessertHdr.dessertHdr:after.dessertHdr:before {
   right: 2rem;
 }
 
-section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:before.dessertHdr:before.dessertHdr:after, section.fattyFaveSpecialSection div.dessertHdrAndImg h2.dessertHdr.dessertHdr:after.dessertHdr:before.dessertHdr:after {
+.fattyFaveSpecialSection .dessertHdrAndImg .dessertHdr.dessertHdr:before.dessertHdr:before.dessertHdr:after, .fattyFaveSpecialSection .dessertHdrAndImg .dessertHdr.dessertHdr:after.dessertHdr:before.dessertHdr:after {
   left: 2rem;
 }
 
-div.specialsDessertDesc {
+.specialsDessertDesc {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-div.specialsDessertDesc h2 {
+.specialsDessertDesc h2 {
   margin: 2rem 0;
   font-size: 2rem;
   font-weight: 700;
 }
 
-div.specialsDessertDesc p {
+.specialsDessertDesc p {
   width: 55%;
   font-size: 1.4rem;
   margin: -4.8rem auto;
   text-align: right;
 }
 
-section.locationsSection h1 {
+.locationsSection h1 {
   color: #c6c6c6;
   font-size: 3.5rem;
   font-weight: 600;
-  padding-top: 5rem;
-  padding-bottom: 4rem;
-  padding-left: 1rem;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  display: none;
+  text-align: center;
 }
 
-div.locationsWrapper {
-  margin: 0 auto;
+.locationsWrapper {
+  margin: 4rem auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2077,18 +2072,18 @@ div.locationsWrapper {
           justify-content: space-between;
 }
 
-div.locationsWrapper .locationHoxtonSq,
-div.locationsWrapper .locationBrixton,
-div.locationsWrapper .locationCroydonCentre,
-div.locationsWrapper .locationClapham {
+.locationsWrapper .locationHoxtonSq,
+.locationsWrapper .locationBrixton,
+.locationsWrapper .locationCroydonCentre,
+.locationsWrapper .locationClapham {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-div.locationsWrapper .locationHoxtonSq img,
-div.locationsWrapper .locationBrixton img,
-div.locationsWrapper .locationCroydonCentre img,
-div.locationsWrapper .locationClapham img {
+.locationsWrapper .locationHoxtonSq img,
+.locationsWrapper .locationBrixton img,
+.locationsWrapper .locationCroydonCentre img,
+.locationsWrapper .locationClapham img {
   border: solid #990000 0.1rem;
   padding: .5rem;
   opacity: .5;
@@ -2097,19 +2092,19 @@ div.locationsWrapper .locationClapham img {
   height: auto;
 }
 
-div.locationsWrapper .locationHoxtonSq img:hover,
-div.locationsWrapper .locationBrixton img:hover,
-div.locationsWrapper .locationCroydonCentre img:hover,
-div.locationsWrapper .locationClapham img:hover {
+.locationsWrapper .locationHoxtonSq img:hover,
+.locationsWrapper .locationBrixton img:hover,
+.locationsWrapper .locationCroydonCentre img:hover,
+.locationsWrapper .locationClapham img:hover {
   opacity: 1;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-div.locationsWrapper .locationHoxtonSq h2,
-div.locationsWrapper .locationBrixton h2,
-div.locationsWrapper .locationCroydonCentre h2,
-div.locationsWrapper .locationClapham h2 {
+.locationsWrapper .locationHoxtonSq h2,
+.locationsWrapper .locationBrixton h2,
+.locationsWrapper .locationCroydonCentre h2,
+.locationsWrapper .locationClapham h2 {
   font-size: 2rem;
   font-weight: 700;
   padding: .5rem 0 1rem 0;
@@ -2117,70 +2112,85 @@ div.locationsWrapper .locationClapham h2 {
   text-transform: uppercase;
 }
 
-div.locationsWrapper .locationHoxtonSq p,
-div.locationsWrapper .locationBrixton p,
-div.locationsWrapper .locationCroydonCentre p,
-div.locationsWrapper .locationClapham p {
+.locationsWrapper .locationHoxtonSq p,
+.locationsWrapper .locationBrixton p,
+.locationsWrapper .locationCroydonCentre p,
+.locationsWrapper .locationClapham p {
   font-size: 1.6rem;
   padding-bottom: 5rem;
 }
 
-h1.openingHrsHdr {
-  font-size: 3.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 4rem;
-  padding-top: 0;
-}
-
-div.openingHrsPageWrapper {
+.openingHrsSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-div.openingHrsPageWrapper div.openingHrsImgWrapper {
+.openingHrsHdr {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.openingHrsPageWrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 4rem auto 0 auto;
+}
+
+.openingHrsPageWrapper .openingHrsImgWrapper {
   padding: 2rem;
 }
 
-div.openingHrsPageWrapper div.openingHrsImgWrapper img.openingHrsImg {
+.openingHrsPageWrapper .openingHrsImgWrapper .openingHrsImg {
   display: block;
   border: solid #D89033 0.1rem;
   padding: .5rem;
+  max-width: 47.4rem;
+  width: 100%;
+  height: auto;
 }
 
-div.openingHrstextInfo {
-  padding-top: 2rem;
-  width: 47.4rem;
+.openingHrstextInfo {
+  margin-top: 2rem;
+  max-width: 47.4rem;
 }
 
-div.openingHrstextInfo .hoxtonSq,
-div.openingHrstextInfo .brixton,
-div.openingHrstextInfo .croydonCentre,
-div.openingHrstextInfo .clapham {
+.openingHrstextInfo .hoxtonSq,
+.openingHrstextInfo .brixton,
+.openingHrstextInfo .croydonCentre,
+.openingHrstextInfo .clapham {
   padding-bottom: 2rem;
 }
 
-div.openingHrstextInfo h2 {
+.openingHrstextInfo h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #4b4b4b;
   text-transform: uppercase;
 }
 
-div.openingHrstextInfo p {
+.openingHrstextInfo p {
   font-size: 1.6rem;
 }
 
-div.openingHrstextInfo p.pleaseNote {
+.openingHrstextInfo .pleaseNote {
+  margin-top: 2rem;
   width: 70%;
-  padding-top: 2rem;
 }
 
 h1.contactPageHdr {
@@ -2787,37 +2797,13 @@ section.privacyContentSection div.privacyContentWrapper a {
 /* ===================================================================
             Media Queries: Bookings
 =================================================================== */
-/*  Large Screens & Desktop  */
-@media only screen and (max-width: 1200px) {
-  img.bookATableDesktopImg {
-    width: 80vw;
-    height: auto;
-  }
-}
-
-/*  Small Laptop Screens  */
-@media only screen and (max-width: 1000px) {
-  h1.bookingsHdr {
-    margin-top: 10rem;
-  }
-}
-
 /*  Tablets  */
 @media only screen and (max-width: 800px) {
-  div.bookingsImgWrapper img.bookATableDesktopImg {
+  .bookingsImgWrapper .bookATableDesktopImg {
     display: none;
   }
-  div.bookingsImgWrapper img.bookATableMobileImg {
+  .bookingsImgWrapper .bookATableMobileImg {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-/*  Larger Phones  */
-@media only screen and (max-width: 650px) {
-  div.bookingsImgWrapper img.bookATableDesktopImg {
-    display: none;
   }
 }
 
@@ -2853,62 +2839,44 @@ section.privacyContentSection div.privacyContentWrapper a {
 =================================================================== */
 /*  Small Laptop Screens  */
 @media only screen and (max-width: 1024px) {
-  div.specialsTopInfo p {
-    text-align: center;
-    padding-left: 0;
-  }
-  section.SpecialsBSSection {
+  .SpecialsBSSection {
     padding-bottom: 7rem;
     border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
   }
-  section.fattyFaveSpecialSection {
+  .fattyFaveSpecialSection {
     margin: 5rem 0;
-  }
-}
-
-/*  Small Laptop Screens  */
-@media only screen and (max-width: 1000px) {
-  section.steakStackSpecialSec {
-    margin-top: 10rem;
-  }
-  section.steakStackSpecialSec div.specialsTopInfo h1 {
-    display: block;
   }
 }
 
 /*  Larger Phones  */
 @media only screen and (max-width: 700px) {
-  img.steakStackSpecialImg,
-  img.fattyFaveSpecialImg {
+  .steakStackSpecialImg,
+  .fattyFaveSpecialImg {
     max-width: 80vw;
     max-height: 90vh;
-    width: auto;
-    height: auto;
-    margin: 0 auto;
   }
 }
 
 /*  Larger Phones  */
 @media only screen and (max-width: 529px) {
-  img.specialsSSTxtOutlineImg,
-  img.specialFFTxtOutlineImg {
+  .specialsSSTxtOutlineImg,
+  .specialFFTxtOutlineImg {
     display: none;
   }
-  div.SpecialsSSDesc p,
-  div.specialsDessertDesc p {
+  .SpecialsSSDesc p,
+  .specialsDessertDesc p {
     margin: 0 auto;
     text-align: center;
     padding: 0;
   }
 }
 
-/*  Small Phones  */
 /* ===================================================================
             Media Queries: Locations
 =================================================================== */
 /*  Large Screens & Desktop  */
 @media only screen and (max-width: 1110px) {
-  div.locationsWrapper {
+  .locationsWrapper {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -2916,17 +2884,12 @@ section.privacyContentSection div.privacyContentWrapper a {
 
 /*  Small Laptop Screens  */
 @media only screen and (max-width: 1000px) {
-  section.locationsSection {
-    margin-top: 10rem;
-  }
-  section.locationsSection h1 {
+  .locationsSection h1 {
     display: block;
     text-align: center;
   }
 }
 
-/*  Tablets  */
-/*  Larger Phones  */
 /*  Small Phones  */
 @media only screen and (max-width: 400px) {
   .locationHoxtonSq img,
@@ -2946,42 +2909,13 @@ section.privacyContentSection div.privacyContentWrapper a {
 /* ===================================================================
             Media Queries: Opening Hours
 =================================================================== */
-/*  Small Laptop Screens  */
-@media only screen and (max-width: 1145px) {
-  div.openingHrsImgWrapper {
-    padding: 0;
-  }
-  p.pleaseNote {
-    width: 100% !important;
-    padding-bottom: 5rem;
-  }
-}
-
-/*  Large Screens & Desktop  */
-@media only screen and (max-width: 1000px) {
-  section.openingHrsSection {
-    margin-top: 10rem;
-  }
-  section.openingHrsSection h1.openingHrsHdr {
-    margin-bottom: 0;
-    padding-bottom: 1rem;
-  }
-}
-
-/*  Tablets  */
 /*  Larger Phones  */
 @media only screen and (max-width: 600px) {
-  div.openingHrstextInfo {
-    padding-top: 2rem;
-    width: 80vw;
-  }
-  img.openingHrsImg {
-    width: 80vw;
-    height: auto;
+  .openingHrsPageWrapper .openingHrsImgWrapper {
+    padding: 0;
   }
 }
 
-/*  Small Phones  */
 /* ===================================================================
             Media Queries: Privacy
 =================================================================== */

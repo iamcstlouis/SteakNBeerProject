@@ -1,4 +1,3 @@
-
 /* ===================================================================
         mobile Menu Styles
 =================================================================== */
@@ -16,7 +15,7 @@
     padding-top: 15rem;
     z-index: 102;
     visibility: hidden;
-    transition: all .6s ease-in-out;
+    transition: all .4s ease-in-out;
 
     &.open {
         height: 100vh;

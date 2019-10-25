@@ -2,23 +2,19 @@
         Specials Top Section
 =================================================================== */
 
-div.specialsTopInfo {
+.specialsTopInfo {
     text-align: center;
+    margin: 0 auto;
 
     h1 {
         font-size: 3.5rem;
         font-weight: 600;
-        margin: 2rem 0 1.5rem 0;
-        display: none;
     }
 
     p {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 300;
-        margin-top: 5rem;
-        margin-bottom: 6rem;
-        text-align: left;
-        padding-left: 5rem;
+        margin-top: 1.5rem;
     }
 }
 
@@ -26,22 +22,22 @@ div.specialsTopInfo {
         Steak Stack Specials Section
 =================================================================== */
 
-div.specialsFlexContainer {
+.specialsWrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 5rem;
+    margin-top: 6rem;
 }
 
-section.SpecialsBSSection {
+.SpecialsBSSection {
 
-    div.SpecialsBSHdrAndImg {
+    .SpecialsBSHdrAndImg {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
 
-        h2.SpecialsBSHdr {
+        .SpecialsBSHdr {
             font-size: 2.5rem;
             font-weight: 400;
             color: $clr-site-yellow;
@@ -70,8 +66,8 @@ section.SpecialsBSSection {
     }
 }
 
-img.steakStackSpecialImg,
-img.fattyFaveSpecialImg {
+.steakStackSpecialImg,
+.fattyFaveSpecialImg {
     display: block;
     max-width: 40vw;
     max-height: 50vh;
@@ -80,12 +76,12 @@ img.fattyFaveSpecialImg {
     margin: 0 auto;
 }
 
-div.SpecialsSSDesc {
+.SpecialsSSDesc {
     width: 100%;
     margin: 0 auto;
     text-align: center;
 
-    h2.specialsSSHdr {
+    .specialsSSHdr {
         margin: 2rem 0;
         font-size: 2rem;
         font-weight: 700;
@@ -106,14 +102,14 @@ div.SpecialsSSDesc {
         Fatty Fave Specials Section
 =================================================================== */
 
-section.fattyFaveSpecialSection {
+.fattyFaveSpecialSection {
 
-    div.dessertHdrAndImg {
+    .dessertHdrAndImg {
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        h2.dessertHdr {
+        .dessertHdr {
             font-size: 2.5rem;
             font-weight: 400;
             color: $clr-site-red;
@@ -142,7 +138,7 @@ section.fattyFaveSpecialSection {
     }
 }
 
-div.specialsDessertDesc {
+.specialsDessertDesc {
     width: 100%;
     margin: 0 auto;
     text-align: center;

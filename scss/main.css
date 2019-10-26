@@ -385,7 +385,7 @@ nav.top-nav .container {
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
   overflow-y: scroll;
-  padding-top: 15rem;
+  padding-top: 10rem;
   z-index: 102;
   visibility: hidden;
   -webkit-transition: all .4s ease-in-out;
@@ -408,7 +408,7 @@ nav.top-nav .container {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--site-light-grey);
   display: block;
   opacity: .5;
@@ -2923,6 +2923,13 @@ div.refresherMenuWrapper div.refresherMenu div.productItem div.productTopInfo p.
 /* ===================================================================
             Media Queries: Opening Hours
 =================================================================== */
+/*  Small Laptops  */
+@media only screen and (max-width: 1000px) {
+  .openingHrstextInfo .pleaseNote {
+    width: 100%;
+  }
+}
+
 /*  Larger Phones  */
 @media only screen and (max-width: 600px) {
   .openingHrsPageWrapper .openingHrsImgWrapper {

@@ -116,6 +116,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
             <div id="mobile-menu" class="mobile-menu">
 
                 <div class="mobileMenuLinks">
+                    <a href="../index.html">Home</a>
                     <a href="../pages/menu-brunch.html">Menu</a>
                     <a href="../pages/bookings.html">Book</a>
                     <a href="../pages/specials.html">Specials</a>

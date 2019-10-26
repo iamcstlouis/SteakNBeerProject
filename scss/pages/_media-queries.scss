@@ -723,6 +723,17 @@
 /* ===================================================================
             Media Queries: Opening Hours
 =================================================================== */
+/*  Small Laptops  */
+
+@media only screen and (max-width: 1000px) {
+
+    .openingHrstextInfo {
+
+        .pleaseNote {
+            width: 100%;
+        }
+    }
+}
 
 /*  Larger Phones  */
 

@@ -12,7 +12,7 @@
     opacity: 0;
     backdrop-filter: blur(2rem);
     overflow-y: scroll;
-    padding-top: 15rem;
+    padding-top: 10rem;
     z-index: 102;
     visibility: hidden;
     transition: all .4s ease-in-out;
@@ -34,7 +34,7 @@
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--site-light-grey);
     display: block;
     opacity: .5;

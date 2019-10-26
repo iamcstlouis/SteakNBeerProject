@@ -1,4 +1,3 @@
-
 /* ===================================================================
             Hamburger Menu Two
 =================================================================== */
@@ -16,6 +15,10 @@
         justify-content: space-between;
         align-items: center;
         transition: all .5s ease-in-out;
+
+        &.open {
+            transform: translateX(-2rem);
+        }
     }
 
     .line-top {

@@ -740,46 +740,33 @@
             Media Queries: Privacy
 =================================================================== */
 
-/*  Small Laptop Screens  */
+/*  Tablets  */
 
-@media only screen and (max-width: 1145px) {}
+@media only screen and (max-width: 900px) {
 
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1000px) {
-
-    div.privacyContentWrapper {
-        padding: 2rem 5rem 1rem 5rem !important;
+    .privacyContentSection {
+        margin-top: 5rem;
     }
 }
 
 /*  Tablets  */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 750px) {
+    .privacyContentSection {
 
-    section.privacyContentSection {
-        margin-top: 5rem;
-
-        div.privacyContentWrapper {
-            padding: 5rem 5rem 1rem 5rem !important;
-            width: 90vw;
+        .privacyContentWrapper {
+            padding: 2rem;
         }
     }
 }
 
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
-
 /*  Small Phones  */
 
 @media only screen and (max-width: 450px) {
-    section.privacyContentSection {
-        margin-top: 10rem;
+    .privacyContentSection {
+        margin-top: 0;
 
-        div.privacyContentWrapper {
-            padding: 0 2rem 1rem 2rem !important;
-            width: 90vw;
+        .privacyContentWrapper {
 
             h1 {
                 margin-bottom: 0;
@@ -792,46 +779,48 @@
             Media Queries: Contact
 =================================================================== */
 
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1000px) {
-    h1.contactPageHdr {
-        margin-top: 10rem;
-        padding-bottom: 2rem;
-    }
-}
-
 /*  Tablets  */
 
-@media only screen and (max-width: 838px) {
+@media only screen and (max-width: 800px) {
 
-    div.contactFormWrapper {
-        padding-right: 0 !important;
-    }
+    .ContactFormSection {
 
-    div.contactStoreLocations {
-        width: 42.1rem;
-        padding-left: 0 !important;
-        padding-bottom: 5rem;
+        .contactFormWrapper {
+            padding-right: 0;
+            width: 100%;
+        }
+
+        .contactStoreLocations {
+            width: 42rem;
+            padding-left: 0;
+            margin-top: 5rem;
+        }
     }
 }
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
 
 /*  Small Phones  */
 
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 375px) {
 
-    input[type=text],
-    input[type=email],
-    input[type=tel],
-    textarea {
-        width: 80vw !important;
-    }
+    .ContactFormSection {
+        width: 100%;
 
-    div.contactStoreLocations {
-        width: 80vw;
+        .contactStoreLocations {
+            width: 100%;
+
+            .contactHoxtonSq,
+            .contactBrixton,
+            .contactCroydonCentre,
+            .contactClapham {
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
     }
 }

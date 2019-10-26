@@ -1,22 +1,22 @@
-h1.contactPageHdr {
+.contactPageHdr {
     color: $clr-site-offWhite;
     text-align: center;
     font-size: 3.5rem;
     font-weight: 600;
-    margin: 7rem 0 1.5rem 0;
-    padding-bottom: 0;
 }
 
-section.ContactFormSection {
+.ContactFormSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 1.5rem;
 
-    div.contactFormWrapper {
+    .contactFormWrapper {
         padding-right: 2rem;
+        max-width: 42rem;
+        width: 50%;
 
-        div.contactForm {
-            margin-bottom: 5rem;
+        .contactForm {
 
             form {
 
@@ -36,7 +36,8 @@ section.ContactFormSection {
                 input[type=text],
                 input[type=email],
                 input[type=tel] {
-                    width: 42.1rem;
+                    // width: 42.1rem;
+                    width: 100%;
                     height: 3.5rem;
                     background: #414141;
                     border: none;
@@ -57,7 +58,8 @@ section.ContactFormSection {
                     padding-left: 1rem;
                     padding-top: 2rem;
                     font-size: 1.4rem;
-                    width: 42.1rem;
+                    // width: 42.1rem;
+                    width: 100%;
                     height: 20rem;
                 }
 
@@ -80,9 +82,13 @@ section.ContactFormSection {
         }
     }
 
-    div.contactStoreLocations {
+    .contactStoreLocations {
         padding-left: 2rem;
         padding-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
 
         h2 {
             font-size: 2rem;

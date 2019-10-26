@@ -2,10 +2,13 @@
                         Homepage Footer
 =================================================================== */
 
+footer {
+    margin-top: auto;
+}
+
 .homepage-footer {
 
-    p.homepageCopyright {
-        margin-top: auto;
+    .homepageCopyright {
         padding-bottom: 1.6rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;

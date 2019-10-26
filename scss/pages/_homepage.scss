@@ -5,6 +5,7 @@
 .homepage {
     width: 100vw;
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 .homePageImgSection {
@@ -12,7 +13,7 @@
     margin: 0 auto;
     text-align: center;
 
-    p.bestSteakHouseSub {
+    .bestSteakHouseSub {
         font-size: 2.6rem;
         font-weight: 300;
         color: $clr-site-red;

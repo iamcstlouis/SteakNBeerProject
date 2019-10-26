@@ -1,7 +1,7 @@
-section.privacyContentSection {
+.privacyContentSection {
     margin-top: 10rem;
 
-    div.privacyContentWrapper {
+    .privacyContentWrapper {
         background-color: $clr-site-white;
         padding: 8rem 12rem 1rem 12rem;
         line-height: 1.4;
@@ -19,20 +19,20 @@ section.privacyContentSection {
             color: rgb(18, 18, 18);
             font-weight: 300;
             padding-bottom: 5rem;
-        }
 
-        .phoneNo {
-            font-size: 1.6rem;
-            font-weight: 300;
-            color: rgb(18, 18, 18);
-        }
+            a {
+                font-size: 1.6rem;
+                font-weight: 300;
+                color: $clr-site-red;
+                text-decoration: none;
+                cursor: pointer;
+            }
 
-        h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: rgb(31, 31, 31);
-            padding-bottom: .5rem;
+            .phoneNo {
+                font-size: 1.6rem;
+                font-weight: 300;
+                color: rgb(18, 18, 18);
+            }
         }
 
         h3 {
@@ -42,13 +42,12 @@ section.privacyContentSection {
             padding-bottom: 1rem;
         }
 
-        a {
-            font-size: 1.8rem;
-            font-weight: 300;
-            color: $clr-site-red;
-            text-decoration: none;
-            outline: none;
-            cursor: pointer;
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: rgb(31, 31, 31);
+            padding-bottom: .5rem;
         }
     }
 }

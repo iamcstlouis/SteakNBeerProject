@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="animated fadeIn">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./scss/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
         integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-    <link rel="stylesheet" href="./scss/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Steak 'N' Beer | Bookings</title>
 </head>
 
@@ -105,14 +105,14 @@
 
             <!-- Main Image -->
 
-            <div class="homePageImgSection">
+            <div class="homePageImgSection" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1900">
                 <p class="bestSteakHouseSub">The Best Steakhouse In The South</p>
                 <img src="./img/homepage/steak-beer-homepage-img.png" alt="Steak 'N' Beer Home" width="704" height="615"
                     class="heroImage">
             </div>
 
             <div class="seeSpecialsBtnSection">
-                <div class="seeSpecialsWrapper">
+                <div class="seeSpecialsWrapper" data-aos="fade-up" data-aos-duration="1000">
                     <a href="./pages/specials.html" class="seeSpecialsBtn">See our specials</a>
                     <img src="./img/component/yellow-text-outline-box-up.png" alt="See Steak 'N' Beer Specials"
                         width="51" height="325" class="seeSpecialsTextbox">
@@ -122,7 +122,7 @@
             <!--    Socials, Reserve Table and Mini Bio Section    -->
 
             <section class="socials-resrv-minibio">
-                <div class="socialsCol">
+                <div class="socialsCol" data-aos="fade-right" data-aos-duration="1500">
                     <div class="socialsBtns">
                         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -131,7 +131,7 @@
                 </div>
 
                 <!-- Reservation Button -->
-                <div class="makeReservationCol">
+                <div class="makeReservationCol" data-aos="fade-up" data-aos-duration="2000">
                     <div class="resevationBtn">
                         <a href="./pages/bookings.html">Make A Reservation</a>
                     </div>
@@ -161,12 +161,12 @@
 
                 <!-- Steak 'N' Beer Mini Bio -->
                 <div id="homepageAboutUs" class="miniBioCol">
-                    <div class="miniBioImgSection">
+                    <div class="miniBioImgSection" data-aos="fade-left" data-aos-duration="1000">
                         <img src="./img/component/yellow-text-outline-box-right.png" alt="At The Steak 'N' Beer"
                             width="315" height="51">
                         <h1>At The Steak ’N’ Beer</h1>
                     </div>
-                    <div class="miniBiotext">
+                    <div class="miniBiotext" data-aos="fade-up" data-aos-duration="1400">
                         <p class="firstPara">
                             It’s down-to-earth, rustic and humble and our popular signature dishes are
                             complemented
@@ -191,6 +191,10 @@
                 </script>.
         </p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

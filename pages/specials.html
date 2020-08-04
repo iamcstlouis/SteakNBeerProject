@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="animated fadeIn">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../scss/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
         integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-    <link rel="stylesheet" href="../scss/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Steak 'N' Beer | Specials</title>
 </head>
 
@@ -109,8 +109,9 @@
             <!--    Specials Top Info    -->
             <section class="steakStackSpecialSec">
                 <div class="specialsTopInfo">
-                    <h1>Specials</h1>
-                    <p>Picked by you our visitors, check out and try our favourites of the season!</p>
+                    <h1 data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">Specials</h1>
+                    <p data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">Picked by you our visitors,
+                        check out and try our favourites of the season!</p>
                 </div>
             </section>
 
@@ -120,7 +121,7 @@
 
                 <!--    Steak Stack    -->
 
-                <section class="SpecialsBSSection">
+                <section class="SpecialsBSSection" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
                     <div class="SpecialsBSHdrAndImg">
                         <h2 class="SpecialsBSHdr">
                             Breakfast Special
@@ -143,7 +144,8 @@
 
                 <!--    Fatty Fave    -->
 
-                <section class="fattyFaveSpecialSection">
+                <section class="fattyFaveSpecialSection" data-aos="fade-up" data-aos-delay="1100"
+                    data-aos-duration="1000">
                     <div class="dessertHdrAndImg">
                         <h2 class="dessertHdr">
                             Fatty Favourite
@@ -178,7 +180,12 @@
             <a href="../pages/privacy.html" class="privacyLink">Privacy</a>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
     <script src="../js/main.js"></script>
 </body>
 

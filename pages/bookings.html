@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="animated fadeIn">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../scss/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
         integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-    <link rel="stylesheet" href="../scss/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Steak 'N' Beer | Bookings</title>
 </head>
 
@@ -109,8 +109,10 @@
 
             <div class="bookingsFormWrapper">
                 <div class="bookingsForm">
-                    <h1 class="bookingsHdr">Bookings</h1>
-                    <form action="../php/login.php" method="post">
+                    <h1 class="bookingsHdr" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Bookings
+                    </h1>
+                    <form action="../php/login.php" method="post" data-aos="fade-up" data-aos-delay="800"
+                        data-aos-duration="1000">
                         <fieldset>
                             <select name="bookings" id="bookings" class="customSelect">
                                 <option value="Please select a restaurant">Please select a restaurant</option>
@@ -124,12 +126,13 @@
                 </div>
             </div>
 
-            <div class="BookTableBtnWrapper"><a class="BookTableBtn" href="https://www.bookatable.co.uk/"
+            <div class="BookTableBtnWrapper" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000"><a
+                    class="BookTableBtn" href="https://www.bookatable.co.uk/"
                     target="_blank">Book A Table</a>
             </div>
             <!--    Bookings Image Section    -->
 
-            <div class="bookingsImgSection">
+            <div class="bookingsImgSection" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1000">
                 <div class="bookingsImgWrapper">
                     <img src="../img/bookings/book-a-table-book2.png" alt="Steak 'N' Beer - Book A Table" width="958"
                         height="312" class="bookATableDesktopImg">
@@ -150,6 +153,12 @@
             <a href="../pages/privacy.html" class="privacyLink">Privacy</a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
     <script src="../js/main.js"></script>
 </body>
 

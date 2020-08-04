@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="animated fadeIn">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../scss/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
         integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-    <link rel="stylesheet" href="../scss/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Steak 'N' Beer | Contact</title>
 </head>
 
@@ -107,33 +107,34 @@
                                 Contact Form 
                 ///////////////////////////////////////////////////////////////////////////-->
 
-            <h1 class="contactPageHdr">Contact</h1>
+            <h1 class="contactPageHdr" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1400">Contact</h1>
 
             <section class="ContactFormSection">
                 <div class="contactFormWrapper">
                     <div class="contactForm">
                         <form name="Steak-n-beer-enquiry" method="post" data-netlify="true">
-                            <div class="formName">
+                            <div class="formName" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1400">
                                 <label for="name">Name</label>
                                 <input type="text" name="name" id="name" required>
                             </div>
 
-                            <div class="formEmail">
+                            <div class="formEmail" data-aos="fade-up" data-aos-delay="750" data-aos-duration="1400">
                                 <label for="email">Email</label>
                                 <input type="text" name="email" id="email" required>
                             </div>
 
-                            <div class="formPhoneNo">
+                            <div class="formPhoneNo" data-aos="fade-up" data-aos-delay="850" data-aos-duration="1400">
                                 <label for="tel">Phone</label>
                                 <input type="tel" name="tel" id="tel" required>
                             </div>
 
-                            <div class="formMsg">
+                            <div class="formMsg" data-aos="fade-up" data-aos-delay="950" data-aos-duration="1400">
                                 <label for="message">Message</label>
                                 <textarea name="message" placeholder="Leave us a message..." required></textarea>
                             </div>
 
-                            <div class="formSubmitBtn">
+                            <div class="formSubmitBtn" data-aos="fade-up" data-aos-delay="1050"
+                                data-aos-duration="1400">
                                 <input type="submit" name="submit" value="Submit">
                             </div>
                         </form>
@@ -195,7 +196,12 @@
             <a href="../pages/privacy.html" class="privacyLink">Privacy</a>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
     <script src="../js/main.js"></script>
 </body>
 
